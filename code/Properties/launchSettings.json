@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "dm98": {
+      "commandName": "Executable",
+      "executablePath": "E:\\Downloads\\sbox\\sbox.exe",
+      "commandLineArgs": "\u002Bdeveloper -w 1920 -h 1080 -noassert -tools"
+    }
+  }
+}

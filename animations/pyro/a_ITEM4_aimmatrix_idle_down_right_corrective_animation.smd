@@ -1,0 +1,84 @@
+// Created by Crowbar 0.71
+version 1
+nodes
+  0 "bip_pelvis" -1
+  1 "bip_spine_0" 0
+  2 "bip_spine_1" 1
+  3 "bip_spine_2" 2
+  4 "bip_spine_3" 3
+  5 "bip_neck" 4
+  6 "bip_head" 5
+  7 "bip_collar_L" 4
+  8 "bip_upperArm_L" 7
+  9 "bip_lowerArm_L" 8
+  10 "bip_hand_L" 9
+  11 "bip_collar_R" 4
+  12 "bip_upperArm_R" 11
+  13 "bip_lowerArm_R" 12
+  14 "bip_hand_R" 13
+  15 "bip_hip_L" 0
+  16 "bip_knee_L" 15
+  17 "bip_foot_L" 16
+  18 "bip_toe_L" 17
+  19 "bip_hip_R" 0
+  20 "bip_knee_R" 19
+  21 "bip_foot_R" 20
+  22 "bip_toe_R" 21
+  23 "prp_fuelTank" 3
+  24 "weapon_bone_L" 10
+  25 "weapon_bone" 14
+  26 "weapon_bone_1" 14
+  27 "weapon_bone_2" 14
+  28 "weapon_bone_3" 14
+  29 "weapon_bone_4" 14
+  30 "effect_hand_L" 10
+  31 "effect_hand_R" 14
+  32 "prp_pouch" 0
+  33 "prp_cannister1" 2
+  34 "prp_cannister2" 2
+  35 "prp_cannister3" 2
+  36 "bip_thumb_0_L" 10
+  37 "bip_thumb_1_L" 36
+  38 "bip_thumb_2_L" 37
+  39 "bip_index_0_L" 10
+  40 "bip_index_1_L" 39
+  41 "bip_index_2_L" 40
+  42 "bip_middle_0_L" 10
+  43 "bip_middle_1_L" 42
+  44 "bip_middle_2_L" 43
+  45 "bip_ring_0_L" 10
+  46 "bip_ring_1_L" 45
+  47 "bip_ring_2_L" 46
+  48 "bip_pinky_0_L" 10
+  49 "bip_pinky_1_L" 48
+  50 "bip_pinky_2_L" 49
+  51 "bip_thumb_0_R" 14
+  52 "bip_thumb_1_R" 51
+  53 "bip_thumb_2_R" 52
+  54 "bip_index_0_R" 14
+  55 "bip_index_1_R" 54
+  56 "bip_index_2_R" 55
+  57 "bip_middle_0_R" 14
+  58 "bip_middle_1_R" 57
+  59 "bip_middle_2_R" 58
+  60 "bip_ring_0_R" 14
+  61 "bip_ring_1_R" 60
+  62 "bip_ring_2_R" 61
+  63 "bip_pinky_0_R" 14
+  64 "bip_pinky_1_R" 63
+  65 "bip_pinky_2_R" 64
+  66 "medal_bone" 3
+  67 "mvm" 0
+  68 "prop_bone" 0
+  69 "prop_bone_1" 0
+  70 "prop_bone_2" 0
+  71 "prop_bone_3" 0
+  72 "prop_bone_4" 0
+  73 "prop_bone_5" 0
+  74 "prop_bone_6" 0
+  75 "taunt_effect" 0
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 0.098138 0.148968 -1.361046
+end
