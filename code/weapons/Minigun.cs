@@ -30,18 +30,24 @@ partial class Minigun : BaseDmWeapon
 			return;
 		}
 
-		(Owner as AnimEntity).SetAnimBool( "b_attack", true );
+		(Owner as AnimEntity).SetAnimBool( "b_minigunattack", true );
 
 		//
 		// Tell the clients to play the shoot effects
 		//
 		ShootEffects();
-		PlaySound( "rust_smg.shoot" );
+		PlaySound("minigun_shoot");
 
 		//
 		// Shoot the bullets
 		//
 		ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
 
+	}
+
+	public override void SimulateAnimator(PawnAnimator anim) 
+	{
+		anim.SetParam("holdtype", 0);
+		anim.SetParam("aimat_weight", 1.0f);
 	}
 }

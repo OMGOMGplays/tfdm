@@ -2417,6 +2417,666 @@
 						framerate = -1.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_down_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_down_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_down_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_mid_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_mid_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_mid_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_neutral"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_neutral.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_straight_up"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_straight_up.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_up_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_up_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_crouch_idle_up_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_down_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_down_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_down_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_mid_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_mid_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_mid_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_neutral"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_neutral.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_straight_up"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_straight_up.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_up_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_up_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_idle_up_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_down_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_down_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_down_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_mid_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_mid_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_mid_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_neutral"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_neutral.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_straight_up"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_straight_up.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_up_center"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_center.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_up_left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_left.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_MELEE_aimmatrix_run_up_right"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_right.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -2425,508 +3085,41 @@
 				children = 
 				[
 					{
-						_class = "GenericGameData"
-						game_class = "prop_data"
-						game_keys = 
-						{
-							base = ""
-							allowstatic = false
-							bakelighting = false
-							spawn_motion_disabled = false
-							health = -1.0
-							min_impact_damage_speed = -1.0
-							impact_damage = -1.0
-							parent_bodygroup_name = ""
-							parent_bodygroup_value = 0
-						}
-					},
-				]
-			},
-			{
-				_class = "PhysicsJointList"
-				children = 
-				[
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_pelvis"
-						child_body = "bip_hip_L"
-						anchor_origin = [ 6.057429, 6.073139, -2.201435 ]
-						anchor_angles = [ -69.021019, -174.348892, 77.632462 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_hip_L"
-						child_body = "bip_knee_L"
-						anchor_origin = [ 13.377922, 0.00009, -0.000484 ]
-						anchor_angles = [ -89.997978, 166.021851, 0.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_knee_L"
-						child_body = "bip_foot_L"
-						anchor_origin = [ 16.792397, 0.000023, -0.000024 ]
-						anchor_angles = [ -69.652855, 0.555743, -96.760513 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_pelvis"
-						child_body = "bip_hip_R"
-						anchor_origin = [ -6.05743, 6.073147, -2.201431 ]
-						anchor_angles = [ -69.021095, -5.650878, 102.369568 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_hip_R"
-						child_body = "bip_knee_R"
-						anchor_origin = [ 13.377892, -0.00007, 0.00001 ]
-						anchor_angles = [ 0.000051, -76.021606, -89.999908 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_knee_R"
-						child_body = "bip_foot_R"
-						anchor_origin = [ 16.792385, -0.00002, -0.00001 ]
-						anchor_angles = [ -0.193161, 110.34584, -6.239692 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_pelvis"
-						child_body = "bip_spine_0"
-						anchor_origin = [ 0.0, -6.065613, -0.000008 ]
-						anchor_angles = [ -6.654667, -90.0, -90.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_0"
-						child_body = "bip_spine_1"
-						anchor_origin = [ 0.0, -7.446178, 0.0 ]
-						anchor_angles = [ -2.464689, -90.000015, -90.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_1"
-						child_body = "bip_spine_2"
-						anchor_origin = [ 0.0, -8.166996, -0.000034 ]
-						anchor_angles = [ 7.814678, -90.000015, -90.000015 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_2"
-						child_body = "bip_spine_3"
-						anchor_origin = [ 0.0, -7.059055, -0.000023 ]
-						anchor_angles = [ 24.682312, -90.0, -90.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_3"
-						child_body = "bip_collar_R"
-						anchor_origin = [ -2.13143, -5.80584, -7.194523 ]
-						anchor_angles = [ -22.26314, 158.080093, -70.895882 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_collar_R"
-						child_body = "bip_upperArm_R"
-						anchor_origin = [ -0.000031, 14.061844, 0.000027 ]
-						anchor_angles = [ -53.49902, 100.801125, -64.396721 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_upperArm_R"
-						child_body = "bip_lowerArm_R"
-						anchor_origin = [ 17.670822, 0.000139, -0.000099 ]
-						anchor_angles = [ 0.000611, -115.321899, -90.000008 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_lowerArm_R"
-						child_body = "bip_hand_R"
-						anchor_origin = [ 15.175468, 0.0, -0.000099 ]
-						anchor_angles = [ -0.000038, -179.999756, -0.000154 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_3"
-						child_body = "bip_neck"
-						anchor_origin = [ 0.0, -7.667641, 0.000072 ]
-						anchor_angles = [ 17.35078, -90.0, -90.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_neck"
-						child_body = "bip_head"
-						anchor_origin = [ 0.0, -3.88068, 0.000023 ]
-						anchor_angles = [ -35.520378, -90.0, -90.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_spine_3"
-						child_body = "bip_upperArm_L"
-						anchor_origin = [ 14.204191, -0.947723, -1.866974 ]
-						anchor_angles = [ -73.352577, 55.333881, -167.853424 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_upperArm_L"
-						child_body = "bip_lowerArm_L"
-						anchor_origin = [ 17.670883, -0.000041, -0.000584 ]
-						anchor_angles = [ -89.998329, -154.67807, 0.0 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-					{
-						_class = "PhysicsJointConical"
-						parent_body = "bip_lowerArm_L"
-						child_body = "bip_hand_L"
-						anchor_origin = [ 15.175457, 0.00005, 0.000027 ]
-						anchor_angles = [ -0.000197, -0.000147, -89.999939 ]
-						collision_enabled = false
-						friction = 0.1
-						enable_swing_limit = true
-						swing_limit = 30.0
-						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
-						enable_twist_limit = true
-						min_twist_angle = -15.0
-						max_twist_angle = 15.0
-					},
-				]
-			},
-			{
-				_class = "PhysicsShapeList"
-				children = 
-				[
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_pelvis"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.027466
-						point0 = [ 7.99947, 0.326578, -0.479586 ]
-						point1 = [ -8.110394, 0.326578, -0.479586 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_hip_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.344478
-						point0 = [ 13.377913, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_knee_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.198099
-						point0 = [ 16.792397, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "bip_foot_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.0
-						center = [ -0.000003, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_hip_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.344476
-						point0 = [ 13.377905, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_knee_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.198098
-						point0 = [ 16.792393, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "bip_foot_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.0
-						center = [ -0.000054, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_spine_0"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.628321
-						point0 = [ -0.956798, -6.2828, 1.777086 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_spine_1"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 2.664022
-						point0 = [ 1.318184, 11.122416, -0.022174 ]
-						point1 = [ 0.989661, 8.585782, 1.785261 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_spine_2"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.377448
-						point0 = [ -1.647226, 7.272616, 2.574678 ]
-						point1 = [ -1.870007, -1.370823, 3.786889 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_spine_3"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.065714
-						point0 = [ -0.111491, 3.601804, -2.27872 ]
-						point1 = [ -0.153114, -2.252182, 1.886752 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_collar_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.515676
-						point0 = [ 1.259267, 0.190741, 0.029129 ]
-						point1 = [ 0.197447, 14.420461, -0.069073 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_upperArm_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.41773
-						point0 = [ 17.670921, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_lowerArm_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.793882
-						point0 = [ 15.175529, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_hand_R"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.124628
-						point0 = [ 4.498512, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "bip_neck"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 2.614615
-						center = [ 0.138268, 1.045298, -0.344639 ]
-					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "bip_head"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.19522
-						center = [ 0.104617, -2.625841, -1.869769 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_upperArm_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 4.41773
-						point0 = [ 17.670921, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_lowerArm_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 3.793876
-						point0 = [ 15.175503, 0.0, 0.0 ]
-						point1 = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_hand_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.24153
-						point0 = [ 0.0, 0.0, 0.0 ]
-						point1 = [ -0.136376, -3.357668, 0.513372 ]
-					},
-					{
-						_class = "PhysicsShapeCapsule"
-						parent_bone = "bip_collar_L"
-						surface_prop = "default"
-						collision_prop = "default"
-						radius = 1.43994
-						point0 = [ -0.134037, -0.013196, -0.024714 ]
-						point1 = [ -0.508335, -14.154165, -0.271825 ]
+						_class = "Feet"
+						children = 
+						[
+							{
+								_class = "Foot"
+								name = "foot_l"
+								anklebone = "bip_foot_L"
+								toebone = "bip_toe_L"
+								balloffset = [ 0.0, 0.0, 0.0 ]
+								heeloffset = [ 0.0, 0.0, 0.0 ]
+								autolevel = true
+								traceheight = 40.0
+								traceradius = 2.0
+							},
+							{
+								_class = "Foot"
+								name = "foot_r"
+								anklebone = "bip_foot_R"
+								toebone = "bip_toe_R"
+								balloffset = [ 0.0, 0.0, 0.0 ]
+								heeloffset = [ 0.0, 0.0, 0.0 ]
+								autolevel = true
+								traceheight = 40.0
+								traceradius = 2.0
+							},
+						]
+						locktolerance = 0.6
+						heighttolerance = 2.0
+						sanitizetrajectories = true
 					},
 				]
 			},
 		]
-		model_archetype = "jointed_physics_model"
-		primary_associated_entity = "prop_ragdoll"
+		model_archetype = ""
+		primary_associated_entity = ""
 		anim_graph_name = "animgraphs/hvywpns.vanmgrph"
 	}
 }

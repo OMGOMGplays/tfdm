@@ -145,11 +145,12 @@ partial class Shotgun : BaseDmWeapon
 	protected virtual void FinishReload()
 	{
 		ViewModelEntity?.SetAnimBool( "reload_finished", true );
+		(Owner as AnimEntity).SetAnimBool("b_reload", false);
 	}
 
 	public override void SimulateAnimator( PawnAnimator anim )
 	{
-		anim.SetParam( "holdtype", 2 ); // TODO this is shit
+		anim.SetParam( "holdtype", 1 ); // TODO this is shit
 		anim.SetParam( "aimat_weight", 1.0f );
 	}
 }
