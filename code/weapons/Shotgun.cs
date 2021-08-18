@@ -17,7 +17,7 @@ partial class Shotgun : BaseDmWeapon
 	{
 		base.Spawn();
 
-		SetModel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" );  
+		SetModel( "models/weapons/c_shotgun_reference.vmdl" );  
 
 		AmmoClip = 6;
 	}
