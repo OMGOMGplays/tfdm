@@ -34,6 +34,7 @@ partial class DeathmatchPlayer : Player
 
 		Inventory.Add(new Shotgun());
 		Inventory.Add(new Minigun(), true);
+		Inventory.Add(new Sandvich());
 
 		GiveAmmo( AmmoType.Pistol, 0);
 		GiveAmmo( AmmoType.Buckshot, 20 );

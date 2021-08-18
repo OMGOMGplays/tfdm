@@ -36,7 +36,7 @@ partial class Minigun : BaseDmWeapon
 		// Tell the clients to play the shoot effects
 		//
 		ShootEffects();
-		PlaySound("minigun_shoot");
+		PlaySound("rust_smg.shoot");
 
 		//
 		// Shoot the bullets

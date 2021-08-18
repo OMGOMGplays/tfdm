@@ -2891,17 +2891,10 @@
 								m_conditions = 
 								[
 									{
-										_class = "CParameterAnimCondition"
+										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_paramID = 
-										{
-											m_id = 782105926
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 1
-											m_data = false
-										}
+										m_option = "FinishedConditionOption_OnFinished"
+										m_bIsFinished = true
 									},
 								]
 								m_blendDuration = 0.2
@@ -2982,17 +2975,10 @@
 								m_conditions = 
 								[
 									{
-										_class = "CParameterAnimCondition"
+										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_paramID = 
-										{
-											m_id = 782105926
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 1
-											m_data = false
-										}
+										m_option = "FinishedConditionOption_OnFinished"
+										m_bIsFinished = true
 									},
 								]
 								m_blendDuration = 0.2
