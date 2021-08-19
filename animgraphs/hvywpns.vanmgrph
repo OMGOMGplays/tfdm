@@ -139,7 +139,7 @@
 			},
 			{
 				_class = "CVectorAnimParameter"
-				m_name = "aim"
+				m_name = "aim_head"
 				m_id = 
 				{
 					m_id = 1027326998
@@ -154,7 +154,7 @@
 			},
 			{
 				_class = "CFloatAnimParameter"
-				m_name = "aim_weight"
+				m_name = "aim_head_weight"
 				m_id = 
 				{
 					m_id = 699932437
@@ -167,7 +167,7 @@
 				m_fDefaultValue = 1.0
 				m_fMinValue = 0.0
 				m_fMaxValue = 1.0
-				m_bInterpolate = false
+				m_bInterpolate = true
 			},
 			{
 				_class = "CBoolAnimParameter"
@@ -235,16 +235,16 @@
 					m_name = "Player Input"
 					m_bDefault = true
 					m_sampleTimes = [  ]
-					m_bUseAcceleraion = false
+					m_bUseAcceleraion = true
 					m_flSpringConstant = 10.0
 					m_flAnticipationDistance = 0.0
 					m_anticipationPosParam = 
 					{
-						m_id = 4294967295
+						m_id = 1027326998
 					}
 					m_anticipationHeadingParam = 
 					{
-						m_id = 4294967295
+						m_id = 898678112
 					}
 				},
 			]
@@ -501,7 +501,7 @@
 							m_id = 695660346
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -511,7 +511,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -608,7 +608,7 @@
 							m_id = 1667307699
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -618,7 +618,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -629,6 +629,28 @@
 					m_fMinSpeed = 10.0
 					m_fMaxTension = 1000.0
 				}
+			}
+		},
+		{
+			key = 
+			{
+				m_id = 189844988
+			}
+			value = 
+			{
+				_class = "CSequenceAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -220.0, 525.0 ]
+				m_nNodeID = 
+				{
+					m_id = 189844988
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_tagSpans = [  ]
+				m_sequenceName = "face_fire_angry1"
+				m_playbackSpeed = 1.0
+				m_bLoop = false
 			}
 		},
 		{
@@ -663,7 +685,7 @@
 							m_id = 1519472530
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -673,7 +695,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -2590,54 +2612,6 @@
 		{
 			key = 
 			{
-				m_id = 529960560
-			}
-			value = 
-			{
-				_class = "CLookAtAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ 531.0, 170.0 ]
-				m_nNodeID = 
-				{
-					m_id = 529960560
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_childID = 
-				{
-					m_id = 1878632805
-				}
-				m_target = "VectorParameter"
-				m_param = 
-				{
-					m_id = 1027326998
-				}
-				m_weightParam = 
-				{
-					m_id = 699932437
-				}
-				m_lookatChainName = "AimChain"
-				m_attachmentName = "forward_reference"
-				m_flYawLimit = 90.0
-				m_flPitchLimit = 80.0
-				m_bResetBase = false
-				m_bLockWhenWaning = false
-				m_bUseHysteresis = false
-				m_flHysteresisInnerAngle = 1.0
-				m_flHysteresisOuterAngle = 20.0
-				m_damping = 
-				{
-					_class = "CAnimInputDamping"
-					m_speedFunction = "Spring"
-					m_fSpeedScale = 15.0
-					m_fMinSpeed = 5.0
-					m_fMaxTension = 720.0
-				}
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 577081123
 			}
 			value = 
@@ -3015,7 +2989,7 @@
 						m_name = "Melee"
 						m_childNodeID = 
 						{
-							m_id = 529960560
+							m_id = 940190163
 						}
 						m_stateID = 
 						{
@@ -4767,7 +4741,7 @@
 			{
 				_class = "CBlendAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1403.0, 282.0 ]
+				m_vecPosition = [ -1402.0, 279.0 ]
 				m_nNodeID = 
 				{
 					m_id = 736008992
@@ -4790,7 +4764,7 @@
 							m_id = 1519472530
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -4800,7 +4774,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -5627,7 +5601,7 @@
 							m_id = 441372276
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -5637,7 +5611,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -5846,6 +5820,54 @@
 		{
 			key = 
 			{
+				m_id = 940190163
+			}
+			value = 
+			{
+				_class = "CLookAtAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ 557.0, 161.0 ]
+				m_nNodeID = 
+				{
+					m_id = 940190163
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_childID = 
+				{
+					m_id = 1878632805
+				}
+				m_target = "VectorParameter"
+				m_param = 
+				{
+					m_id = 1027326998
+				}
+				m_weightParam = 
+				{
+					m_id = 699932437
+				}
+				m_lookatChainName = "AimChain"
+				m_attachmentName = "forward_reference"
+				m_flYawLimit = 360.0
+				m_flPitchLimit = 360.0
+				m_bResetBase = false
+				m_bLockWhenWaning = false
+				m_bUseHysteresis = false
+				m_flHysteresisInnerAngle = 1.0
+				m_flHysteresisOuterAngle = 20.0
+				m_damping = 
+				{
+					_class = "CAnimInputDamping"
+					m_speedFunction = "NoDamping"
+					m_fSpeedScale = 5.0
+					m_fMinSpeed = 10.0
+					m_fMaxTension = 960.0
+				}
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 995746448
 			}
 			value = 
@@ -5875,7 +5897,7 @@
 							m_id = 1278029920
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -5885,7 +5907,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -6275,7 +6297,7 @@
 							m_id = 441372276
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -6285,7 +6307,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -6377,7 +6399,7 @@
 							m_id = 798165373
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -6387,7 +6409,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7085,7 +7107,7 @@
 							m_id = 931603031
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7095,7 +7117,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7140,7 +7162,7 @@
 							m_id = 931603031
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7150,7 +7172,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7210,6 +7232,38 @@
 		{
 			key = 
 			{
+				m_id = 1217725753
+			}
+			value = 
+			{
+				_class = "CAddAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -140.0, 410.0 ]
+				m_nNodeID = 
+				{
+					m_id = 1217725753
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_baseChildID = 
+				{
+					m_id = 1398654178
+				}
+				m_additiveChildID = 
+				{
+					m_id = 189844988
+				}
+				m_timingBehavior = "UseChild2"
+				m_flTimingBlend = 0.5
+				m_footMotionTiming = "Child1"
+				m_bResetBase = true
+				m_bResetAdditive = true
+				m_bApplyChannelsSeparately = true
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 1226180883
 			}
 			value = 
@@ -7261,7 +7315,7 @@
 							m_id = 1667307699
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7271,7 +7325,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7337,6 +7391,38 @@
 					m_fMinSpeed = 10.0
 					m_fMaxTension = 1000.0
 				}
+			}
+		},
+		{
+			key = 
+			{
+				m_id = 1276245194
+			}
+			value = 
+			{
+				_class = "CAddAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -200.0, 271.0 ]
+				m_nNodeID = 
+				{
+					m_id = 1276245194
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_baseChildID = 
+				{
+					m_id = 877279670
+				}
+				m_additiveChildID = 
+				{
+					m_id = 1908662772
+				}
+				m_timingBehavior = "UseChild2"
+				m_flTimingBlend = 0.5
+				m_footMotionTiming = "Child1"
+				m_bResetBase = true
+				m_bResetAdditive = true
+				m_bApplyChannelsSeparately = true
 			}
 		},
 		{
@@ -7480,7 +7566,7 @@
 							m_id = 695660346
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7490,7 +7576,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7590,7 +7676,7 @@
 							m_id = 1677071428
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7600,7 +7686,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7645,7 +7731,7 @@
 							m_id = 798165373
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7655,7 +7741,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7786,7 +7872,7 @@
 							m_id = 441372276
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -7796,7 +7882,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -7818,7 +7904,7 @@
 			{
 				_class = "CAddAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -151.0, 476.0 ]
+				m_vecPosition = [ -77.0, 560.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1505723500
@@ -7882,7 +7968,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1596.0, 317.0 ]
+				m_vecPosition = [ -1603.0, 338.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1519472530
@@ -8358,7 +8444,7 @@
 							m_id = 1677071428
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -8368,7 +8454,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -9343,7 +9429,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnFinished"
+										m_option = "FinishedConditionOption_OnAlmostFinished"
 										m_bIsFinished = true
 									},
 								]
@@ -9369,15 +9455,15 @@
 								[
 									{
 										_class = "CParameterAnimCondition"
-										m_comparisonOp = 0
+										m_comparisonOp = 4
 										m_paramID = 
 										{
-											m_id = 1856445861
+											m_id = 547574561
 										}
 										m_comparisonValue = 
 										{
-											m_nType = 1
-											m_data = false
+											m_nType = 4
+											m_data = 0.5
 										}
 									},
 								]
@@ -9403,7 +9489,7 @@
 						m_name = "Melee Attack Crouch"
 						m_childNodeID = 
 						{
-							m_id = 877279670
+							m_id = 1276245194
 						}
 						m_stateID = 
 						{
@@ -9427,7 +9513,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnFinished"
+										m_option = "FinishedConditionOption_OnAlmostFinished"
 										m_bIsFinished = true
 									},
 								]
@@ -9453,15 +9539,15 @@
 								[
 									{
 										_class = "CParameterAnimCondition"
-										m_comparisonOp = 0
+										m_comparisonOp = 3
 										m_paramID = 
 										{
-											m_id = 1856445861
+											m_id = 547574561
 										}
 										m_comparisonValue = 
 										{
-											m_nType = 1
-											m_data = true
+											m_nType = 4
+											m_data = 0.5
 										}
 									},
 								]
@@ -9487,7 +9573,7 @@
 						m_name = "Melee Attack"
 						m_childNodeID = 
 						{
-							m_id = 1398654178
+							m_id = 1217725753
 						}
 						m_stateID = 
 						{
@@ -9511,7 +9597,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnFinished"
+										m_option = "FinishedConditionOption_OnAlmostFinished"
 										m_bIsFinished = true
 									},
 								]
@@ -9551,7 +9637,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnFinished"
+										m_option = "FinishedConditionOption_OnAlmostFinished"
 										m_bIsFinished = true
 									},
 								]
@@ -9658,7 +9744,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnFinished"
+										m_option = "FinishedConditionOption_OnAlmostFinished"
 										m_bIsFinished = true
 									},
 								]
@@ -9725,6 +9811,28 @@
 		{
 			key = 
 			{
+				m_id = 1908662772
+			}
+			value = 
+			{
+				_class = "CSequenceAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -281.0, 382.0 ]
+				m_nNodeID = 
+				{
+					m_id = 1908662772
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_tagSpans = [  ]
+				m_sequenceName = "face_fire_angry1"
+				m_playbackSpeed = 1.0
+				m_bLoop = false
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 1981025393
 			}
 			value = 
@@ -9754,7 +9862,7 @@
 							m_id = 441372276
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -9764,7 +9872,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -9982,7 +10090,7 @@
 							m_id = 1278029920
 						}
 						m_name = "Crouch"
-						m_blendValue = 1.0
+						m_blendValue = 0.5
 					},
 				]
 				m_blendValueSource = "Parameter"
@@ -9992,7 +10100,7 @@
 				}
 				m_blendKeyType = "BlendKey_UserValue"
 				m_bLockBlendOnReset = false
-				m_bSyncCycles = true
+				m_bSyncCycles = false
 				m_bLoop = true
 				m_bLockWhenWaning = true
 				m_damping = 
@@ -10036,7 +10144,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1594.0, 518.0 ]
+				m_vecPosition = [ -1598.0, 495.0 ]
 				m_nNodeID = 
 				{
 					m_id = 2108324553

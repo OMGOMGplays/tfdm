@@ -5,14 +5,14 @@ using System;
 
 partial class Sandvich : BaseDmWeapon 
 {
-    public override string ViewModelPath => "hvwpns/hvywpnswpns/sandvich.vmdl";
+    public override string ViewModelPath => "";
     public override float PrimaryRate => 0.3f;
 
     public override void Spawn() 
     {
         base.Spawn();
 
-        SetModel("hvwpns/hvywpnspwns/sandvich.vmdl");
+        SetModel("models/hvwpns/hvywpnspwns/sandvich.vmdl");
         AmmoClip = 1;
     }
 

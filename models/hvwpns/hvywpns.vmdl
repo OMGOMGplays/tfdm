@@ -4237,6 +4237,26 @@
 						framerate = -1.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "face_fire_angry1"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/face_fire_angry1.dmx"
+						start_frame = -1
+						end_frame = 30
+						framerate = -1.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -4406,9 +4426,9 @@
 								parent_bone = "bip_neck"
 								surface_property = ""
 								translation_only = false
-								group_id = 0
-								hitbox_mins = [ -6.187033, -5.519465, -7.329038 ]
-								hitbox_maxs = [ 6.187033, 0.5, 4.248815 ]
+								group_id = 1
+								hitbox_mins = [ -6.187033, -11.990884, -7.329038 ]
+								hitbox_maxs = [ 6.187033, 0.5, 9.56496 ]
 							},
 							{
 								_class = "Hitbox"
@@ -4751,6 +4771,552 @@
 								hitbox_maxs = [ 3.587529, 12.001155, 6.50642 ]
 							},
 						]
+					},
+				]
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_pelvis"
+						child_body = "bip_hip_L"
+						anchor_origin = [ 6.057429, 6.073135, -2.201454 ]
+						anchor_angles = [ -69.021095, -174.349167, 77.632736 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_hip_L"
+						child_body = "bip_knee_L"
+						anchor_origin = [ 13.377903, 0.00007, -0.0005 ]
+						anchor_angles = [ -89.997955, 166.021744, 0.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_knee_L"
+						child_body = "bip_foot_L"
+						anchor_origin = [ 16.792395, 0.000036, -0.000043 ]
+						anchor_angles = [ -69.652901, 0.555444, -96.760277 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_foot_L"
+						child_body = "bip_toe_L"
+						anchor_origin = [ -0.000011, -7.94121, 0.000009 ]
+						anchor_angles = [ 31.300329, 89.999992, -90.000061 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_pelvis"
+						child_body = "bip_hip_R"
+						anchor_origin = [ -6.05743, 6.073143, -2.201454 ]
+						anchor_angles = [ -69.021133, -5.651138, 102.369804 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_hip_R"
+						child_body = "bip_knee_R"
+						anchor_origin = [ 13.377903, -0.000096, 0.00001 ]
+						anchor_angles = [ 0.000058, -76.021667, -89.999886 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_knee_R"
+						child_body = "bip_foot_R"
+						anchor_origin = [ 16.792397, -0.000023, -0.000017 ]
+						anchor_angles = [ -0.19316, 110.346161, -6.239755 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_foot_R"
+						child_body = "bip_toe_R"
+						anchor_origin = [ -0.00005, 7.941223, -0.000048 ]
+						anchor_angles = [ 31.300415, 89.999825, -90.000366 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_pelvis"
+						child_body = "bip_spine_0"
+						anchor_origin = [ 0.0, -6.065628, -0.000004 ]
+						anchor_angles = [ -6.654698, -90.000008, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_0"
+						child_body = "bip_spine_1"
+						anchor_origin = [ 0.0, -7.446194, -0.000004 ]
+						anchor_angles = [ -2.464773, -90.0, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_1"
+						child_body = "bip_spine_2"
+						anchor_origin = [ 0.0, -8.166996, -0.000038 ]
+						anchor_angles = [ 7.814723, -90.0, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_2"
+						child_body = "bip_spine_3"
+						anchor_origin = [ 0.0, -7.059055, -0.000031 ]
+						anchor_angles = [ 24.68251, -90.0, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_3"
+						child_body = "bip_collar_L"
+						anchor_origin = [ 2.131428, -5.805923, -7.194527 ]
+						anchor_angles = [ -22.263977, 21.920237, 70.895073 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_collar_L"
+						child_body = "bip_upperArm_L"
+						anchor_origin = [ -0.000038, -14.061872, 0.000092 ]
+						anchor_angles = [ -53.498833, 100.801086, 115.601265 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_upperArm_L"
+						child_body = "bip_lowerArm_L"
+						anchor_origin = [ 17.670849, -0.000108, -0.000629 ]
+						anchor_angles = [ -89.998322, -154.678238, 0.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_lowerArm_L"
+						child_body = "bip_hand_L"
+						anchor_origin = [ 15.175444, 0.000065, 0.000034 ]
+						anchor_angles = [ -0.000215, 0.000027, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_3"
+						child_body = "bip_collar_R"
+						anchor_origin = [ -2.13143, -5.805878, -7.194542 ]
+						anchor_angles = [ -22.263382, 158.080124, -70.895699 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_collar_R"
+						child_body = "bip_upperArm_R"
+						anchor_origin = [ 0.000046, 14.061865, 0.0 ]
+						anchor_angles = [ 53.498791, -79.199326, -115.603546 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_upperArm_R"
+						child_body = "bip_lowerArm_R"
+						anchor_origin = [ 17.670883, 0.00018, -0.000038 ]
+						anchor_angles = [ 0.000563, -115.321747, -89.999786 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_lowerArm_R"
+						child_body = "bip_hand_R"
+						anchor_origin = [ 15.175512, -0.000019, -0.000107 ]
+						anchor_angles = [ -0.000026, -179.999863, -0.00046 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_spine_3"
+						child_body = "bip_neck"
+						anchor_origin = [ 0.0, -7.667671, 0.000088 ]
+						anchor_angles = [ 17.350811, -90.0, -90.0 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "bip_neck"
+						child_body = "bip_head"
+						anchor_origin = [ 0.0, -3.880699, 0.000034 ]
+						anchor_angles = [ -35.520535, -90.0, -90.000008 ]
+						collision_enabled = false
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_pelvis"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.8
+						point0 = [ 5.190049, 0.0, 0.0 ]
+						point1 = [ -2.252734, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_hip_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.344478
+						point0 = [ 13.377911, 0.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_knee_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.0
+						point0 = [ 16.792404, 0.0, 0.0 ]
+						point1 = [ 2.750669, -0.206407, -0.457453 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_foot_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 1.0
+						point0 = [ 0.0, 0.0, 0.0 ]
+						point1 = [ -0.350619, -6.722722, -0.334592 ]
+					},
+					{
+						_class = "PhysicsShapeSphere"
+						parent_bone = "bip_toe_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 1.0
+						center = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_hip_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.344477
+						point0 = [ 13.377907, 0.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_knee_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.0
+						point0 = [ 16.792408, 0.0, 0.0 ]
+						point1 = [ 2.382966, 0.742794, -0.355152 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_foot_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 1.0
+						point0 = [ 0.0, 0.0, 0.0 ]
+						point1 = [ -0.270756, 6.699496, -0.019984 ]
+					},
+					{
+						_class = "PhysicsShapeSphere"
+						parent_bone = "bip_toe_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 1.0
+						center = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_spine_0"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 6.316694
+						point0 = [ 0.124277, -0.707413, -7.210316 ]
+						point1 = [ -0.020446, -2.627534, -6.976586 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_spine_1"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 5.953948
+						point0 = [ 0.528739, 9.76522, -12.015493 ]
+						point1 = [ 0.681696, 7.597485, -10.948691 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_spine_2"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 7.011575
+						point0 = [ -1.013856, 3.005482, -7.426161 ]
+						point1 = [ 0.162542, -2.030602, -0.893162 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_spine_3"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.625968
+						point0 = [ 0.499837, -2.957262, -0.240592 ]
+						point1 = [ 0.499809, -2.967256, -0.240942 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_collar_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.0
+						point0 = [ -3.212009, -2.272063, -6.628098 ]
+						point1 = [ -0.628388, -13.939364, 0.212627 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_upperArm_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 4.41773
+						point0 = [ 10.527243, -0.360315, -0.082485 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_lowerArm_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.793878
+						point0 = [ 13.059979, -1.033128, -0.58424 ]
+						point1 = [ 2.960876, 1.559964, 0.34009 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_hand_L"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.0435
+						point0 = [ -0.170863, 0.177554, 0.468244 ]
+						point1 = [ -0.813952, -4.308126, 0.694604 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_collar_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.0
+						point0 = [ 3.797314, 3.606121, 7.545037 ]
+						point1 = [ -0.727122, 13.724061, -0.371566 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_upperArm_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 4.417736
+						point0 = [ 12.277634, 0.426485, 0.458853 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_lowerArm_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.793888
+						point0 = [ 12.699446, 0.606779, -0.496209 ]
+						point1 = [ 3.712349, 0.152219, -1.104339 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_hand_R"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.043496
+						point0 = [ 1.386835, 5.427585, -0.501209 ]
+						point1 = [ 0.816808, 3.196695, -0.295198 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "bip_neck"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 3.284592
+						point0 = [ -0.090181, -1.456914, 0.162554 ]
+						point1 = [ 0.06504, 0.116768, -0.02692 ]
+					},
+					{
+						_class = "PhysicsShapeSphere"
+						parent_bone = "bip_head"
+						surface_prop = "flesh"
+						collision_prop = "default"
+						radius = 4.823895
+						center = [ 0.045492, -3.333828, -2.628978 ]
 					},
 				]
 			},
