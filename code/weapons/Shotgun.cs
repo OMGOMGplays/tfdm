@@ -50,34 +50,6 @@ partial class Shotgun : BaseDmWeapon
 		}
 	}
 
-	public override void AttackSecondary()
-	{
-		TimeSincePrimaryAttack = -0.5f;
-		TimeSinceSecondaryAttack = -0.5f;
-
-		if ( !TakeAmmo( 2 ) )
-		{
-			DryFire();
-			return;
-		}
-
-		(Owner as AnimEntity).SetAnimBool( "b_attack", true );
-
-		//
-		// Tell the clients to play the shoot effects
-		//
-		DoubleShootEffects();
-		PlaySound( "rust_pumpshotgun.shootdouble" );
-
-		//
-		// Shoot the bullets
-		//
-		for ( int i = 0; i < 20; i++ )
-		{
-			ShootBullet( 0.4f, 0.3f, 8.0f, 3.0f );
-		}
-	}
-
 	[ClientRpc]
 	protected override void ShootEffects()
 	{
@@ -94,22 +66,6 @@ partial class Shotgun : BaseDmWeapon
 		}
 
 		CrosshairPanel?.CreateEvent( "fire" );
-	}
-
-	[ClientRpc]
-	protected virtual void DoubleShootEffects()
-	{
-		Host.AssertClient();
-
-		Particles.Create( "particles/pistol_muzzleflash.vpcf", EffectEntity, "muzzle" );
-
-		ViewModelEntity?.SetAnimBool( "fire_double", true );
-		CrosshairPanel?.CreateEvent( "fire" );
-
-		if ( IsLocalPawn )
-		{
-			new Sandbox.ScreenShake.Perlin(3.0f, 3.0f, 3.0f);
-		}
 	}
 
 	public override void OnReloadFinish()
@@ -150,7 +106,7 @@ partial class Shotgun : BaseDmWeapon
 
 	public override void SimulateAnimator( PawnAnimator anim )
 	{
-		anim.SetParam( "holdtype", 1 ); // TODO this is shit
+		anim.SetParam( "holdtype", 3 ); // TODO this is shit
 		anim.SetParam( "aimat_weight", 1.0f );
 	}
 }

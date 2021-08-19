@@ -3661,6 +3661,582 @@
 						framerate = -1.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_ITEM1"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpland_ITEM1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_MELEE"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpland_MELEE.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_PRIMARY"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpland_PRIMARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_SECONDARY"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpland_SECONDARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpstart_ITEM1"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpstart_ITEM1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpstart_MELEE"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpstart_MELEE.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpstart_PRIMARY"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpstart_PRIMARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpstart_SECONDARY"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/jumpstart_SECONDARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_ITEM1_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@jumpland_ITEM1_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_MELEE_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@jumpland_MELEE_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_PRIMARY_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@jumpland_PRIMARY_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "jumpland_SECONDARY_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@jumpland_SECONDARY_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_SECONDARY_crouch_reload_end_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@a_SECONDARY_crouch_reload_end_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_SECONDARY_crouch_reload_loop_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@a_SECONDARY_crouch_reload_loop_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_SECONDARY_reload_airwalk_end_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@a_SECONDARY_reload_airwalk_end_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_SECONDARY_reload_airwalk_loop_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@a_SECONDARY_reload_airwalk_loop_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_SECONDARY_reload_end_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@a_SECONDARY_reload_end_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "airwalk_PRIMARY"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/airwalk_PRIMARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "airwalk_ITEM1"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/airwalk_ITEM1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "airwalk_MELEE"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/airwalk_MELEE.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "airwalk_SECONDARY"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/airwalk_SECONDARY.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "attackStand_PRIMARY_corrective_animation"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/@attackStand_PRIMARY_corrective_animation.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "layer_attackCrouch_PRIMARY_spooldown"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/layer_attackCrouch_PRIMARY_spooldown.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "layer_attackCrouch_PRIMARY_spoolup"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/layer_attackCrouch_PRIMARY_spoolup.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "layer_attackStand_PRIMARY_spooldown"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/layer_attackStand_PRIMARY_spooldown.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "layer_attackStand_PRIMARY_spoolup"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/layer_attackStand_PRIMARY_spoolup.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -3699,6 +4275,33 @@
 						heighttolerance = 2.0
 						sanitizetrajectories = true
 					},
+					{
+						_class = "LookAtChain"
+						name = "AimChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "bip_spine_2"
+									weight = 1.0
+								},
+								{
+									name = "bip_spine_1"
+									weight = 0.7
+								},
+								{
+									name = "bip_spine_0"
+									weight = 0.45
+								},
+								{
+									name = "bip_pelvis"
+									weight = 0.2
+								},
+							]
+						}
+					},
 				]
 			},
 			{
@@ -3713,6 +4316,441 @@
 						relative_angles = [ 0.0, 90.0, 90.0 ]
 						weight = 1.0
 						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "Only_Upperbody"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_spine_0"
+								weight = 0.32
+							},
+							{
+								bone = "bip_spine_1"
+								weight = 0.53
+							},
+							{
+								bone = "bip_spine_2"
+								weight = 0.74
+							},
+							{
+								bone = "bip_spine_3"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "bip_spine_0"
+								parent_bone = "bip_spine_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.392752, -14.205915, -15.005053 ]
+								hitbox_maxs = [ 13.192789, 9.783888, 5.6042 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_1"
+								parent_bone = "bip_spine_1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.392751, -10.329999, -14.893532 ]
+								hitbox_maxs = [ 13.39276, 6.082952, 5.763601 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_2"
+								parent_bone = "bip_spine_2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.574334, -10.580236, -15.404904 ]
+								hitbox_maxs = [ 14.57433, 7.476078, 6.004195 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_3"
+								parent_bone = "bip_spine_3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.692443, -11.577701, -12.502958 ]
+								hitbox_maxs = [ 12.692443, 6.341748, 5.162809 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_neck"
+								parent_bone = "bip_neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.187033, -5.519465, -7.329038 ]
+								hitbox_maxs = [ 6.187033, 0.5, 4.248815 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_collar_L"
+								parent_bone = "bip_collar_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.432056, -18.336973, -9.02354 ]
+								hitbox_maxs = [ 6.7075, 0.5, 5.993439 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_upperArm_L"
+								parent_bone = "bip_upperArm_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.639091, -6.635078, -4.415653 ]
+								hitbox_maxs = [ 18.854244, 7.909966, 7.262217 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_lowerArm_L"
+								parent_bone = "bip_lowerArm_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.137238, -4.198734, -5.203483 ]
+								hitbox_maxs = [ 16.096237, 4.006109, 5.230359 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hand_L"
+								parent_bone = "bip_hand_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.452391, -8.087729, -4.657906 ]
+								hitbox_maxs = [ 3.104267, 1.422383, 6.432261 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_0_L"
+								parent_bone = "bip_thumb_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.992638, -4.483174, -3.070452 ]
+								hitbox_maxs = [ 2.660728, 0.5, 2.067261 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_1_L"
+								parent_bone = "bip_thumb_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.992647, -2.10797, -3.077686 ]
+								hitbox_maxs = [ 1.344362, 2.116239, 1.372228 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_0_L"
+								parent_bone = "bip_index_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.561979, -3.600729, -1.441015 ]
+								hitbox_maxs = [ 1.403498, 0.5, 2.278284 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_1_L"
+								parent_bone = "bip_index_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.234507, -2.242379, -1.021404 ]
+								hitbox_maxs = [ 1.226863, 0.5, 1.362715 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_0_L"
+								parent_bone = "bip_middle_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.498653, -4.729813, -2.11277 ]
+								hitbox_maxs = [ 1.478558, 0.5, 1.817753 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_1_L"
+								parent_bone = "bip_middle_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.345877, -2.872698, -1.342504 ]
+								hitbox_maxs = [ 1.192526, 0.5, 1.033915 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_0_L"
+								parent_bone = "bip_ring_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.395684, -3.818516, -1.467779 ]
+								hitbox_maxs = [ 1.363788, 0.5, 1.688641 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_1_L"
+								parent_bone = "bip_ring_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.206731, -2.391063, -1.012833 ]
+								hitbox_maxs = [ 1.250682, 0.5, 1.057491 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_0_L"
+								parent_bone = "bip_pinky_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.073306, -3.038783, -1.559204 ]
+								hitbox_maxs = [ 1.652695, 0.890707, 1.317165 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_1_L"
+								parent_bone = "bip_pinky_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.052003, -1.949512, -1.071629 ]
+								hitbox_maxs = [ 1.201744, 0.5, 0.863745 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_collar_R"
+								parent_bone = "bip_collar_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.521691, -0.681011, -5.99341 ]
+								hitbox_maxs = [ 10.432068, 18.336895, 6.993382 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_upperArm_R"
+								parent_bone = "bip_upperArm_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.639048, -7.909969, -4.415466 ]
+								hitbox_maxs = [ 18.854301, 6.63505, 7.2625 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_lowerArm_R"
+								parent_bone = "bip_lowerArm_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.341946, -4.864194, -4.008564 ]
+								hitbox_maxs = [ 16.096212, 5.197742, 4.192686 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hand_R"
+								parent_bone = "bip_hand_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.104254, -1.422466, -6.432301 ]
+								hitbox_maxs = [ 5.452425, 8.087634, 4.657877 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_0_R"
+								parent_bone = "bip_thumb_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.660677, -0.5, -2.067249 ]
+								hitbox_maxs = [ 1.992647, 4.483155, 3.070474 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_1_R"
+								parent_bone = "bip_thumb_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.344242, -0.783103, -1.372191 ]
+								hitbox_maxs = [ 1.536133, 2.107958, 1.309268 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_0_R"
+								parent_bone = "bip_index_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.403469, -0.5, -2.278208 ]
+								hitbox_maxs = [ 1.561988, 3.600731, 1.441109 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_1_R"
+								parent_bone = "bip_index_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.226848, -0.5, -1.36261 ]
+								hitbox_maxs = [ 1.234522, 2.2424, 1.021509 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_0_R"
+								parent_bone = "bip_middle_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.478526, -0.5, -1.817715 ]
+								hitbox_maxs = [ 1.498671, 4.729771, 2.112837 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_1_R"
+								parent_bone = "bip_middle_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.192535, -0.5, -1.033918 ]
+								hitbox_maxs = [ 1.345868, 2.872648, 1.342501 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_0_R"
+								parent_bone = "bip_ring_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.363796, -0.5, -1.688593 ]
+								hitbox_maxs = [ 1.3957, 3.818461, 1.467825 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_1_R"
+								parent_bone = "bip_ring_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.25069, -0.5, -1.057415 ]
+								hitbox_maxs = [ 1.206725, 2.39095, 1.01289 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_0_R"
+								parent_bone = "bip_pinky_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.652696, -0.890825, -1.31723 ]
+								hitbox_maxs = [ 1.073305, 3.038671, 1.559116 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_1_R"
+								parent_bone = "bip_pinky_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.201761, -0.5, -0.863766 ]
+								hitbox_maxs = [ 1.051995, 1.949399, 1.071626 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hip_L"
+								parent_bone = "bip_hip_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.632378, -7.456096, -4.868546 ]
+								hitbox_maxs = [ 13.933769, 5.18319, 7.802896 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_knee_L"
+								parent_bone = "bip_knee_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.728497, -3.931931, -5.473041 ]
+								hitbox_maxs = [ 18.194965, 5.407005, 4.896274 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_foot_L"
+								parent_bone = "bip_foot_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.587525, -12.001172, -6.506424 ]
+								hitbox_maxs = [ 4.14669, 2.493972, 2.94695 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hip_R"
+								parent_bone = "bip_hip_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.632175, -5.183189, -4.86864 ]
+								hitbox_maxs = [ 13.933708, 8.301806, 7.802944 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_knee_R"
+								parent_bone = "bip_knee_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.090621, -4.896301, -5.406983 ]
+								hitbox_maxs = [ 17.901514, 5.473028, 3.931968 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_foot_R"
+								parent_bone = "bip_foot_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.146682, -2.186687, -2.946977 ]
+								hitbox_maxs = [ 3.587529, 12.001155, 6.50642 ]
+							},
+						]
 					},
 				]
 			},
