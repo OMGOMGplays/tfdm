@@ -30,6 +30,8 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 
 	public PickupTrigger PickupTrigger { get; protected set; }
 
+	bool shooting;
+	bool spooling;
 
 	public int AvailableAmmo()
 	{
@@ -98,6 +100,35 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 		if ( IsReloading && TimeSinceReload > ReloadTime )
 		{
 			OnReloadFinish();
+		}
+
+		if (!Input.Down(InputButton.Attack1) && shooting) 
+		{
+			shooting = false;
+			(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
+			ViewModelEntity?.SetAnimBool("spooldown", true);
+		}
+		
+		if (Input.Down(InputButton.Attack1) && !shooting) 
+		{
+			shooting = true;
+			ViewModelEntity?.SetAnimBool("spoolidle", false);
+		}
+
+		if (!Input.Down(InputButton.Attack2) && spooling) 
+		{
+			spooling = false;
+			(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
+			(Owner as AnimEntity).SetAnimBool("b_minigunidle", false);
+			ViewModelEntity?.SetAnimBool("spooldown", true);
+			ViewModelEntity?.SetAnimBool("spoolide", false);
+		}
+
+		if (Input.Down(InputButton.Attack2) && !spooling) 
+		{
+			spooling = true;
+			ViewModelEntity?.SetAnimBool("spoolup", true);
+			ViewModelEntity?.SetAnimBool("spoolidle", true);
 		}
 	}
 

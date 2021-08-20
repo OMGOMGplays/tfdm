@@ -5,20 +5,20 @@ using System;
 
 partial class Minigun : BaseDmWeapon 
 {
-    public override string ViewModelPath => "weapons/rust_smg/v_rust_smg.vmdl";
+    public override string ViewModelPath => "models/weapons/c_minigun.vmdl";
 
-    public override float PrimaryRate => 30.0f;
+    public override float PrimaryRate => 15.0f;
     public override int ClipSize => 300;
-    public override float ReloadTime => 99999.0f;
+	public override int Bucket => 1;
 
     public override void Spawn() 
     {
         base.Spawn();
 
-        SetModel("weapons/rust_smg/rust_smg.vmdl");
+        SetModel("models/weapons/w_minigun.vmdl");
         AmmoClip = 300;
-    }
-	
+	}
+
     public override void AttackPrimary()
 	{
 		TimeSincePrimaryAttack = 0;
@@ -27,22 +27,61 @@ partial class Minigun : BaseDmWeapon
 		if ( !TakeAmmo( 1 ) )
 		{
 			DryFire();
+			(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
+			ViewModelEntity?.SetAnimBool("spooldown", true);
 			return;
 		}
 
-		(Owner as AnimEntity).SetAnimBool( "b_minigunattack", true );
+		
+		if (Input.Down(InputButton.Attack1) == true) 
+		{
+			AttackPrimaryStart();
 
-		//
-		// Tell the clients to play the shoot effects
-		//
-		ShootEffects();
-		PlaySound("rust_smg.shoot");
+			ShootEffects();
+			PlaySound("rust_smg.shoot");
 
-		//
-		// Shoot the bullets
-		//
-		ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
+			ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
+			
+			return;
+		}
 
+	}
+
+	public override void AttackSecondary() 
+	{
+		AttackSecondaryStart();
+
+		if (!Input.Down(InputButton.Attack2)) 
+		{
+			AttackSecondaryEnd();
+		}
+	}
+
+	public void AttackPrimaryStart() 
+	{
+		(Owner as AnimEntity).SetAnimBool("b_minigunstart", true);
+		ViewModelEntity?.SetAnimBool("spoolup", true);
+	}
+
+	public void AttackPrimaryEnd() 
+	{
+		(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
+		ViewModelEntity?.SetAnimBool("spooldown", true);
+	}
+
+	public void AttackSecondaryStart() 
+	{
+		(Owner as AnimEntity).SetAnimBool("b_minigunstart", true);
+		(Owner as AnimEntity).SetAnimBool("b_minigunidle", true);
+		ViewModelEntity?.SetAnimBool("spoolidle", true);
+	}
+
+	public void AttackSecondaryEnd() 
+	{
+		ViewModelEntity?.SetAnimBool("spooldown", true);
+		ViewModelEntity?.SetAnimBool("spoolidle", false);
+		(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
+		(Owner as AnimEntity).SetAnimBool("b_minigunidle", false);
 	}
 
 	public override void SimulateAnimator(PawnAnimator anim) 

@@ -2331,26 +2331,6 @@
 					},
 					{
 						_class = "AnimFile"
-						name = "a_deployedCenter_PRIMARY"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_deployedCenter_PRIMARY.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
 						name = "a_SECONDARY_reload_airwalk_loop"
 						children = 
 						[
@@ -2412,666 +2392,6 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "animations/hvywpns/a_SECONDARY_reload_airwalk_end.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_down_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_down_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_down_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_down_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_mid_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_mid_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_mid_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_mid_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_neutral"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_neutral.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_straight_up"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_straight_up.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_up_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_up_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_crouch_idle_up_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_crouch_idle_up_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_down_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_down_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_down_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_down_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_mid_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_mid_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_mid_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_mid_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_neutral"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_neutral.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_straight_up"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_straight_up.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_up_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_up_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_idle_up_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_idle_up_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_down_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_down_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_down_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_down_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_mid_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_mid_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_mid_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_mid_right.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_neutral"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_neutral.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_straight_up"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_straight_up.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_up_center"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_center.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_up_left"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_left.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "a_MELEE_aimmatrix_run_up_right"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/hvywpns/a_MELEE_aimmatrix_run_up_right.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -4239,7 +3559,7 @@
 					},
 					{
 						_class = "AnimFile"
-						name = "face_fire_angry1"
+						name = "a_deployedCenter_PRIMARY"
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -4251,9 +3571,43 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/hvywpns/face_fire_angry1.dmx"
+						source_filename = "animations/hvywpns/a_deployedCenter_PRIMARY.smd"
 						start_frame = -1
-						end_frame = 30
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "a_crouch_walkCenter_PRIMARY"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/hvywpns/a_crouch_walkCenter_PRIMARY.smd"
+						start_frame = -1
+						end_frame = -1
 						framerate = -1.0
 						reverse = false
 					},
@@ -4322,6 +3676,25 @@
 							]
 						}
 					},
+					{
+						_class = "LookAtChain"
+						name = "LookChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "bip_head"
+									weight = 0.6
+								},
+								{
+									name = "bip_neck"
+									weight = 0.35
+								},
+							]
+						}
+					},
 				]
 			},
 			{
@@ -4333,7 +3706,7 @@
 						name = "forward_reference"
 						parent_bone = "bip_head"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
-						relative_angles = [ 0.0, 90.0, 90.0 ]
+						relative_angles = [ 90.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -5317,6 +4690,22 @@
 						collision_prop = "default"
 						radius = 4.823895
 						center = [ 0.045492, -3.333828, -2.628978 ]
+					},
+				]
+			},
+			{
+				_class = "IKData"
+				children = 
+				[
+					{
+						_class = "IKRigBiped"
+						initial_master_blend_amount = 1.0
+						abs_origin_drop_height = 24.0
+						abs_origin_drop_height_spring_strength = 500.0
+						default_tilt_spring_strength = 5.0
+						tilt_bone = ""
+						animgraph_master_blend_parameter_name = ""
+						system = "IKSYSTEMTYPE_Animgraph"
 					},
 				]
 			},

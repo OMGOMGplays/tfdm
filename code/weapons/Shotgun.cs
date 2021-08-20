@@ -5,7 +5,7 @@
 [Hammer.EditorModel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" )]
 partial class Shotgun : BaseDmWeapon
 { 
-	public override string ViewModelPath => "models/engi/engifp/engiviewmodel_shotgun.vmdl";
+	public override string ViewModelPath => "models/weapons/c_heavy_shotgun.vmdl";
 	public override float PrimaryRate => 1;
 	public override float SecondaryRate => 1;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
@@ -95,6 +95,7 @@ partial class Shotgun : BaseDmWeapon
 			else
 			{
 				FinishReload();
+				(Owner as AnimEntity).SetAnimBool("b_finishreload", true);
 			}
 		}
 	}
@@ -103,7 +104,6 @@ partial class Shotgun : BaseDmWeapon
 	protected virtual void FinishReload()
 	{
 		ViewModelEntity?.SetAnimBool( "reload_finished", true );
-		(Owner as AnimEntity).SetAnimBool("b_reload", false);
 	}
 
 	public override void SimulateAnimator( PawnAnimator anim )

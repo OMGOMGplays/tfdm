@@ -59,7 +59,7 @@
 						_class = "RenderMeshFile"
 						filename = "models/engi/engifp/c_shotgun_reference.smd"
 						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 3.0, 270.0, 0.0 ]
+						import_rotation = [ 0.0, 270.0, 0.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -91,7 +91,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_draw.smd"
+						source_filename = "animations/wpns/engishotgun/fj_draw.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -111,7 +111,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_fire.smd"
+						source_filename = "animations/wpns/engishotgun/fj_fire.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -131,7 +131,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_idle.smd"
+						source_filename = "animations/wpns/engishotgun/fj_idle.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -151,7 +151,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_reload_start.smd"
+						source_filename = "animations/wpns/engishotgun/fj_reload_start.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -171,7 +171,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_reload_loop.smd"
+						source_filename = "animations/wpns/engishotgun/fj_reload_loop.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -191,7 +191,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/engi/viewmodel/fj_reload_end.smd"
+						source_filename = "animations/wpns/engishotgun/fj_reload_end.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
