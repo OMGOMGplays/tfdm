@@ -7,7 +7,7 @@ partial class Minigun : BaseDmWeapon
 {
     public override string ViewModelPath => "weapons/rust_smg/v_rust_smg.vmdl";
 
-    public override float PrimaryRate => 30.0f;
+    public override float PrimaryRate => 15.0f;
     public override int ClipSize => 300;
     public override float ReloadTime => 99999.0f;
 
