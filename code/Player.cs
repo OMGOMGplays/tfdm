@@ -57,6 +57,8 @@ partial class DeathmatchPlayer : Player
 		Controller = null;
 		Camera = new SpectateRagdollCamera();
 
+		PlaySound("heavy_painsevere03");
+
 		EnableAllCollisions = false;
 		EnableDrawing = false;
 	}

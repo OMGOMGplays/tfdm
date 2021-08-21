@@ -6,17 +6,18 @@
 	z-index: 100;
 	flex-direction: column-reverse;
 	width: 500px;
-	font-family: Poppins;
+	font-family: tf2;
 	font-size: 15px;
 	font-weight: 500;
 	align-items: flex-end;
+	border-radius: 10px;
 }
 
 KillFeedEntry
 {
 	//background-color: rgba( black, 0.8 );
 	margin-bottom: 5px;
-	color: white;
+	color: rgb(255, 255, 255);
 	transition: all 0.2s ease-out;
 	opacity: 1;
 	flex-shrink: 0;
@@ -29,7 +30,7 @@ KillFeedEntry
 
 	&:intro
 	{
-		transform: scale( 2 );
+		transform: scale( 1.25 );
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-bottom: 0;
@@ -50,18 +51,13 @@ KillFeedEntry
 		width: 100px;
 		height: 100px;
 		background-size: 100%;
-		background-image-tint: red;
+		background-image-tint: rgb(255, 255, 255);
 	}
 
 	.left, .right
 	{
 		padding: 0 12px;
 		color: #fc0;
-
-		&.me
-		{
-			font-weight: bold;
-		}
 	}
 
 	.method
@@ -71,7 +67,7 @@ KillFeedEntry
 
 	.message
 	{
-		color: #ccc;
+		color: rgb(255, 255, 255);
 		font-size: 14px;
 		//	background-color: red;
 		flex-grow: 1;

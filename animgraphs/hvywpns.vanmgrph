@@ -902,7 +902,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -79.0, -347.0 ]
+				m_vecPosition = [ -33.0, -306.0 ]
 				m_nNodeID = 
 				{
 					m_id = 284247858
@@ -1008,7 +1008,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 615.0, 12.0 ]
+				m_vecPosition = [ 699.0, -62.0 ]
 				m_nNodeID = 
 				{
 					m_id = 403212221
@@ -1934,7 +1934,7 @@
 			{
 				_class = "CStateMachineAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 226.0, -356.0 ]
+				m_vecPosition = [ 271.0, -427.0 ]
 				m_nNodeID = 
 				{
 					m_id = 514239371
@@ -2535,6 +2535,12 @@
 											m_data = true
 										}
 									},
+									{
+										_class = "CFinishedCondition"
+										m_comparisonOp = 0
+										m_option = "FinishedConditionOption_OnAlmostFinished"
+										m_bIsFinished = true
+									},
 								]
 								m_blendDuration = 0.2
 								m_destState = 
@@ -3118,41 +3124,20 @@
 										m_comparisonOp = 0
 										m_paramID = 
 										{
-											m_id = 99950993
+											m_id = 2032836100
 										}
 										m_comparisonValue = 
 										{
 											m_nType = 1
-											m_data = false
+											m_data = true
 										}
 									},
-								]
-								m_blendDuration = 0.2
-								m_destState = 
-								{
-									m_id = 1063630875
-								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
-								m_flFixedCycleValue = 0.0
-								m_blendCurve = 
-								{
-									m_vControlPoint1 = [ 0.5, 0.0 ]
-									m_vControlPoint2 = [ 0.5, 1.0 ]
-								}
-								m_bForceFootPlant = false
-								m_bDisabled = false
-							},
-							{
-								_class = "CAnimStateTransition"
-								m_conditions = 
-								[
 									{
 										_class = "CParameterAnimCondition"
 										m_comparisonOp = 0
 										m_paramID = 
 										{
-											m_id = 99950993
+											m_id = 1062557567
 										}
 										m_comparisonValue = 
 										{
@@ -3305,6 +3290,40 @@
 								m_bForceFootPlant = false
 								m_bDisabled = false
 							},
+							{
+								_class = "CAnimStateTransition"
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 1062557567
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+								]
+								m_blendDuration = 0.2
+								m_destState = 
+								{
+									m_id = 1063630875
+								}
+								m_bReset = true
+								m_resetCycleOption = "Beginning"
+								m_flFixedCycleValue = 0.0
+								m_blendCurve = 
+								{
+									m_vControlPoint1 = [ 0.5, 0.0 ]
+									m_vControlPoint2 = [ 0.5, 1.0 ]
+								}
+								m_bForceFootPlant = false
+								m_bDisabled = false
+							},
 						]
 						m_tags = 
 						[
@@ -3368,53 +3387,6 @@
 								m_destState = 
 								{
 									m_id = 106275585
-								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
-								m_flFixedCycleValue = 0.0
-								m_blendCurve = 
-								{
-									m_vControlPoint1 = [ 0.5, 0.0 ]
-									m_vControlPoint2 = [ 0.5, 1.0 ]
-								}
-								m_bForceFootPlant = false
-								m_bDisabled = false
-							},
-							{
-								_class = "CAnimStateTransition"
-								m_conditions = 
-								[
-									{
-										_class = "CParameterAnimCondition"
-										m_comparisonOp = 0
-										m_paramID = 
-										{
-											m_id = 99950993
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 1
-											m_data = false
-										}
-									},
-									{
-										_class = "CParameterAnimCondition"
-										m_comparisonOp = 3
-										m_paramID = 
-										{
-											m_id = 547574561
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 4
-											m_data = 0.5
-										}
-									},
-								]
-								m_blendDuration = 0.2
-								m_destState = 
-								{
-									m_id = 425263741
 								}
 								m_bReset = true
 								m_resetCycleOption = "Beginning"
@@ -3555,6 +3527,100 @@
 								m_bForceFootPlant = false
 								m_bDisabled = false
 							},
+							{
+								_class = "CAnimStateTransition"
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 1062557567
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 3
+										m_paramID = 
+										{
+											m_id = 547574561
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 4
+											m_data = 0.5
+										}
+									},
+								]
+								m_blendDuration = 0.2
+								m_destState = 
+								{
+									m_id = 106275585
+								}
+								m_bReset = true
+								m_resetCycleOption = "Beginning"
+								m_flFixedCycleValue = 0.0
+								m_blendCurve = 
+								{
+									m_vControlPoint1 = [ 0.5, 0.0 ]
+									m_vControlPoint2 = [ 0.5, 1.0 ]
+								}
+								m_bForceFootPlant = false
+								m_bDisabled = false
+							},
+							{
+								_class = "CAnimStateTransition"
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 1062557567
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 3
+										m_paramID = 
+										{
+											m_id = 547574561
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 4
+											m_data = 0.5
+										}
+									},
+								]
+								m_blendDuration = 0.2
+								m_destState = 
+								{
+									m_id = 425263741
+								}
+								m_bReset = true
+								m_resetCycleOption = "Beginning"
+								m_flFixedCycleValue = 0.0
+								m_blendCurve = 
+								{
+									m_vControlPoint1 = [ 0.5, 0.0 ]
+									m_vControlPoint2 = [ 0.5, 1.0 ]
+								}
+								m_bForceFootPlant = false
+								m_bDisabled = false
+							},
 						]
 						m_tags = 
 						[
@@ -3593,7 +3659,7 @@
 			{
 				_class = "CStateMachineAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 1060.0, 95.0 ]
+				m_vecPosition = [ 1101.0, 67.0 ]
 				m_nNodeID = 
 				{
 					m_id = 577081123
@@ -5705,7 +5771,7 @@
 									{
 										_class = "CFinishedCondition"
 										m_comparisonOp = 0
-										m_option = "FinishedConditionOption_OnAlmostFinished"
+										m_option = "FinishedConditionOption_OnFinished"
 										m_bIsFinished = true
 									},
 									{
@@ -6648,7 +6714,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 46.0, -401.0 ]
+				m_vecPosition = [ -27.0, -433.0 ]
 				m_nNodeID = 
 				{
 					m_id = 886067201
@@ -6658,11 +6724,11 @@
 				m_weightListName = "Only_Upperbody"
 				m_child1ID = 
 				{
-					m_id = 274223705
+					m_id = 1112152383
 				}
 				m_child2ID = 
 				{
-					m_id = 1112152383
+					m_id = 274223705
 				}
 				m_blendSpace = "BlendSpace_Parent"
 				m_bUseBlendScale = false
@@ -6671,7 +6737,7 @@
 				{
 					m_id = 4294967295
 				}
-				m_timingBehavior = "UseChild1"
+				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
 				m_flRootMotionBlend = 0.0
 				m_footMotionTiming = "Child1"
@@ -6862,7 +6928,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -26.0, -563.0 ]
+				m_vecPosition = [ -27.0, -497.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1028235917
@@ -7078,7 +7144,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -28.0, -630.0 ]
+				m_vecPosition = [ -28.0, -559.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1138684408
@@ -8254,7 +8320,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -129.0, -419.0 ]
+				m_vecPosition = [ -33.0, -369.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1330756922
@@ -8334,7 +8400,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -52.0, -286.0 ]
+				m_vecPosition = [ -32.0, -242.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1343605317
@@ -8429,7 +8495,7 @@
 			{
 				_class = "CBoneMaskAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -86.0, -213.0 ]
+				m_vecPosition = [ -35.0, -173.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1383024074
@@ -8658,7 +8724,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 814.0, 15.0 ]
+				m_vecPosition = [ 917.0, -66.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1488771426
@@ -8738,7 +8804,7 @@
 			{
 				_class = "CAddAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -287.0, -189.0 ]
+				m_vecPosition = [ -284.0, -166.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1505988824
@@ -9083,6 +9149,46 @@
 					m_fMinSpeed = 10.0
 					m_fMaxTension = 1000.0
 				}
+			}
+		},
+		{
+			key = 
+			{
+				m_id = 1807350975
+			}
+			value = 
+			{
+				_class = "CBoneMaskAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -54.0, 341.0 ]
+				m_nNodeID = 
+				{
+					m_id = 1807350975
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_weightListName = "Only_Upperbody"
+				m_child1ID = 
+				{
+					m_id = 500927019
+				}
+				m_child2ID = 
+				{
+					m_id = 1398654178
+				}
+				m_blendSpace = "BlendSpace_Model"
+				m_bUseBlendScale = false
+				m_blendValueSource = "Parameter"
+				m_blendParameter = 
+				{
+					m_id = 4294967295
+				}
+				m_timingBehavior = "UseChild2"
+				m_flTimingBlend = 0.5
+				m_flRootMotionBlend = 0.0
+				m_footMotionTiming = "Child1"
+				m_bResetChild1 = true
+				m_bResetChild2 = true
 			}
 		},
 		{
@@ -10122,8 +10228,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 1317160093
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee Attack Crouch"
 						m_childNodeID = 
 						{
@@ -10206,12 +10317,17 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 1317160093
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee Attack"
 						m_childNodeID = 
 						{
-							m_id = 1398654178
+							m_id = 1807350975
 						}
 						m_stateID = 
 						{

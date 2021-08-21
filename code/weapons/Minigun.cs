@@ -9,7 +9,8 @@ partial class Minigun : BaseDmWeapon
 
     public override float PrimaryRate => 15.0f;
     public override int ClipSize => 300;
-	public override int Bucket => 1;
+	public override int Bucket => 0;
+	public override AmmoType AmmoType => AmmoType.Minigun;
 
     public override void Spawn() 
     {
@@ -38,7 +39,6 @@ partial class Minigun : BaseDmWeapon
 			AttackPrimaryStart();
 
 			ShootEffects();
-			PlaySound("rust_smg.shoot");
 
 			ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
 			
@@ -47,14 +47,9 @@ partial class Minigun : BaseDmWeapon
 
 	}
 
-	public override void AttackSecondary() 
+	public override bool CanReload() 
 	{
-		AttackSecondaryStart();
-
-		if (!Input.Down(InputButton.Attack2)) 
-		{
-			AttackSecondaryEnd();
-		}
+		return false;
 	}
 
 	public void AttackPrimaryStart() 
@@ -67,21 +62,6 @@ partial class Minigun : BaseDmWeapon
 	{
 		(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
 		ViewModelEntity?.SetAnimBool("spooldown", true);
-	}
-
-	public void AttackSecondaryStart() 
-	{
-		(Owner as AnimEntity).SetAnimBool("b_minigunstart", true);
-		(Owner as AnimEntity).SetAnimBool("b_minigunidle", true);
-		ViewModelEntity?.SetAnimBool("spoolidle", true);
-	}
-
-	public void AttackSecondaryEnd() 
-	{
-		ViewModelEntity?.SetAnimBool("spooldown", true);
-		ViewModelEntity?.SetAnimBool("spoolidle", false);
-		(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
-		(Owner as AnimEntity).SetAnimBool("b_minigunidle", false);
 	}
 
 	public override void SimulateAnimator(PawnAnimator anim) 

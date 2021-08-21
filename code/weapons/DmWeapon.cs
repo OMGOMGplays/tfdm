@@ -31,7 +31,6 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 	public PickupTrigger PickupTrigger { get; protected set; }
 
 	bool shooting;
-	bool spooling;
 
 	public int AvailableAmmo()
 	{
@@ -114,22 +113,6 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 			shooting = true;
 			ViewModelEntity?.SetAnimBool("spoolidle", false);
 		}
-
-		if (!Input.Down(InputButton.Attack2) && spooling) 
-		{
-			spooling = false;
-			(Owner as AnimEntity).SetAnimBool("b_minigunend", true);
-			(Owner as AnimEntity).SetAnimBool("b_minigunidle", false);
-			ViewModelEntity?.SetAnimBool("spooldown", true);
-			ViewModelEntity?.SetAnimBool("spoolide", false);
-		}
-
-		if (Input.Down(InputButton.Attack2) && !spooling) 
-		{
-			spooling = true;
-			ViewModelEntity?.SetAnimBool("spoolup", true);
-			ViewModelEntity?.SetAnimBool("spoolidle", true);
-		}
 	}
 
 	public virtual void OnReloadFinish()
@@ -199,7 +182,7 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 
 		if ( IsLocalPawn )
 		{
-			new Sandbox.ScreenShake.Perlin();
+			// new Sandbox.ScreenShake.Perlin();
 		}
 
 		ViewModelEntity?.SetAnimBool( "fire", true );

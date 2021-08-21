@@ -7,6 +7,8 @@ partial class Melee : BaseDmWeapon
 {
     public override string ViewModelPath => "models/weapons/c_heavy_arms.vmdl";
     public override float PrimaryRate => 1.0f;
+	public override int Bucket => 2;
+	public override AmmoType AmmoType => AmmoType.Melee;
 
     public override void Spawn() 
     {
@@ -28,6 +30,11 @@ partial class Melee : BaseDmWeapon
 		}
 
 		PlaySound( "" );
+	}
+	
+	public override bool CanReload() 
+	{
+		return false;
 	}
 
 	private bool MeleeAttack()
@@ -73,6 +80,8 @@ partial class Melee : BaseDmWeapon
 
         (Owner as AnimEntity).SetAnimBool("b_attack", true);
 
+		PlaySound("boxing_gloves_swing2");
+
 		ViewModelEntity?.SetAnimBool( "attack", true );
 	}
 
@@ -87,6 +96,8 @@ partial class Melee : BaseDmWeapon
 		}
 
         (Owner as AnimEntity).SetAnimBool("b_attack", true);
+
+		PlaySound("fist_hit_world1");
 
 		ViewModelEntity?.SetAnimBool( "attack", true );
 	}

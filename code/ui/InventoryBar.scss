@@ -1,6 +1,6 @@
 ﻿inventorybar
 {
-	position: absolute;
+	position: relative;
 	left: 200px;
 	top: 80px;
 	font-family: Roboto;
@@ -18,20 +18,21 @@
 
 inventorycolumn
 {
-	margin-right: 5px;
-	mix-blend-mode: lighten;
-	color: #fc0;
-	flex-direction: column;
-	align-items: flex-start; // align to the left, don't stretch
+	margin-right: 2.5px;
+	mix-blend-mode: screen;
+	color: rgb(255, 255, 255);
+	flex-direction: row;
+	right: -1500px;
+	align-items: center; // align to the left, don't stretch
 
 	.slot-number
 	{
-		background-color: #fa02;
-		padding: 22px 15px 0px 10px;
+		padding: 10px 10px 0px 14px;
 		font-size: 20px;
-		font-weight: bolder;
+		font-family: tf2build;
 		width: 40px;
 		height: 40px;
+		border-radius: 10px;
 	}
 
 	inventoryicon
@@ -41,7 +42,7 @@ inventorycolumn
 		width: 40px;
 		height: 40px;
 		overflow: hidden;
-		transition: all 0.1s ease-out;
+		transition: all 0.5s ease-out;
 
 		.icon
 		{
@@ -57,15 +58,15 @@ inventorycolumn
 
 		inventoryicon
 		{
-			transition: all 0.1s ease-out;
-			opacity: 0.2;
+			transition: all 0.25s ease-out;
+			opacity: 0.9;
 			display: flex;
 			width: 200px;
 			height: 90px;
 
 			.icon
 			{
-				opacity: 1;
+				opacity: 0.5;
 			}
 
 			&.active
@@ -81,13 +82,16 @@ inventoryicon
 	margin-top: 5px;
 	mix-blend-mode: lighten;
 	color: #fc0;
-	background-color: #fa04;
+	background-color: rgba(255, 0, 0, 0.267);
 	font-size: 40px;
 	font-weight: lighter;
 	padding: 10px;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-image: url(/ui/loadout_rect_red.png);
 
 	.icon
 	{

@@ -11,9 +11,9 @@
 				[
 					{
 						_class = "Bone"
-						name = "hold_r"
-						origin = [ -2.245047, 0.0, -2.81047 ]
-						angles = [ 0.0, 0.0, 0.0 ]
+						name = "bip_hand_R"
+						origin = [ -0.210772, -4.138826, -0.944754 ]
+						angles = [ 1.158998, 79.367554, 128.678009 ]
 						do_not_discard = true
 					},
 				]
@@ -49,6 +49,9 @@
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
 						filename = "models/weapons/c_minigun.smd"
 						import_scale = 1.0
 						faceMergeAngle = 10.0

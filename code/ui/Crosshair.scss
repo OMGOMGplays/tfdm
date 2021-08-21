@@ -14,68 +14,10 @@
 
 	.el0
 	{
-		background-color: #ff0;
+		background-color: rgb(255, 255, 255);
 		border-radius: 1000px;
 		width: 6px;
 		height: 6px;
-	}
-
-	&.dm_shotgun
-	{
-		opacity: 0.3;
-		transition: opacity 0.5s linear;
-
-		.el0
-		{
-			background-color: transparent;
-			border-radius: 1000px;
-			left: -100px;
-			top: -100px;
-			width: 200px;
-			height: 200px;
-			border: 6px solid #ff00;
-			border-left: 6px solid #ff0;
-			border-right: 6px solid #ff0;
-			transition: all 0.5s ease-out;
-		}
-
-		.el1
-		{
-			transition: all 0.5s ease-out;
-			background-color: #ff05;
-			border-radius: 1000px;
-			width: 10px;
-			height: 10px;
-			left: -5px;
-			top: -5px;
-		}
-
-		&.fire
-		{
-			opacity: 0.9;
-			transition: opacity 0.01s ease-out;
-
-			.el0
-			{
-				transition: all 0.01s ease-out;
-				left: -150px;
-				width: 300px;
-				border: 6px solid #0000;
-				border-left: 6px solid #fa0;
-				border-right: 6px solid #fa0;
-				opacity: 1.0;
-			}
-
-			.el1
-			{
-				transition: all 0.01s ease-out;
-				background-color: #ff0;
-				width: 16px;
-				height: 16px;
-				left: -8px;
-				top: -8px;
-			}
-		}
 	}
 
 	&.dm_pistol
@@ -85,7 +27,8 @@
 
 		.el0, .el1, .el2, .el3
 		{
-			background-color: #ff0;
+			background-image: url(/ui/hud_crosshair.png);
+			background-color: rgb(255, 255, 255);
 			border-radius: 0;
 			transition: all 0.5s ease-out;
 		}
@@ -135,7 +78,7 @@
 			.el0, .el1, .el2, .el3
 			{
 				transition: all 0.01s ease-in;
-				background-color: #fa0;
+				background-color: rgb(255, 255, 255);
 			}
 
 			.el0
@@ -172,8 +115,9 @@
 		.el0
 		{
 			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
 			border-radius: 100px;
-			border: 2px solid #fc0;
+			border: 2px solid rgb(255, 255, 255);
 			width: 40px;
 			height: 40px;
 			left: -20px;
@@ -193,8 +137,78 @@
 				height: 150px;
 				left: -75px;
 				top: -75px;
-				border: 5px solid #fc0;
+				border: 5px solid rgb(255, 255, 255);
 			}
+		}
+	}
+
+	&.tfdm_minigun 
+	{
+		opacity: 0.5;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
+		}
+
+		&.fire
+		{
+			opacity: 0.9;
+			transition: opacity 0.01s ease-out;
+
+			.el0
+			{
+				transition: all 0.01s ease-in;
+				width: 150px;
+				height: 150px;
+				left: -75px;
+				top: -75px;
+				border: 5px solid rgb(255, 255, 255);
+			}
+		}
+	}
+
+	&.tfdm_shotgun
+	{
+		opacity: 0.5;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	&.tfdm_melee 
+	{
+		opacity: 0.5;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
 		}
 	}
 }

@@ -196,6 +196,30 @@
 				]
 				default_root_bone_name = ""
 			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "muzzle"
+						parent_bone = "barrel"
+						relative_origin = [ -0.067977, 2.37962, 28.301746 ]
+						relative_angles = [ -85.321892, 176.906326, -161.575241 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "ejection_point"
+						parent_bone = "weapon_bone"
+						relative_origin = [ -14.961439, -19.551239, 5.757019 ]
+						relative_angles = [ 1.758168, -102.08754, -151.555527 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""

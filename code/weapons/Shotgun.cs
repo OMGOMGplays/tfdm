@@ -2,16 +2,17 @@
 
 
 [Library( "tfdm_shotgun", Title = "Shotgun" )]
-[Hammer.EditorModel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" )]
+
 partial class Shotgun : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/c_heavy_shotgun.vmdl";
 	public override float PrimaryRate => 1;
 	public override float SecondaryRate => 1;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
+	public static SoundEvent Attack = new SoundEvent("sounds/hvysounds/shotgun_shoot.vsnd");
 	public override int ClipSize => 8;
 	public override float ReloadTime => 0.5f;
-	public override int Bucket => 2;
+	public override int Bucket => 1;
 
 	public override void Spawn()
 	{
@@ -37,11 +38,12 @@ partial class Shotgun : BaseDmWeapon
 
 		(Owner as AnimEntity).SetAnimBool( "b_attack", true );
 
+		PlaySound("shotgun_shoot");
+
 		//
 		// Tell the clients to play the shoot effects
 		//
 		ShootEffects();
-		PlaySound( "rust_pumpshotgun.shoot" );
 
 		//
 		// Shoot the bullets

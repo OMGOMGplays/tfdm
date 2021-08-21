@@ -17,24 +17,37 @@ rootpanel
 	}
 }
 
-vitals
-{
+vitals {
 	position: absolute;
-	bottom: 64px;
 	left: 100px;
-	font-size: 64px;
-	color: #ff0;
-	mix-blend-mode: lighten;
-	font-family: Roboto;
+	bottom: 50px;
+	font-size: 40px;
+	font-family: TF2 Secondary;
+	color: #5F5241;
+	white-space: nowrap;
+	background-image: url(/ui/hud_health_placeholder.png);
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
 
-	label
-	{
-		text-shadow: 0px 0px 20px #f70a;
+	label {
+		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.667);
 
-		&.danger
-		{
-			color: #f00;
+		&.danger {
+			color: rgb(177, 0, 0);
 			text-shadow: 0px 0px 10px #f005;
+			position: absolute;
+			font-size: 40px;
+			font-family: TF2 Secondary;
+			white-space: nowrap;
+			background-image: url(/ui/hud_health_25.png);
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
@@ -45,14 +58,20 @@ ammo
 	position: absolute;
 	bottom: 64px;
 	right: 100px;
-	font-size: 64px;
-	color: #ff0;
+	font-size: 45px;
+	color: rgb(255, 255, 255);
 	mix-blend-mode: lighten;
-	font-family: Roboto;
+	background-image: url(/ui/hud_ammo_container_red.png);
+	background-size: cover;
+	width: 235px;
+	height: 111px;
+	align-items: center;
+	justify-content: center;
+	font-family: tf2build;
 
 	label
 	{
-		text-shadow: 0px 0px 20px #f70a;
+		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.667);
 
 		&.danger
 		{
@@ -60,19 +79,22 @@ ammo
 		}
 	}
 }
-
-
 .dm_pistol .icon
 {
 	background-image: url( /ui/weapons/dm_pistol.png );
 }
 
-.dm_shotgun .icon
+.tfdm_shotgun .icon
 {
 	background-image: url( /ui/weapons/dm_shotgun.png );
 }
 
-.dm_smg .icon
+.tfdm_melee .icon 
+{
+	background-image: url(/ui/weapons/tfdm_sandvich);
+}
+
+.tfdm_minigun .icon
 {
 	background-image: url( /ui/weapons/dm_smg.png );
 }
