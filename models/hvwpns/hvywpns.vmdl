@@ -3053,6 +3053,30 @@
 							{
 								_class = "AnimFile"
 								name = "attackCrouch_PRIMARY"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_PLAYSOUND"
+										event_frame = 0
+										event_keys = 
+										{
+											name = "minigun_shoot"
+											tags = ""
+											stop_on_seq_change = false
+											use_layer_sequence = false
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_STOPSOUND"
+										event_frame = 14
+										event_keys = 
+										{
+											name = "minigun_shoot"
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -3073,6 +3097,30 @@
 							{
 								_class = "AnimFile"
 								name = "attackStand_PRIMARY"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_STOPSOUND"
+										event_frame = 14
+										event_keys = 
+										{
+											name = "minigun_shoot"
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_PLAYSOUND"
+										event_frame = 0
+										event_keys = 
+										{
+											name = "minigun_shoot"
+											tags = ""
+											stop_on_seq_change = false
+											use_layer_sequence = false
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
