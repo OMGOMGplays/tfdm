@@ -36,9 +36,41 @@ vitals {
 		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.667);
 
 		&.danger {
+			color: #5F5241;
+			position: absolute;
+			text-align: center;
+			font-size: 40px;
+			font-family: TF2 Secondary;
+			white-space: nowrap;
+			background-image: url(/ui/hud_health_75.png);
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			align-items: center;
+			justify-content: right;
+		}
+
+		&.danger2 {
 			color: rgb(177, 0, 0);
 			text-shadow: 0px 0px 10px #f005;
 			position: absolute;
+			text-align: center;
+			font-size: 40px;
+			font-family: TF2 Secondary;
+			white-space: nowrap;
+			background-image: url(/ui/hud_health_50.png);
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			align-items: center;
+			justify-content: right;
+		}
+
+		&.danger3 {
+			color: rgb(177, 0, 0);
+			text-shadow: 0px 0px 10px #f005;
+			position: absolute;
+			text-align: center;
 			font-size: 40px;
 			font-family: TF2 Secondary;
 			white-space: nowrap;
@@ -47,7 +79,22 @@ vitals {
 			width: 150px;
 			height: 150px;
 			align-items: center;
-			justify-content: center;
+			justify-content: right;
+		}
+
+		&.dead {
+			color: rgb(177, 0, 0);
+			text-shadow: 0px 0px 10px #f005;
+			position: absolute;
+			font-size: 0px;
+			font-family: TF2 Secondary;
+			white-space: nowrap;
+			background-image: url(/ui/hud_health_0.png);
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+			align-items: center;
+			justify-content: right;
 		}
 	}
 }
@@ -86,17 +133,17 @@ ammo
 
 .tfdm_shotgun .icon
 {
-	background-image: url( /ui/weapons/dm_shotgun.png );
+	background-image: url( /ui/weapons/w_shotgun_large.png );
 }
 
-.tfdm_melee .icon 
+.tfdm_fists .icon 
 {
-	background-image: url(/ui/weapons/tfdm_sandvich);
+	background-image: url(/ui/weapons/v_fist_heavy_large.png);
 }
 
 .tfdm_minigun .icon
 {
-	background-image: url( /ui/weapons/dm_smg.png );
+	background-image: url( /ui/weapons/w_minigun_large.png );
 }
 
 .dm_crossbow .icon, .crossbow_bolt .icon

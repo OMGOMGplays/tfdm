@@ -22,13 +22,13 @@ partial class DmViewModel : BaseViewModel
 		//
 		// Bob up and down based on our walk movement
 		//
-		var speed = Owner.Velocity.Length.LerpInverse( 0, 320 );
+		var speed = Owner.Velocity.Length.LerpInverse( 0, 100 );
 		var left = camSetup.Rotation.Left;
 		var up = camSetup.Rotation.Up;
 
 		if ( Owner.GroundEntity != null )
 		{
-			walkBob += Time.Delta * 25.0f * speed;
+			walkBob += Time.Delta * 15.0f * speed;
 		}
 
 		Position += up * MathF.Sin( walkBob ) * speed * -1;

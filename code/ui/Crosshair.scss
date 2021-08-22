@@ -158,22 +158,6 @@
 			top: -20px;
 			transition: all 0.3s ease-out;
 		}
-
-		&.fire
-		{
-			opacity: 0.9;
-			transition: opacity 0.01s ease-out;
-
-			.el0
-			{
-				transition: all 0.01s ease-in;
-				width: 150px;
-				height: 150px;
-				left: -75px;
-				top: -75px;
-				border: 5px solid rgb(255, 255, 255);
-			}
-		}
 	}
 
 	&.tfdm_shotgun

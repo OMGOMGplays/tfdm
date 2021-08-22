@@ -5,7 +5,7 @@
 	top: 80px;
 	font-family: Roboto;
 	opacity: 0;
-	transition: all 0.2s ease-out;
+	transition: all 0.2s ease-in;
 
 
 	&.active
@@ -21,8 +21,9 @@ inventorycolumn
 	margin-right: 2.5px;
 	mix-blend-mode: screen;
 	color: rgb(255, 255, 255);
-	flex-direction: row;
-	right: -1500px;
+	flex-direction: column;
+	right: -500px;
+	top: 850px;
 	align-items: center; // align to the left, don't stretch
 
 	.slot-number
@@ -37,20 +38,20 @@ inventorycolumn
 
 	inventoryicon
 	{
-		opacity: 1;
+		opacity: 0.5;
 		padding: 25px 15px 10px 2px;
-		width: 40px;
-		height: 40px;
+		width: 192px;
+		height: 95px;
 		overflow: hidden;
 		transition: all 0.5s ease-out;
 
 		.icon
 		{
-			opacity: 0;
+			opacity: 0.25;
 		}
 	}
 
-	opacity: 0.4;
+	opacity: 0.5;
 
 	&.active
 	{
@@ -59,14 +60,14 @@ inventorycolumn
 		inventoryicon
 		{
 			transition: all 0.25s ease-out;
-			opacity: 0.9;
+			opacity: 1;
 			display: flex;
-			width: 200px;
-			height: 90px;
+			width: 192px;
+			height: 97px;
 
 			.icon
 			{
-				opacity: 0.5;
+				opacity: 1;
 			}
 
 			&.active
@@ -81,7 +82,7 @@ inventoryicon
 {
 	margin-top: 5px;
 	mix-blend-mode: lighten;
-	color: #fc0;
+	color: rgb(255, 255, 255);
 	background-color: rgba(255, 0, 0, 0.267);
 	font-size: 40px;
 	font-weight: lighter;
@@ -91,6 +92,7 @@ inventoryicon
 	overflow: hidden;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	opacity: 1;
 	background-image: url(/ui/loadout_rect_red.png);
 
 	.icon
@@ -98,7 +100,8 @@ inventoryicon
 		width: 150px;
 		height: 150px;
 		background-size: 100%;
-		background-image-tint: #fa0;
+		background-image-tint: rgb(255, 255, 255);
+		opacity: 1;
 		position: absolute;
 	}
 
@@ -115,13 +118,14 @@ inventoryicon
 
 	&.empty
 	{
-		opacity: 0.5;
+		opacity: 1;
 		background-color: #c004;
 		color: #f002;
 
 		.icon
 		{
 			background-color: #f50;
+			opacity: 1;
 		}
 	}
 }

@@ -34,11 +34,9 @@ partial class DeathmatchPlayer : Player
 
 		Inventory.Add(new Shotgun());
 		Inventory.Add(new Minigun(), true);
-		Inventory.Add(new Melee());
+		Inventory.Add(new Fists());
 
-		GiveAmmo( AmmoType.Pistol, 0);
 		GiveAmmo( AmmoType.Buckshot, 20 );
-		GiveAmmo( AmmoType.Crossbow, 0 );
 
 		SupressPickupNotices = false;
 		Health = 300;
@@ -242,7 +240,7 @@ partial class DeathmatchPlayer : Player
 	[ClientRpc]
 	public void DidDamage( Vector3 pos, float amount, float healthinv )
 	{
-		Sound.FromScreen( "dm.ui_attacker" )
+		Sound.FromScreen( "hitsound" )
 			.SetPitch( 1 + healthinv * 1 );
 
 		HitIndicator.Current?.OnHit( pos, amount );

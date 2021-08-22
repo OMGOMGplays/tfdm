@@ -31,7 +31,7 @@ partial class DmInventory : BaseInventory
 
 				if ( notices )
 				{
-					Sound.FromWorld( "dm.pickup_ammo", ent.Position );
+					Sound.FromWorld( "item_heavy_gun_pickup", ent.Position );
 					PickupFeed.OnPickup( To.Single( player ), $"+{ammo} {ammoType}" );
 				}
 			}

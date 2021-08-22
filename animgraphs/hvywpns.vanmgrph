@@ -270,6 +270,20 @@
 				m_bPredicted = false
 				m_bDefaultValue = false
 			},
+			{
+				_class = "CBoolAnimParameter"
+				m_name = "b_help"
+				m_id = 
+				{
+					m_id = 174637636
+				}
+				m_previewButton = "ANIMPARAM_BUTTON_NONE"
+				m_bNetwork = false
+				m_bUseMostRecentValue = false
+				m_bAutoReset = true
+				m_bPredicted = false
+				m_bDefaultValue = false
+			},
 		]
 	}
 	m_pTagManager = 
@@ -366,7 +380,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 609.0, 90.0 ]
+				m_vecPosition = [ 706.0, 52.0 ]
 				m_nNodeID = 
 				{
 					m_id = 15301344
@@ -888,7 +902,7 @@
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
 				m_footMotionTiming = "Child1"
-				m_bResetBase = true
+				m_bResetBase = false
 				m_bResetAdditive = true
 				m_bApplyChannelsSeparately = true
 			}
@@ -1185,7 +1199,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -554.0, 509.0 ]
+				m_vecPosition = [ -387.0, 515.0 ]
 				m_nNodeID = 
 				{
 					m_id = 454083183
@@ -1245,7 +1259,7 @@
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
 				m_footMotionTiming = "Child1"
-				m_bResetBase = true
+				m_bResetBase = false
 				m_bResetAdditive = true
 				m_bApplyChannelsSeparately = true
 			}
@@ -1912,7 +1926,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -389.0, 517.0 ]
+				m_vecPosition = [ -311.0, 648.0 ]
 				m_nNodeID = 
 				{
 					m_id = 512369721
@@ -1934,7 +1948,7 @@
 			{
 				_class = "CStateMachineAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 271.0, -427.0 ]
+				m_vecPosition = [ 292.0, -350.0 ]
 				m_nNodeID = 
 				{
 					m_id = 514239371
@@ -3999,7 +4013,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 609.0, 159.0 ]
+				m_vecPosition = [ 706.0, 121.0 ]
 				m_nNodeID = 
 				{
 					m_id = 608294723
@@ -4116,7 +4130,7 @@
 			{
 				_class = "CStateMachineAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 227.0, -102.0 ]
+				m_vecPosition = [ 299.0, -90.0 ]
 				m_nNodeID = 
 				{
 					m_id = 679635303
@@ -5865,8 +5879,11 @@
 							{
 								m_id = 1087719671
 							},
+							{
+								m_id = 1317160093
+							},
 						]
-						m_tagBehaviors = [ 0 ]
+						m_tagBehaviors = [ 0, 0 ]
 						m_name = "Secondary Land"
 						m_childNodeID = 
 						{
@@ -5876,7 +5893,7 @@
 						{
 							m_id = 321045201
 						}
-						m_position = [ 274.0, -378.0 ]
+						m_position = [ 275.0, -379.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -6553,7 +6570,7 @@
 			{
 				_class = "CAddAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -380.0, 573.0 ]
+				m_vecPosition = [ -379.0, 573.0 ]
 				m_nNodeID = 
 				{
 					m_id = 744531204
@@ -6571,7 +6588,7 @@
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
 				m_footMotionTiming = "Child1"
-				m_bResetBase = true
+				m_bResetBase = false
 				m_bResetAdditive = true
 				m_bApplyChannelsSeparately = true
 			}
@@ -8427,7 +8444,7 @@
 				m_flTimingBlend = 0.5
 				m_flRootMotionBlend = 0.0
 				m_footMotionTiming = "Child1"
-				m_bResetChild1 = true
+				m_bResetChild1 = false
 				m_bResetChild2 = true
 			}
 		},
@@ -8599,7 +8616,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 822.0, 160.0 ]
+				m_vecPosition = [ 919.0, 122.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1436564327
@@ -9976,7 +9993,7 @@
 			{
 				_class = "CStateMachineAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 271.0, 209.0 ]
+				m_vecPosition = [ 320.0, 166.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1878632805
@@ -10844,7 +10861,7 @@
 			{
 				_class = "CLookAtAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ 817.0, 94.0 ]
+				m_vecPosition = [ 914.0, 56.0 ]
 				m_nNodeID = 
 				{
 					m_id = 2070317828

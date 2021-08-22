@@ -3053,30 +3053,6 @@
 							{
 								_class = "AnimFile"
 								name = "attackCrouch_PRIMARY"
-								children = 
-								[
-									{
-										_class = "AnimEvent"
-										event_class = "AE_CL_PLAYSOUND"
-										event_frame = 0
-										event_keys = 
-										{
-											name = "minigun_shoot"
-											tags = ""
-											stop_on_seq_change = false
-											use_layer_sequence = false
-										}
-									},
-									{
-										_class = "AnimEvent"
-										event_class = "AE_CL_STOPSOUND"
-										event_frame = 14
-										event_keys = 
-										{
-											name = "minigun_shoot"
-										}
-									},
-								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -3097,30 +3073,6 @@
 							{
 								_class = "AnimFile"
 								name = "attackStand_PRIMARY"
-								children = 
-								[
-									{
-										_class = "AnimEvent"
-										event_class = "AE_CL_STOPSOUND"
-										event_frame = 14
-										event_keys = 
-										{
-											name = "minigun_shoot"
-										}
-									},
-									{
-										_class = "AnimEvent"
-										event_class = "AE_CL_PLAYSOUND"
-										event_frame = 0
-										event_keys = 
-										{
-											name = "minigun_shoot"
-											tags = ""
-											stop_on_seq_change = false
-											use_layer_sequence = false
-										}
-									},
-								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -3874,26 +3826,6 @@
 							},
 							{
 								_class = "AnimFile"
-								name = "jumpstart_ITEM1"
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								source_filename = "animations/hvywpns/jumpstart_ITEM1.smd"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								reverse = false
-							},
-							{
-								_class = "AnimFile"
 								name = "jumpstart_MELEE"
 								activity_name = ""
 								activity_weight = 1
@@ -4061,40 +3993,6 @@
 								anim_markup_ordered = false
 								disable_compression = false
 								source_filename = "animations/hvywpns/airwalk_PRIMARY.smd"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								reverse = false
-							},
-							{
-								_class = "AnimFile"
-								name = "airwalk_ITEM1"
-								children = 
-								[
-									{
-										_class = "ExtractMotion"
-										extract_tx = true
-										extract_ty = true
-										extract_tz = false
-										extract_rz = false
-										linear = false
-										quadratic = false
-										root_bone_name = ""
-										motion_type = "Single"
-									},
-								]
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = true
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								source_filename = "animations/hvywpns/airwalk_ITEM1.smd"
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
@@ -4562,6 +4460,126 @@
 						master_morph_weight = -1.0
 						morph_weights = [  ]
 					},
+					{
+						_class = "WeightList"
+						name = "Only_Legs"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_foot_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_foot_R"
+								weight = 1.0
+							},
+							{
+								bone = "bip_hip_L"
+								weight = 0.49
+							},
+							{
+								bone = "bip_hip_R"
+								weight = 0.49
+							},
+							{
+								bone = "bip_knee_L"
+								weight = 0.71
+							},
+							{
+								bone = "bip_knee_R"
+								weight = 0.71
+							},
+							{
+								bone = "bip_pelvis"
+								weight = 0.310757
+							},
+							{
+								bone = "bip_spine_0"
+								weight = 0.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Left_Arm_And_Spine"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_collar_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_collar_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_hand_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_head"
+								weight = 0.0
+							},
+							{
+								bone = "bip_lowerArm_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_neck"
+								weight = 0.864542
+							},
+							{
+								bone = "bip_spine_0"
+								weight = 0.135458
+							},
+							{
+								bone = "bip_spine_1"
+								weight = 0.322709
+							},
+							{
+								bone = "bip_spine_2"
+								weight = 0.553785
+							},
+							{
+								bone = "bip_spine_3"
+								weight = 0.760956
+							},
+							{
+								bone = "bip_upperArm_L"
+								weight = 1.0
+							},
+							{
+								bone = "hlp_forearm_L"
+								weight = 0.0
+							},
+							{
+								bone = "prp_bullet_backLower"
+								weight = 0.0
+							},
+							{
+								bone = "prp_bullet_backUpper"
+								weight = 0.0
+							},
+							{
+								bone = "prp_bullet_chestLower"
+								weight = 0.0
+							},
+							{
+								bone = "prp_bullet_chestUpper"
+								weight = 0.0
+							},
+							{
+								bone = "prp_bullet_side"
+								weight = 0.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
 				]
 			},
 			{
@@ -4577,7 +4595,7 @@
 								_class = "Hitbox"
 								name = "bip_spine_0"
 								parent_bone = "bip_spine_0"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -13.392752, -14.205915, -15.005053 ]
@@ -4587,7 +4605,7 @@
 								_class = "Hitbox"
 								name = "bip_spine_1"
 								parent_bone = "bip_spine_1"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -13.392751, -10.329999, -14.893532 ]
@@ -4597,7 +4615,7 @@
 								_class = "Hitbox"
 								name = "bip_spine_2"
 								parent_bone = "bip_spine_2"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -14.574334, -10.580236, -15.404904 ]
@@ -4607,7 +4625,7 @@
 								_class = "Hitbox"
 								name = "bip_spine_3"
 								parent_bone = "bip_spine_3"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -12.692443, -11.577701, -12.502958 ]
@@ -4617,17 +4635,17 @@
 								_class = "Hitbox"
 								name = "bip_neck"
 								parent_bone = "bip_neck"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 1
-								hitbox_mins = [ -6.187033, -11.990884, -7.329038 ]
+								hitbox_mins = [ -6.187033, -14.059818, -7.329038 ]
 								hitbox_maxs = [ 6.187033, 0.5, 9.56496 ]
 							},
 							{
 								_class = "Hitbox"
 								name = "bip_collar_L"
 								parent_bone = "bip_collar_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -10.432056, -18.336973, -9.02354 ]
@@ -4637,7 +4655,7 @@
 								_class = "Hitbox"
 								name = "bip_upperArm_L"
 								parent_bone = "bip_upperArm_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.639091, -6.635078, -4.415653 ]
@@ -4647,7 +4665,7 @@
 								_class = "Hitbox"
 								name = "bip_lowerArm_L"
 								parent_bone = "bip_lowerArm_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -4.137238, -4.198734, -5.203483 ]
@@ -4657,7 +4675,7 @@
 								_class = "Hitbox"
 								name = "bip_hand_L"
 								parent_bone = "bip_hand_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -5.452391, -8.087729, -4.657906 ]
@@ -4667,7 +4685,7 @@
 								_class = "Hitbox"
 								name = "bip_thumb_0_L"
 								parent_bone = "bip_thumb_0_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.992638, -4.483174, -3.070452 ]
@@ -4677,7 +4695,7 @@
 								_class = "Hitbox"
 								name = "bip_thumb_1_L"
 								parent_bone = "bip_thumb_1_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.992647, -2.10797, -3.077686 ]
@@ -4687,7 +4705,7 @@
 								_class = "Hitbox"
 								name = "bip_index_0_L"
 								parent_bone = "bip_index_0_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.561979, -3.600729, -1.441015 ]
@@ -4697,7 +4715,7 @@
 								_class = "Hitbox"
 								name = "bip_index_1_L"
 								parent_bone = "bip_index_1_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.234507, -2.242379, -1.021404 ]
@@ -4707,7 +4725,7 @@
 								_class = "Hitbox"
 								name = "bip_middle_0_L"
 								parent_bone = "bip_middle_0_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.498653, -4.729813, -2.11277 ]
@@ -4717,7 +4735,7 @@
 								_class = "Hitbox"
 								name = "bip_middle_1_L"
 								parent_bone = "bip_middle_1_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.345877, -2.872698, -1.342504 ]
@@ -4727,7 +4745,7 @@
 								_class = "Hitbox"
 								name = "bip_ring_0_L"
 								parent_bone = "bip_ring_0_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.395684, -3.818516, -1.467779 ]
@@ -4737,7 +4755,7 @@
 								_class = "Hitbox"
 								name = "bip_ring_1_L"
 								parent_bone = "bip_ring_1_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.206731, -2.391063, -1.012833 ]
@@ -4747,7 +4765,7 @@
 								_class = "Hitbox"
 								name = "bip_pinky_0_L"
 								parent_bone = "bip_pinky_0_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.073306, -3.038783, -1.559204 ]
@@ -4757,7 +4775,7 @@
 								_class = "Hitbox"
 								name = "bip_pinky_1_L"
 								parent_bone = "bip_pinky_1_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.052003, -1.949512, -1.071629 ]
@@ -4767,7 +4785,7 @@
 								_class = "Hitbox"
 								name = "bip_collar_R"
 								parent_bone = "bip_collar_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -6.521691, -0.681011, -5.99341 ]
@@ -4777,7 +4795,7 @@
 								_class = "Hitbox"
 								name = "bip_upperArm_R"
 								parent_bone = "bip_upperArm_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.639048, -7.909969, -4.415466 ]
@@ -4787,7 +4805,7 @@
 								_class = "Hitbox"
 								name = "bip_lowerArm_R"
 								parent_bone = "bip_lowerArm_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.341946, -4.864194, -4.008564 ]
@@ -4797,7 +4815,7 @@
 								_class = "Hitbox"
 								name = "bip_hand_R"
 								parent_bone = "bip_hand_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.104254, -1.422466, -6.432301 ]
@@ -4807,7 +4825,7 @@
 								_class = "Hitbox"
 								name = "bip_thumb_0_R"
 								parent_bone = "bip_thumb_0_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -2.660677, -0.5, -2.067249 ]
@@ -4817,7 +4835,7 @@
 								_class = "Hitbox"
 								name = "bip_thumb_1_R"
 								parent_bone = "bip_thumb_1_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.344242, -0.783103, -1.372191 ]
@@ -4827,7 +4845,7 @@
 								_class = "Hitbox"
 								name = "bip_index_0_R"
 								parent_bone = "bip_index_0_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.403469, -0.5, -2.278208 ]
@@ -4837,7 +4855,7 @@
 								_class = "Hitbox"
 								name = "bip_index_1_R"
 								parent_bone = "bip_index_1_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.226848, -0.5, -1.36261 ]
@@ -4847,7 +4865,7 @@
 								_class = "Hitbox"
 								name = "bip_middle_0_R"
 								parent_bone = "bip_middle_0_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.478526, -0.5, -1.817715 ]
@@ -4857,7 +4875,7 @@
 								_class = "Hitbox"
 								name = "bip_middle_1_R"
 								parent_bone = "bip_middle_1_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.192535, -0.5, -1.033918 ]
@@ -4867,7 +4885,7 @@
 								_class = "Hitbox"
 								name = "bip_ring_0_R"
 								parent_bone = "bip_ring_0_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.363796, -0.5, -1.688593 ]
@@ -4877,7 +4895,7 @@
 								_class = "Hitbox"
 								name = "bip_ring_1_R"
 								parent_bone = "bip_ring_1_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.25069, -0.5, -1.057415 ]
@@ -4887,7 +4905,7 @@
 								_class = "Hitbox"
 								name = "bip_pinky_0_R"
 								parent_bone = "bip_pinky_0_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.652696, -0.890825, -1.31723 ]
@@ -4897,7 +4915,7 @@
 								_class = "Hitbox"
 								name = "bip_pinky_1_R"
 								parent_bone = "bip_pinky_1_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.201761, -0.5, -0.863766 ]
@@ -4907,7 +4925,7 @@
 								_class = "Hitbox"
 								name = "bip_hip_L"
 								parent_bone = "bip_hip_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -2.632378, -7.456096, -4.868546 ]
@@ -4917,7 +4935,7 @@
 								_class = "Hitbox"
 								name = "bip_knee_L"
 								parent_bone = "bip_knee_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.728497, -3.931931, -5.473041 ]
@@ -4927,7 +4945,7 @@
 								_class = "Hitbox"
 								name = "bip_foot_L"
 								parent_bone = "bip_foot_L"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.587525, -12.001172, -6.506424 ]
@@ -4937,7 +4955,7 @@
 								_class = "Hitbox"
 								name = "bip_hip_R"
 								parent_bone = "bip_hip_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -2.632175, -5.183189, -4.86864 ]
@@ -4947,7 +4965,7 @@
 								_class = "Hitbox"
 								name = "bip_knee_R"
 								parent_bone = "bip_knee_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.090621, -4.896301, -5.406983 ]
@@ -4957,7 +4975,7 @@
 								_class = "Hitbox"
 								name = "bip_foot_R"
 								parent_bone = "bip_foot_R"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -4.146682, -2.186687, -2.946977 ]
