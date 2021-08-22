@@ -5,7 +5,7 @@
 
 partial class Shotgun : BaseDmWeapon
 { 
-	public override string ViewModelPath => "models/weapons/c_heavy_shotgun.vmdl";
+	public override string ViewModelPath => "models/weapons/hvywpnswpns/c_heavy_shotgun.vmdl";
 	public override float PrimaryRate => 1;
 	public override float SecondaryRate => 1;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
@@ -18,7 +18,7 @@ partial class Shotgun : BaseDmWeapon
 	{
 		base.Spawn();
 
-		SetModel( "models/weapons/c_shotgun_reference.vmdl" );  
+		SetModel( "models/weapons/hvywpnswpns/c_shotgun_reference.vmdl" );  
 
 		AmmoClip = 6;
 

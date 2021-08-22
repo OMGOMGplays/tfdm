@@ -5,7 +5,7 @@ using System;
 
 partial class Minigun : BaseDmWeapon 
 {
-    public override string ViewModelPath => "models/weapons/c_minigun.vmdl";
+    public override string ViewModelPath => "models/weapons/hvywpnswpns/c_minigun.vmdl";
 
     public override float PrimaryRate => 15.0f;
     public override int ClipSize => 300;
@@ -16,7 +16,7 @@ partial class Minigun : BaseDmWeapon
     {
         base.Spawn();
 
-        SetModel("models/weapons/w_minigun.vmdl");
+        SetModel("models/weapons/hvywpnswpns/w_minigun.vmdl");
         AmmoClip = 300;
 	}
 

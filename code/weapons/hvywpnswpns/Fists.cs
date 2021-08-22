@@ -5,7 +5,7 @@ using System;
 
 partial class Fists : BaseDmWeapon 
 {
-    public override string ViewModelPath => "models/weapons/c_heavy_arms.vmdl";
+    public override string ViewModelPath => "models/weapons/hvywpnswpns/c_heavy_arms.vmdl";
     public override float PrimaryRate => 1.0f;
 	public override int Bucket => 2;
 	public override AmmoType AmmoType => AmmoType.Fists;
