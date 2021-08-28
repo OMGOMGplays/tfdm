@@ -139,6 +139,6 @@
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
-		anim_graph_name = "animgraphs/hvyarms.vanmgrph"
+		anim_graph_name = "animgraphs/heavy/hvyarms.vanmgrph"
 	}
 }

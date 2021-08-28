@@ -6,13 +6,11 @@ using System;
 
 partial class Scattergun : BaseDmWeapon
 { 
-	public override string ViewModelPath => "models/weapons/hvywpnswpns/c_heavy_shotgun.vmdl";
+	public override string ViewModelPath => "models/weapons/scoutwpns/v_scattergun.vmdl";
 
-	public override float PrimaryRate => 1;
-	public override float SecondaryRate => 1;
+	public override float PrimaryRate => 1.5f;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
-	public static SoundEvent Attack = new SoundEvent("sounds/hvysounds/shotgun_shoot.vsnd");
-	public override int ClipSize => 8;
+	public override int ClipSize => 6;
 	public override float ReloadTime => 0.5f;
 	public override int Bucket => 0;
 
@@ -20,7 +18,7 @@ partial class Scattergun : BaseDmWeapon
 	{
 		base.Spawn();
 
-		SetModel( "models/weapons/hvywpnswpns/c_shotgun_reference.vmdl" );  
+		SetModel( "models/weapons/scoutwpns/w_scattergun.vmdl" );  
 
 		AmmoClip = 6;
 
@@ -62,7 +60,6 @@ partial class Scattergun : BaseDmWeapon
 		Host.AssertClient();
 
 		Particles.Create( "particles/pistol_muzzleflash.vpcf", EffectEntity, "muzzle" );
-		Particles.Create( "particles/pistol_ejectbrass.vpcf", EffectEntity, "ejection_point" );
 
 		ViewModelEntity?.SetAnimBool( "fire", true );
 
@@ -96,6 +93,7 @@ partial class Scattergun : BaseDmWeapon
 			{
 				Reload();
 				PlaySound("scattergunplaceholder");
+				Particles.Create( "particles/pistol_ejectbrass.vpcf", EffectEntity, "ejection_point" );
 			}
 			else
 			{
@@ -105,7 +103,6 @@ partial class Scattergun : BaseDmWeapon
 		}
 	}
 
-	[ClientRpc]
 	protected virtual void FinishReload()
 	{
 		ViewModelEntity?.SetAnimBool( "reload_finished", true );

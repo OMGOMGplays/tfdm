@@ -7,12 +7,12 @@ using System.Threading;
 partial class DeathmatchPlayer : Player
 {
 	private TimeSince timeSinceDropped;
-	// private TimeSince timeSinceInAir;
+	private TimeSince timeSinceInAir;
 
 	public float DefaultSpeed {get; set;}
 
 	float Randomize = Rand.Float(1, 9);
-    // private int numJumps;
+    private int numJumps;
 
 	public bool SupressPickupNotices { get; private set; }
 
@@ -59,7 +59,7 @@ partial class DeathmatchPlayer : Player
 			DefaultSpeed = 400.0f;
 		}
 
-		// numJumps = 0;
+		numJumps = 0;
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -74,7 +74,16 @@ partial class DeathmatchPlayer : Player
 
 		SupressPickupNotices = true;
 
-		GiveAmmo( AmmoType.Buckshot, 20 );
+		if (Randomize == 2) 
+		{
+			GiveAmmo(AmmoType.Buckshot, 20);
+		}
+
+		if (Randomize == 1 || Randomize > 2) 
+		{
+			GiveAmmo(AmmoType.Pistol, 36);
+			GiveAmmo(AmmoType.Buckshot, 32);
+		}
 
 		SupressPickupNotices = false;
 		if (Randomize == 1) 
@@ -119,7 +128,7 @@ partial class DeathmatchPlayer : Player
 
 		EnableAllCollisions = false;
 		EnableDrawing = false;
-        // numJumps = 0;		
+        numJumps = 0;		
 	}
 
 
@@ -155,25 +164,24 @@ partial class DeathmatchPlayer : Player
 			}
 		}
 
-		// if (Randomize == 1 || Randomize > 2) 
-		// {
-		// 	if (GroundEntity == null)
-		// 	{
-				
-		// 		if (timeSinceInAir > 0.1f && Input.Pressed(InputButton.Jump))
-		// 		{
-		// 			if (numJumps < 2)
-		// 			{
-		// 				DoubleJump();
-		// 			}
-		// 	        else
-		// 			{
-		// 				numJumps = 0;
-		// 				timeSinceInAir = 0;
-		// 			}
-		// 		}
-		// 	}
-		// }
+		if (Randomize == 1 || Randomize > 2) 
+		{
+			if (GroundEntity == null)
+			{
+				if (timeSinceInAir > 0.1f && Input.Pressed(InputButton.Jump))
+				{
+					if (numJumps < 2)
+					{
+						DoubleJump();
+					}
+			        else if (numJumps >= 2)
+					{
+						numJumps = 0;
+						timeSinceInAir = 0;
+					}
+				}
+			}
+		}
 
 		if ( Input.Pressed( InputButton.Drop ) )
 		{
@@ -334,53 +342,53 @@ partial class DeathmatchPlayer : Player
 		DamageIndicator.Current?.OnHit( pos );
 	}
 
-    // public virtual void DoubleJump()
-    // {
-    //     float flGroundFactor = 1.25f;
+    public virtual void DoubleJump()
+    {
+        float flGroundFactor = 1.25f;
 
-    //     float flMul = 268.3281572999747f * 1.2f;
+        float flMul = 268.3281572999747f * 1.2f;
 
-    //     Vector3 startx = new Vector3(); //LocalVelocity.x;
-    //     Vector3 starty = new Vector3(); //LocalVelocity.y;
+        Vector3 startx = new Vector3(); //LocalVelocity.x;
+        Vector3 starty = new Vector3(); //LocalVelocity.y;
 
-    //     if (Input.Down(InputButton.Left))
-    //     {
-    //         //starty = LocalVelocity.y * .25f;
-    //         starty = Rotation.Left;
-    //     }
-    //     if (Input.Down(InputButton.Right))
-    //     {
-    //         //starty = LocalVelocity.y * 1.25f;
-    //         starty = Rotation.Right;
-    //     }
-    //     if (Input.Down(InputButton.Back))
-    //     {
-    //         //startx = LocalVelocity.x * 1.25f;
-    //         startx = Rotation.Backward;
-    //     }
-    //     if (Input.Down(InputButton.Forward))
-    //     {
-    //         //startx = LocalVelocity.x * .25f;
-    //         startx = Rotation.Forward;
+        if (Input.Down(InputButton.Left))
+        {
+            //starty = LocalVelocity.y * .25f;
+            starty = Rotation.Left;
+        }
+        if (Input.Down(InputButton.Right))
+        {
+            //starty = LocalVelocity.y * 1.25f;
+            starty = Rotation.Right;
+        }
+        if (Input.Down(InputButton.Back))
+        {
+            //startx = LocalVelocity.x * 1.25f;
+            startx = Rotation.Backward;
+        }
+        if (Input.Down(InputButton.Forward))
+        {
+            //startx = LocalVelocity.x * .25f;
+            startx = Rotation.Forward;
             
-    //     }
+        }
 
-    //     //Log.Info("Global: " + EyeRot);
-    //     //Log.Info("Local: " + EyeRotLocal);
+        //Log.Info("Global: " + EyeRot);
+        //Log.Info("Local: " + EyeRotLocal);
 
-    //     //Velocity = Velocity.AddClamped((startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor), 500.0f);
+        //Velocity = Velocity.AddClamped((startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor), 500.0f);
 
-    //     Velocity = (startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor);
+        Velocity = (startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor);
 
-    //     Velocity -= new Vector3(0, 0, Pawn.Gravity) * Time.Delta;
+        // Velocity -= new Vector3(0, 0, Pawn.Gravity) * Time.Delta;
 
-    //     //Log.Info("Local: " + LocalVelocity.x + " " + LocalVelocity.y + " " + LocalVelocity.z);
-    //     //Log.Info("Global: " + Pawn.Velocity.x + " " + Pawn.Velocity.y + " " + Pawn.Velocity.z);
+        //Log.Info("Local: " + LocalVelocity.x + " " + LocalVelocity.y + " " + LocalVelocity.z);
+        //Log.Info("Global: " + Pawn.Velocity.x + " " + Pawn.Velocity.y + " " + Pawn.Velocity.z);
 
-    //     Pawn.AirMove();
+        // Pawn.AirMove();
 
-    //     Pawn.AddEvent("jump");
+        // Pawn.AddEvent("jump");
 
-    //     numJumps++;
-    // }
+		numJumps++;
+    }
 }

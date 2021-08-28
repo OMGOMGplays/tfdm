@@ -223,6 +223,6 @@
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
-		anim_graph_name = "animgraphs/minigun.vanmgrph"
+		anim_graph_name = "animgraphs/heavy/minigun.vanmgrph"
 	}
 }
