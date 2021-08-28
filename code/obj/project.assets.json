@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\dm98\\code\\dm98.csproj",
-      "projectName": "dm98",
-      "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\dm98\\code\\dm98.csproj",
+      "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\tfdm.csproj",
+      "projectName": "tfdm",
+      "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\tfdm.csproj",
       "packagesPath": "C:\\Users\\Loke\\.nuget\\packages\\",
-      "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\dm98\\code\\obj\\",
+      "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Loke\\AppData\\Roaming\\NuGet\\NuGet.Config",

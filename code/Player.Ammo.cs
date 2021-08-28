@@ -62,7 +62,7 @@ public enum AmmoType
 {
 	Pistol,
 	Buckshot,
-	Crossbow,
 	Fists,
-	Minigun
+	Minigun,
+	Bat
 }

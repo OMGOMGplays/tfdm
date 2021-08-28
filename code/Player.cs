@@ -6,18 +6,60 @@ using System.Threading;
 
 partial class DeathmatchPlayer : Player
 {
-	TimeSince timeSinceDropped;
+	private TimeSince timeSinceDropped;
+	// private TimeSince timeSinceInAir;
+
+	public float DefaultSpeed {get; set;}
+
+	float Randomize = Rand.Float(1, 9);
+    // private int numJumps;
 
 	public bool SupressPickupNotices { get; private set; }
 
 	public DeathmatchPlayer()
 	{
-		Inventory = new DmInventory( this );
+		Inventory = new DmInventory(this);
+	}
+
+	public virtual void CheckJumpButton()
+	{	
+		if (GroundEntity == null) 
+		{
+			return;	
+		}
 	}
 
 	public override void Respawn()
 	{
-		SetModel( "models/hvwpns/hvywpns.vmdl" );
+		
+		if (Randomize == 1) 
+		{
+			SetModel( "models/scout/scout.vmdl" );
+			Inventory.Add(new Scattergun());
+			Inventory.Add(new ScoutPistol(), true);
+			Inventory.Add(new Bat());
+			DefaultSpeed = 400.0f;
+		}
+
+		if (Randomize == 2) 
+		{
+			SetModel("models/hvwpns/hvywpns.vmdl");
+			Inventory.Add(new Minigun(), true);
+			Inventory.Add(new Shotgun());
+			Inventory.Add(new Fists());
+			DefaultSpeed = 230.0f;
+		}
+
+		if (Randomize > 2) 
+		{
+			SetModel("models/scout/scout.vmdl");
+			Inventory.Add(new Scattergun(), true);
+			Inventory.Add(new ScoutPistol());
+			Inventory.Add(new Bat());
+			DefaultSpeed = 400.0f;
+		}
+
+		// numJumps = 0;
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -32,17 +74,27 @@ partial class DeathmatchPlayer : Player
 
 		SupressPickupNotices = true;
 
-		Inventory.Add(new Shotgun());
-		Inventory.Add(new Minigun(), true);
-		Inventory.Add(new Fists());
-
 		GiveAmmo( AmmoType.Buckshot, 20 );
 
 		SupressPickupNotices = false;
-		Health = 300;
+		if (Randomize == 1) 
+		{
+			Health = 125;
+		}
+
+		if (Randomize == 2) 
+		{
+			Health = 300;
+		}
+
+		if (Randomize > 2) 
+		{
+			Health = 125;
+		}
 
 		base.Respawn();
 	}
+
 	public override void OnKilled()
 	{
 		base.OnKilled();
@@ -55,10 +107,19 @@ partial class DeathmatchPlayer : Player
 		Controller = null;
 		Camera = new SpectateRagdollCamera();
 
-		PlaySound("heavy_painsevere03");
+		if (Randomize == 2) 
+		{
+			PlaySound("heavy_painsevere03");
+		}
+
+		if (Randomize == 1 || Randomize > 2) 
+		{
+			PlaySound("scout_painsevere03");
+		}
 
 		EnableAllCollisions = false;
 		EnableDrawing = false;
+        // numJumps = 0;		
 	}
 
 
@@ -93,6 +154,26 @@ partial class DeathmatchPlayer : Player
 				Camera = new ThirdPersonCamera();
 			}
 		}
+
+		// if (Randomize == 1 || Randomize > 2) 
+		// {
+		// 	if (GroundEntity == null)
+		// 	{
+				
+		// 		if (timeSinceInAir > 0.1f && Input.Pressed(InputButton.Jump))
+		// 		{
+		// 			if (numJumps < 2)
+		// 			{
+		// 				DoubleJump();
+		// 			}
+		// 	        else
+		// 			{
+		// 				numJumps = 0;
+		// 				timeSinceInAir = 0;
+		// 			}
+		// 		}
+		// 	}
+		// }
 
 		if ( Input.Pressed( InputButton.Drop ) )
 		{
@@ -243,7 +324,6 @@ partial class DeathmatchPlayer : Player
 		Sound.FromScreen( "hitsound" )
 			.SetPitch( 1 + healthinv * 1 );
 
-		HitIndicator.Current?.OnHit( pos, amount );
 	}
 
 	[ClientRpc]
@@ -253,4 +333,54 @@ partial class DeathmatchPlayer : Player
 
 		DamageIndicator.Current?.OnHit( pos );
 	}
+
+    // public virtual void DoubleJump()
+    // {
+    //     float flGroundFactor = 1.25f;
+
+    //     float flMul = 268.3281572999747f * 1.2f;
+
+    //     Vector3 startx = new Vector3(); //LocalVelocity.x;
+    //     Vector3 starty = new Vector3(); //LocalVelocity.y;
+
+    //     if (Input.Down(InputButton.Left))
+    //     {
+    //         //starty = LocalVelocity.y * .25f;
+    //         starty = Rotation.Left;
+    //     }
+    //     if (Input.Down(InputButton.Right))
+    //     {
+    //         //starty = LocalVelocity.y * 1.25f;
+    //         starty = Rotation.Right;
+    //     }
+    //     if (Input.Down(InputButton.Back))
+    //     {
+    //         //startx = LocalVelocity.x * 1.25f;
+    //         startx = Rotation.Backward;
+    //     }
+    //     if (Input.Down(InputButton.Forward))
+    //     {
+    //         //startx = LocalVelocity.x * .25f;
+    //         startx = Rotation.Forward;
+            
+    //     }
+
+    //     //Log.Info("Global: " + EyeRot);
+    //     //Log.Info("Local: " + EyeRotLocal);
+
+    //     //Velocity = Velocity.AddClamped((startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor), 500.0f);
+
+    //     Velocity = (startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor);
+
+    //     Velocity -= new Vector3(0, 0, Pawn.Gravity) * Time.Delta;
+
+    //     //Log.Info("Local: " + LocalVelocity.x + " " + LocalVelocity.y + " " + LocalVelocity.z);
+    //     //Log.Info("Global: " + Pawn.Velocity.x + " " + Pawn.Velocity.y + " " + Pawn.Velocity.z);
+
+    //     Pawn.AirMove();
+
+    //     Pawn.AddEvent("jump");
+
+    //     numJumps++;
+    // }
 }
