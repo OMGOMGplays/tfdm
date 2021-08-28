@@ -11,7 +11,7 @@ partial class DeathmatchPlayer : Player
 
 	public float DefaultSpeed {get; set;}
 
-	float Randomize = Rand.Float(1, 9);
+	float Randomize = Rand.Float(1, 2);
     private int numJumps;
 
 	public bool SupressPickupNotices { get; private set; }
@@ -50,15 +50,6 @@ partial class DeathmatchPlayer : Player
 			DefaultSpeed = 230.0f;
 		}
 
-		if (Randomize > 2) 
-		{
-			SetModel("models/scout/scout.vmdl");
-			Inventory.Add(new Scattergun(), true);
-			Inventory.Add(new ScoutPistol());
-			Inventory.Add(new Bat());
-			DefaultSpeed = 400.0f;
-		}
-
 		numJumps = 0;
 
 		Controller = new WalkController();
@@ -79,7 +70,7 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.Buckshot, 20);
 		}
 
-		if (Randomize == 1 || Randomize > 2) 
+		if (Randomize == 1) 
 		{
 			GiveAmmo(AmmoType.Pistol, 36);
 			GiveAmmo(AmmoType.Buckshot, 32);
@@ -94,11 +85,6 @@ partial class DeathmatchPlayer : Player
 		if (Randomize == 2) 
 		{
 			Health = 300;
-		}
-
-		if (Randomize > 2) 
-		{
-			Health = 125;
 		}
 
 		base.Respawn();
@@ -121,7 +107,7 @@ partial class DeathmatchPlayer : Player
 			PlaySound("heavy_painsevere03");
 		}
 
-		if (Randomize == 1 || Randomize > 2) 
+		if (Randomize == 1) 
 		{
 			PlaySound("scout_painsevere03");
 		}
@@ -164,7 +150,7 @@ partial class DeathmatchPlayer : Player
 			}
 		}
 
-		if (Randomize == 1 || Randomize > 2) 
+		if (Randomize == 1) 
 		{
 			if (GroundEntity == null)
 			{
