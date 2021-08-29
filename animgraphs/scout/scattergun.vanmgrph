@@ -67,7 +67,17 @@
 	m_pTagManager = 
 	{
 		_class = "CAnimTagManager"
-		m_tags = [  ]
+		m_tags = 
+		[
+			{
+				_class = "CStringAnimTag"
+				m_name = "In Reload"
+				m_tagID = 
+				{
+					m_id = 981937903
+				}
+			},
+		]
 	}
 	m_pMovementManager = 
 	{
@@ -109,7 +119,7 @@
 	}
 	m_previewModels = 
 	[
-		"models/weapons/scoutwpns/scattergun.vmdl",
+		"models/weapons/scoutwpns/v_scattergun.vmdl",
 	]
 	m_nodes = 
 	[
@@ -351,6 +361,15 @@
 											m_nType = 1
 											m_data = true
 										}
+									},
+									{
+										_class = "CTagCondition"
+										m_comparisonOp = 0
+										m_tagID = 
+										{
+											m_id = 981937903
+										}
+										m_comparisonValue = false
 									},
 								]
 								m_blendDuration = 0.2
@@ -632,8 +651,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 981937903
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Reload"
 						m_childNodeID = 
 						{
@@ -723,8 +747,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 981937903
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Reload"
 						m_childNodeID = 
 						{

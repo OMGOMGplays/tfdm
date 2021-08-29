@@ -8,6 +8,8 @@ partial class Scattergun : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/scoutwpns/v_scattergun.vmdl";
 
+	float ChickenRandomizer = Rand.Float(1, 1000); 
+
 	public override float PrimaryRate => 1.5f;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
 	public override int ClipSize => 6;
@@ -38,7 +40,15 @@ partial class Scattergun : BaseDmWeapon
 
 		(Owner as AnimEntity).SetAnimBool( "b_attack", true );
 
-		PlaySound("scattergunplaceholder");
+		if (ChickenRandomizer < 1000 || ChickenRandomizer == 1) 
+		{
+			PlaySound("scatter_gun_shoot");
+		}
+
+		if (ChickenRandomizer == 1000)
+		{
+			PlaySound("chicken");
+		}
 
 		//
 		// Tell the clients to play the shoot effects
@@ -92,7 +102,7 @@ partial class Scattergun : BaseDmWeapon
 			if ( AmmoClip < ClipSize )
 			{
 				Reload();
-				PlaySound("scattergunplaceholder");
+				PlaySound("scatter_gun_reload");
 				Particles.Create( "particles/pistol_ejectbrass.vpcf", EffectEntity, "ejection_point" );
 			}
 			else

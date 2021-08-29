@@ -1,0 +1,4 @@
+importfilelist
+{
+	"file"	"models/weapons/c_models/c_shotgun/c_shotgun_is_unused.vmt"
+}

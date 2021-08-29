@@ -35,8 +35,8 @@ partial class DeathmatchPlayer : Player
 		if (Randomize == 1) 
 		{
 			SetModel( "models/scout/scout.vmdl" );
-			Inventory.Add(new Scattergun());
-			Inventory.Add(new ScoutPistol(), true);
+			Inventory.Add(new Scattergun(), true);
+			Inventory.Add(new ScoutPistol());
 			Inventory.Add(new Bat());
 			DefaultSpeed = 400.0f;
 		}
@@ -48,6 +48,24 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new Shotgun());
 			Inventory.Add(new Fists());
 			DefaultSpeed = 230.0f;
+		}
+
+		if (Randomize >= 1.5f) 
+		{
+			SetModel("models/hvwpns/hvywpns.vmdl");
+			Inventory.Add(new Minigun(), true);
+			Inventory.Add(new Shotgun());
+			Inventory.Add(new Fists());
+			DefaultSpeed = 230.0f;
+		}
+
+		if (Randomize < 1.5f) 
+		{
+			SetModel( "models/scout/scout.vmdl" );
+			Inventory.Add(new Scattergun(), true);
+			Inventory.Add(new ScoutPistol());
+			Inventory.Add(new Bat());
+			DefaultSpeed = 400.0f;
 		}
 
 		numJumps = 0;
@@ -76,6 +94,17 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.Buckshot, 32);
 		}
 
+		if (Randomize >= 1.5f) 
+		{
+			GiveAmmo(AmmoType.Buckshot, 20);
+		}
+
+		if (Randomize < 1.5f) 
+		{
+			GiveAmmo(AmmoType.Pistol, 36);
+			GiveAmmo(AmmoType.Buckshot, 32);
+		}
+
 		SupressPickupNotices = false;
 		if (Randomize == 1) 
 		{
@@ -85,6 +114,16 @@ partial class DeathmatchPlayer : Player
 		if (Randomize == 2) 
 		{
 			Health = 300;
+		}
+
+		if (Randomize >= 1.5f) 
+		{
+			Health = 300;
+		}
+
+		if (Randomize < 1.5f) 
+		{
+			Health = 125;
 		}
 
 		base.Respawn();
@@ -102,12 +141,22 @@ partial class DeathmatchPlayer : Player
 		Controller = null;
 		Camera = new SpectateRagdollCamera();
 
-		if (Randomize == 2) 
+		if (Randomize == 2)
 		{
 			PlaySound("heavy_painsevere03");
 		}
 
 		if (Randomize == 1) 
+		{
+			PlaySound("scout_painsevere03");
+		}
+
+		if (Randomize >= 1.5f) 
+		{
+			PlaySound("heavy_painsevere03");
+		}
+
+		if (Randomize < 1.5f) 
 		{
 			PlaySound("scout_painsevere03");
 		}
@@ -150,7 +199,7 @@ partial class DeathmatchPlayer : Player
 			}
 		}
 
-		if (Randomize == 1) 
+		if (Randomize == 1 || Randomize < 1.5f) 
 		{
 			if (GroundEntity == null)
 			{

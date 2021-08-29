@@ -6,6 +6,9 @@ using System;
 partial class Bat : BaseDmWeapon 
 {
     public override string ViewModelPath => "models/weapons/scoutwpns/v_bat.vmdl";
+
+	float ChickenRandomizer = Rand.Float(1, 1000); 
+
     public override float PrimaryRate => 2;
 	public override int Bucket => 2;
 	public override AmmoType AmmoType => AmmoType.Bat;
@@ -78,7 +81,15 @@ partial class Bat : BaseDmWeapon
 
         (Owner as AnimEntity).SetAnimBool("b_attack", true);
 
-		PlaySound("scattergunplaceholder");
+		if (ChickenRandomizer < 1000 || ChickenRandomizer == 1) 
+		{
+			PlaySound("bat_draw_swoosh1");
+		}
+
+		if (ChickenRandomizer == 1000)
+		{
+			PlaySound("chicken");
+		}
 
 		ViewModelEntity?.SetAnimBool( "attack", true );
 	}
@@ -95,7 +106,15 @@ partial class Bat : BaseDmWeapon
 
         (Owner as AnimEntity).SetAnimBool("b_attack", true);
 
-		PlaySound("scattergunplaceholder");
+		if (ChickenRandomizer < 1000 || ChickenRandomizer == 1) 
+		{
+			PlaySound("bat_hit");
+		}
+
+		if (ChickenRandomizer == 1000)
+		{
+			PlaySound("chicken");
+		}
 
 		ViewModelEntity?.SetAnimBool( "attack", true );
 	}

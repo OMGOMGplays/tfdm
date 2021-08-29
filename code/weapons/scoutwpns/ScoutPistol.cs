@@ -8,6 +8,8 @@ partial class ScoutPistol : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/scoutwpns/v_pistol.vmdl";
 
+	float ChickenRandomizer = Rand.Float(1, 1000); 
+
 	public override float PrimaryRate => 7.5f;
 	public override AmmoType AmmoType => AmmoType.Pistol;
 	public override int ClipSize => 12;
@@ -36,8 +38,16 @@ partial class ScoutPistol : BaseDmWeapon
 
 		(Owner as AnimEntity).SetAnimBool( "b_attack", true );
 
-		PlaySound("scattergunplaceholder");
+		if (ChickenRandomizer < 1000 || ChickenRandomizer == 1) 
+		{
+			PlaySound("pistol_shoot");
+		}
 
+		if (ChickenRandomizer == 1000)
+		{
+			PlaySound("chicken");
+		}
+		
 		//
 		// Tell the clients to play the shoot effects
 		//

@@ -126,9 +126,9 @@ ammo
 		}
 	}
 }
-.tfdm_pistol .icon
+.tfdm_scoutpistol .icon
 {
-	background-image: url( /ui/weapons/dm_pistol.png );
+	background-image: url( /ui/weapons/w_pistol_large.png );
 }
 
 .tfdm_shotgun .icon
@@ -148,5 +148,10 @@ ammo
 
 .tfdm_bat .icon 
 {
-	background-image: url(/ui/weapons/w_minigun_large.png);
+	background-image: url(/ui/weapons/w_bat_large.png);
+}
+
+.tfdm_scattergun .icon 
+{
+	background-image: url(/ui/weapons/w_scattergun_large.png);
 }
