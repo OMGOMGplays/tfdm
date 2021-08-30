@@ -9,10 +9,24 @@ partial class DeathmatchPlayer : Player
 	private TimeSince timeSinceDropped;
 	private TimeSince timeSinceInAir;
 
-	public float DefaultSpeed {get; set;}
+	[ServerCmd( "class_scout" )]
+    public static void Class_Scout()
+    {
+		Scout = true;
+		Heavy = false;
+    }
 
-	float Randomize = Rand.Float(1, 2);
-    private int numJumps;
+	[ServerCmd( "class_heavy" )]
+    public static void Class_Heavy()
+    {
+		Scout = false;
+		Heavy = true;
+    }
+
+	private int numberOfJumps;
+
+	public static bool Scout = false;
+	public static bool Heavy = true;
 
 	public bool SupressPickupNotices { get; private set; }
 
@@ -31,44 +45,31 @@ partial class DeathmatchPlayer : Player
 
 	public override void Respawn()
 	{
-		
-		if (Randomize == 1) 
+		numberOfJumps = 0;
+
+		if (Scout == true) 
 		{
-			SetModel( "models/scout/scout.vmdl" );
 			Inventory.Add(new Scattergun(), true);
 			Inventory.Add(new ScoutPistol());
 			Inventory.Add(new Bat());
-			DefaultSpeed = 400.0f;
 		}
 
-		if (Randomize == 2) 
-		{
-			SetModel("models/hvwpns/hvywpns.vmdl");
-			Inventory.Add(new Minigun(), true);
-			Inventory.Add(new Shotgun());
-			Inventory.Add(new Fists());
-			DefaultSpeed = 230.0f;
-		}
-
-		if (Randomize >= 1.5f) 
-		{
-			SetModel("models/hvwpns/hvywpns.vmdl");
-			Inventory.Add(new Minigun(), true);
-			Inventory.Add(new Shotgun());
-			Inventory.Add(new Fists());
-			DefaultSpeed = 230.0f;
-		}
-
-		if (Randomize < 1.5f) 
+		if (Scout == true) 
 		{
 			SetModel( "models/scout/scout.vmdl" );
-			Inventory.Add(new Scattergun(), true);
-			Inventory.Add(new ScoutPistol());
-			Inventory.Add(new Bat());
-			DefaultSpeed = 400.0f;
 		}
 
-		numJumps = 0;
+		if (Heavy == true) 
+		{
+			SetModel("models/hvwpns/hvywpns.vmdl");
+		}
+
+		if (Heavy == true) 
+		{
+			Inventory.Add(new Minigun(), true);
+			Inventory.Add(new Shotgun());
+			Inventory.Add(new Fists());			
+		}
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -83,48 +84,20 @@ partial class DeathmatchPlayer : Player
 
 		SupressPickupNotices = true;
 
-		if (Randomize == 2) 
+		if (Heavy == true) 
 		{
 			GiveAmmo(AmmoType.Buckshot, 20);
 		}
 
-		if (Randomize == 1) 
-		{
-			GiveAmmo(AmmoType.Pistol, 36);
-			GiveAmmo(AmmoType.Buckshot, 32);
-		}
-
-		if (Randomize >= 1.5f) 
-		{
-			GiveAmmo(AmmoType.Buckshot, 20);
-		}
-
-		if (Randomize < 1.5f) 
+		if (Scout == true) 
 		{
 			GiveAmmo(AmmoType.Pistol, 36);
 			GiveAmmo(AmmoType.Buckshot, 32);
 		}
 
 		SupressPickupNotices = false;
-		if (Randomize == 1) 
-		{
-			Health = 125;
-		}
 
-		if (Randomize == 2) 
-		{
-			Health = 300;
-		}
-
-		if (Randomize >= 1.5f) 
-		{
-			Health = 300;
-		}
-
-		if (Randomize < 1.5f) 
-		{
-			Health = 125;
-		}
+		Health = 100;
 
 		base.Respawn();
 	}
@@ -141,29 +114,19 @@ partial class DeathmatchPlayer : Player
 		Controller = null;
 		Camera = new SpectateRagdollCamera();
 
-		if (Randomize == 2)
+		if (Heavy == true)
 		{
 			PlaySound("heavy_painsevere03");
 		}
 
-		if (Randomize == 1) 
-		{
-			PlaySound("scout_painsevere03");
-		}
-
-		if (Randomize >= 1.5f) 
-		{
-			PlaySound("heavy_painsevere03");
-		}
-
-		if (Randomize < 1.5f) 
+		if (Scout == true) 
 		{
 			PlaySound("scout_painsevere03");
 		}
 
 		EnableAllCollisions = false;
 		EnableDrawing = false;
-        numJumps = 0;		
+        numberOfJumps = 0;		
 	}
 
 
@@ -199,19 +162,19 @@ partial class DeathmatchPlayer : Player
 			}
 		}
 
-		if (Randomize == 1 || Randomize < 1.5f) 
+		if (Scout == true) 
 		{
 			if (GroundEntity == null)
 			{
 				if (timeSinceInAir > 0.1f && Input.Pressed(InputButton.Jump))
 				{
-					if (numJumps < 2)
+					if (numberOfJumps < 2)
 					{
 						DoubleJump();
 					}
-			        else if (numJumps >= 2)
+			        else if (numberOfJumps >= 2)
 					{
-						numJumps = 0;
+						numberOfJumps = 0;
 						timeSinceInAir = 0;
 					}
 				}
@@ -275,7 +238,7 @@ partial class DeathmatchPlayer : Player
 
 		var angleDiff = Rotation.Difference( lastCameraRot, setup.Rotation );
 		var angleDiffDegrees = angleDiff.Angle();
-		var allowance = 20.0f;
+		var allowance = 5.0f;
 
 		if ( angleDiffDegrees > allowance )
 		{
@@ -317,7 +280,7 @@ partial class DeathmatchPlayer : Player
 		setup.Position += left * MathF.Sin( walkBob * 0.6f ) * speed * 1;
 
 		// Camera lean
-		lean = lean.LerpTo( Velocity.Dot( setup.Rotation.Right ) * 0.03f, Time.Delta * 15.0f );
+		lean = lean.LerpTo( Velocity.Dot( setup.Rotation.Right ) * 0.01f, Time.Delta * 15.0f );
 
 		var appliedLean = lean;
 		appliedLean += MathF.Sin( walkBob ) * speed * 0.2f;
@@ -424,6 +387,6 @@ partial class DeathmatchPlayer : Player
 
         // Pawn.AddEvent("jump");
 
-		numJumps++;
+		numberOfJumps++;
     }
 }
