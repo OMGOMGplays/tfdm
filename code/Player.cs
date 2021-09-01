@@ -15,24 +15,28 @@ partial class DeathmatchPlayer : Player
 		var caller = ConsoleSystem.Caller.Pawn;
 
 		if (caller == null) return;
-
-		if (Class == "Scout" || Class == "scout") 
+		else 
 		{
-			Scout = true;
-			Heavy = false;
+			if (Class == "Scout" || Class == "scout") 
+			{
+				Scout = true;
+				Heavy = false;
 
-			caller.Health = 125;
-		}
+				caller.Health = 125;
+			}
 
-		if (Class == "Heavy" || Class == "heavy") 
-		{
-			Scout = false;
-			Heavy = true;
+			if (Class == "Heavy" || Class == "heavy") 
+			{
+				Scout = false;
+				Heavy = true;
 
-			caller.Health = 300;
+				caller.Health = 300;
+			}
 		}
     }
-	
+
+	public float DamageSoundRandomizer = Rand.Float(1.0f, 1.5f);
+
 	private int numberOfJumps;
 
 	public static bool Scout = false;
@@ -323,6 +327,36 @@ partial class DeathmatchPlayer : Player
 			info.Damage *= 2.0f;
 		}
 
+		if (DamageSoundRandomizer <= 1.25f && Heavy == true) 
+		{
+			PlaySound("heavy_painsharp02");
+		}
+
+		if (DamageSoundRandomizer > 1.25f && Heavy == true) 
+		{
+			PlaySound("heavy_painsharp03");
+		}
+
+		if (DamageSoundRandomizer == 1.5f && Heavy == true) 
+		{
+			PlaySound("heavy_painsharp05");
+		}
+
+		if (DamageSoundRandomizer <= 1.25f && Scout == true) 
+		{
+			PlaySound("scout_painsharp01");
+		}
+
+		if (DamageSoundRandomizer < 1.25f && Scout == true) 
+		{
+			PlaySound("scout_painsharp03");
+		}
+
+		if (DamageSoundRandomizer == 1.5f && Scout == true ) 
+		{
+			PlaySound("scout_painsharp06");
+		}
+
 		base.TakeDamage( info );
 
 		if ( info.Attacker is DeathmatchPlayer attacker && attacker != this )
@@ -397,6 +431,6 @@ partial class DeathmatchPlayer : Player
 
         // Pawn.AddEvent("jump");
 
-		numberOfJumps++;
+		numberOfJumps = 2;
     }
 }
