@@ -18,7 +18,7 @@ partial class DeathmatchPlayer : Player
 		Heavy = false;
 	}
 	
-	if (Class == "Heavy" || Class == "heavy) 
+	if (Class == "Heavy" || Class == "heavy") 
 	{
 		Heavy = true;
 		Scout = false;
