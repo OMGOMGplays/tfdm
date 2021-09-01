@@ -9,18 +9,24 @@ partial class DeathmatchPlayer : Player
 	private TimeSince timeSinceDropped;
 	private TimeSince timeSinceInAir;
 
-	[ServerCmd( "class_scout" )]
-    public static void Class_Scout()
+	[ServerCmd( "changeclass" )]
+    public static void ChangeClass(string Class)
     {
+	if (Class == "Scout" || Class == "scout") 
+	{
 		Scout = true;
 		Heavy = false;
-    }
-
-	[ServerCmd( "class_heavy" )]
-    public static void Class_Heavy()
-    {
-		Scout = false;
+	}
+	
+	if (Class == "Heavy" || Class == "heavy) 
+	{
 		Heavy = true;
+		Scout = false;
+	}
+	
+	var caller = ConsoleSystem.Caller.Pawn;
+	
+	if (caller == null) return;
     }
 
 	private int numberOfJumps;
