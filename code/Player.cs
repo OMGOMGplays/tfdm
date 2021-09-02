@@ -186,12 +186,13 @@ partial class DeathmatchPlayer : Player
 					{
 						DoubleJump();
 					}
-			        else if (numberOfJumps >= 2)
-					{
-						numberOfJumps = 0;
-						timeSinceInAir = 0;
-					}
 				}
+			}
+			
+			else
+			{
+				numberOfJumps = 0;
+				timeSinceInAir = 0;
 			}
 		}
 
