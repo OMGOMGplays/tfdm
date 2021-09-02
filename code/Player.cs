@@ -195,21 +195,6 @@ partial class DeathmatchPlayer : Player
 			}
 		}
 
-		if ( Input.Pressed( InputButton.Drop ) )
-		{
-			var dropped = Inventory.DropActive();
-			if ( dropped != null )
-			{
-				if ( dropped.PhysicsGroup != null )
-				{
-					dropped.PhysicsGroup.Velocity = Velocity + (EyeRot.Forward + EyeRot.Up) * 300;
-				}
-
-				timeSinceDropped = 0;
-				SwitchToBestWeapon();
-			}
-		}
-
 		SimulateActiveChild( cl, ActiveChild );
 
 		//
