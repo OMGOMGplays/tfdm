@@ -1254,28 +1254,6 @@
 		{
 			key = 
 			{
-				m_id = 512369721
-			}
-			value = 
-			{
-				_class = "CSequenceAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ -311.0, 648.0 ]
-				m_nNodeID = 
-				{
-					m_id = 512369721
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_tagSpans = [  ]
-				m_sequenceName = "jumpland_MELEE"
-				m_playbackSpeed = 1.0
-				m_bLoop = false
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 514239371
 			}
 			value = 
@@ -5898,38 +5876,6 @@
 		{
 			key = 
 			{
-				m_id = 744531204
-			}
-			value = 
-			{
-				_class = "CAddAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ -379.0, 573.0 ]
-				m_nNodeID = 
-				{
-					m_id = 744531204
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_baseChildID = 
-				{
-					m_id = 4294967295
-				}
-				m_additiveChildID = 
-				{
-					m_id = 822937099
-				}
-				m_timingBehavior = "UseChild2"
-				m_flTimingBlend = 0.5
-				m_footMotionTiming = "Child1"
-				m_bResetBase = false
-				m_bResetAdditive = true
-				m_bApplyChannelsSeparately = true
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 799424938
 			}
 			value = 
@@ -5980,26 +5926,6 @@
 					m_fMinSpeed = 10.0
 					m_fMaxTension = 1000.0
 				}
-			}
-		},
-		{
-			key = 
-			{
-				m_id = 822937099
-			}
-			value = 
-			{
-				_class = "CSingleFrameAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ -653.0, 598.0 ]
-				m_nNodeID = 
-				{
-					m_id = 822937099
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_sequenceName = "jumpland_MELEE_corrective_animation"
-				m_nFrameIndex = 0
 			}
 		},
 		{
@@ -7975,46 +7901,6 @@
 		{
 			key = 
 			{
-				m_id = 1196994643
-			}
-			value = 
-			{
-				_class = "CBoneMaskAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ 104.0, 401.0 ]
-				m_nNodeID = 
-				{
-					m_id = 1196994643
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_weightListName = "Only_Upperbody"
-				m_child1ID = 
-				{
-					m_id = 1505723500
-				}
-				m_child2ID = 
-				{
-					m_id = 207188166
-				}
-				m_blendSpace = "BlendSpace_Parent"
-				m_bUseBlendScale = false
-				m_blendValueSource = "Parameter"
-				m_blendParameter = 
-				{
-					m_id = 4294967295
-				}
-				m_timingBehavior = "UseChild1"
-				m_flTimingBlend = 0.5
-				m_flRootMotionBlend = 0.0
-				m_footMotionTiming = "Child1"
-				m_bResetChild1 = false
-				m_bResetChild2 = false
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 1208127362
 			}
 			value = 
@@ -9453,38 +9339,6 @@
 		{
 			key = 
 			{
-				m_id = 1505723500
-			}
-			value = 
-			{
-				_class = "CAddAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ -77.0, 560.0 ]
-				m_nNodeID = 
-				{
-					m_id = 1505723500
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_baseChildID = 
-				{
-					m_id = 744531204
-				}
-				m_additiveChildID = 
-				{
-					m_id = 512369721
-				}
-				m_timingBehavior = "UseChild2"
-				m_flTimingBlend = 0.5
-				m_footMotionTiming = "Child1"
-				m_bResetBase = true
-				m_bResetAdditive = true
-				m_bApplyChannelsSeparately = true
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 1505988824
 			}
 			value = 
@@ -9841,46 +9695,6 @@
 		{
 			key = 
 			{
-				m_id = 1807350975
-			}
-			value = 
-			{
-				_class = "CBoneMaskAnimNode"
-				m_sName = "Unnamed"
-				m_vecPosition = [ -54.0, 341.0 ]
-				m_nNodeID = 
-				{
-					m_id = 1807350975
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_weightListName = "Only_Upperbody"
-				m_child1ID = 
-				{
-					m_id = 4294967295
-				}
-				m_child2ID = 
-				{
-					m_id = 1398654178
-				}
-				m_blendSpace = "BlendSpace_Model"
-				m_bUseBlendScale = false
-				m_blendValueSource = "Parameter"
-				m_blendParameter = 
-				{
-					m_id = 4294967295
-				}
-				m_timingBehavior = "UseChild2"
-				m_flTimingBlend = 0.5
-				m_flRootMotionBlend = 0.0
-				m_footMotionTiming = "Child1"
-				m_bResetChild1 = true
-				m_bResetChild2 = true
-			}
-		},
-		{
-			key = 
-			{
 				m_id = 1822343280
 			}
 			value = 
@@ -9918,7 +9732,7 @@
 				m_sNote = ""
 				m_baseChildID = 
 				{
-					m_id = 4294967295
+					m_id = 1187851517
 				}
 				m_additiveChildID = 
 				{
@@ -10045,7 +9859,7 @@
 									m_id = 992563871
 								}
 								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -10079,7 +9893,7 @@
 									m_id = 1828799064
 								}
 								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -10201,7 +10015,7 @@
 								{
 									m_id = 549455824
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -10235,7 +10049,7 @@
 								{
 									m_id = 1828799064
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -10290,8 +10104,8 @@
 								{
 									m_id = 549455824
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_bReset = false
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -10324,7 +10138,7 @@
 								{
 									m_id = 992563871
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -10346,7 +10160,7 @@
 						m_name = "Melee Attack"
 						m_childNodeID = 
 						{
-							m_id = 1807350975
+							m_id = 1398654178
 						}
 						m_stateID = 
 						{
@@ -10553,7 +10367,7 @@
 						m_name = "Melee Land"
 						m_childNodeID = 
 						{
-							m_id = 1196994643
+							m_id = 4294967295
 						}
 						m_stateID = 
 						{
