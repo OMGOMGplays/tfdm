@@ -39,8 +39,8 @@ partial class DeathmatchPlayer : Player
 
 	private int numberOfJumps;
 
-	public static bool Scout = false;
-	public static bool Heavy = true;
+	public static bool Scout = true;
+	public static bool Heavy = false;
 
 	public bool SupressPickupNotices { get; private set; }
 
