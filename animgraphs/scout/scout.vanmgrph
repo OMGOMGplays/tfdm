@@ -228,6 +228,20 @@
 				m_fMaxValue = 1.0
 				m_bInterpolate = true
 			},
+			{
+				_class = "CBoolAnimParameter"
+				m_name = "b_noclip"
+				m_id = 
+				{
+					m_id = 1239035187
+				}
+				m_previewButton = "ANIMPARAM_BUTTON_NONE"
+				m_bNetwork = false
+				m_bUseMostRecentValue = false
+				m_bAutoReset = false
+				m_bPredicted = false
+				m_bDefaultValue = false
+			},
 		]
 	}
 	m_pTagManager = 
@@ -393,7 +407,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1168.0, -240.0 ]
+				m_vecPosition = [ -1167.0, -240.0 ]
 				m_nNodeID = 
 				{
 					m_id = 48724680
@@ -602,7 +616,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1090.0, 948.0 ]
+				m_vecPosition = [ -1136.0, 912.0 ]
 				m_nNodeID = 
 				{
 					m_id = 251400451
@@ -975,7 +989,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1088.0, 352.0 ]
+				m_vecPosition = [ -1136.0, 352.0 ]
 				m_nNodeID = 
 				{
 					m_id = 361963634
@@ -1077,7 +1091,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -720.0, 496.0 ]
+				m_vecPosition = [ -720.0, 480.0 ]
 				m_nNodeID = 
 				{
 					m_id = 433749732
@@ -1099,7 +1113,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1168.0, -352.0 ]
+				m_vecPosition = [ -1167.0, -336.0 ]
 				m_nNodeID = 
 				{
 					m_id = 441372276
@@ -1240,7 +1254,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -464.0, 608.0 ]
+				m_vecPosition = [ -464.0, 560.0 ]
 				m_nNodeID = 
 				{
 					m_id = 514035331
@@ -1761,8 +1775,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 109523071
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee"
 						m_childNodeID = 
 						{
@@ -1799,7 +1818,7 @@
 								{
 									m_id = 2111376441
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -1833,7 +1852,7 @@
 								{
 									m_id = 1468403223
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -1845,8 +1864,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 109523071
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee Attack"
 						m_childNodeID = 
 						{
@@ -1883,7 +1907,7 @@
 								{
 									m_id = 2111376441
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -1917,7 +1941,7 @@
 								{
 									m_id = 1628598864
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -1929,8 +1953,13 @@
 								m_bDisabled = false
 							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 109523071
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee Crouch Attack"
 						m_childNodeID = 
 						{
@@ -1940,7 +1969,7 @@
 						{
 							m_id = 1468403223
 						}
-						m_position = [ -176.0, 80.0 ]
+						m_position = [ -160.0, 80.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -1991,9 +2020,48 @@
 								m_bForceFootPlant = false
 								m_bDisabled = false
 							},
+							{
+								_class = "CAnimStateTransition"
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 1502345830
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = false
+										}
+									},
+								]
+								m_blendDuration = 0.2
+								m_destState = 
+								{
+									m_id = 2111376441
+								}
+								m_bReset = false
+								m_resetCycleOption = "Beginning"
+								m_flFixedCycleValue = 0.0
+								m_blendCurve = 
+								{
+									m_vControlPoint1 = [ 0.5, 0.0 ]
+									m_vControlPoint2 = [ 0.5, 1.0 ]
+								}
+								m_bForceFootPlant = false
+								m_bDisabled = false
+							},
 						]
-						m_tags = [  ]
-						m_tagBehaviors = [  ]
+						m_tags = 
+						[
+							{
+								m_id = 1645160971
+							},
+						]
+						m_tagBehaviors = [ 0 ]
 						m_name = "Melee Jump"
 						m_childNodeID = 
 						{
@@ -2060,7 +2128,7 @@
 						{
 							m_id = 174345413
 						}
-						m_position = [ -48.0, -352.0 ]
+						m_position = [ 64.0, -224.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -2136,7 +2204,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1072.0, 416.0 ]
+				m_vecPosition = [ -1120.0, 400.0 ]
 				m_nNodeID = 
 				{
 					m_id = 716760169
@@ -2407,7 +2475,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1091.0, 832.0 ]
+				m_vecPosition = [ -1136.0, 816.0 ]
 				m_nNodeID = 
 				{
 					m_id = 862072169
@@ -2461,7 +2529,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1296.0, -176.0 ]
+				m_vecPosition = [ -1344.0, -208.0 ]
 				m_nNodeID = 
 				{
 					m_id = 903793779
@@ -2483,7 +2551,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -720.0, 448.0 ]
+				m_vecPosition = [ -720.0, 432.0 ]
 				m_nNodeID = 
 				{
 					m_id = 927963229
@@ -2505,7 +2573,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1072.0, 288.0 ]
+				m_vecPosition = [ -1120.0, 304.0 ]
 				m_nNodeID = 
 				{
 					m_id = 931603031
@@ -2602,7 +2670,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1264.0, 448.0 ]
+				m_vecPosition = [ -1312.0, 432.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1001829964
@@ -2624,7 +2692,7 @@
 			{
 				_class = "CAddAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1120.0, -160.0 ]
+				m_vecPosition = [ -1168.0, -192.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1019313319
@@ -3095,7 +3163,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1296.0, -128.0 ]
+				m_vecPosition = [ -1344.0, -160.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1310465804
@@ -3139,7 +3207,7 @@
 			{
 				_class = "CAddAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1072.0, 464.0 ]
+				m_vecPosition = [ -1120.0, 448.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1366297736
@@ -3338,7 +3406,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1096.0, 779.0 ]
+				m_vecPosition = [ -1136.0, 768.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1519472530
@@ -3613,7 +3681,7 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -3636,7 +3704,7 @@
 						{
 							m_id = 1542622152
 						}
-						m_position = [ -272.0, -156.0 ]
+						m_position = [ -272.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -3774,7 +3842,7 @@
 						{
 							m_id = 1731775317
 						}
-						m_position = [ -279.0, 32.0 ]
+						m_position = [ -288.0, 32.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -3902,7 +3970,7 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -3925,7 +3993,7 @@
 						{
 							m_id = 210485700
 						}
-						m_position = [ -45.0, -160.0 ]
+						m_position = [ -48.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -3959,8 +4027,8 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_bReset = false
+								m_resetCycleOption = "InverseSourceCycle"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -4040,8 +4108,8 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_bReset = false
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -4063,7 +4131,7 @@
 						{
 							m_id = 2055914967
 						}
-						m_position = [ -42.0, 22.0 ]
+						m_position = [ -48.0, 32.0 ]
 						m_bIsStartState = true
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -4106,7 +4174,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -464.0, 560.0 ]
+				m_vecPosition = [ -464.0, 144.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1684097548
@@ -4452,7 +4520,7 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -4475,7 +4543,7 @@
 						{
 							m_id = 1542622152
 						}
-						m_position = [ -272.0, -156.0 ]
+						m_position = [ -272.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -4613,7 +4681,7 @@
 						{
 							m_id = 1731775317
 						}
-						m_position = [ -279.0, 32.0 ]
+						m_position = [ -272.0, 16.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -4741,7 +4809,7 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -4764,7 +4832,7 @@
 						{
 							m_id = 210485700
 						}
-						m_position = [ -45.0, -160.0 ]
+						m_position = [ -48.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -4798,7 +4866,7 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -4879,7 +4947,7 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -4902,7 +4970,7 @@
 						{
 							m_id = 2055914967
 						}
-						m_position = [ -42.0, 22.0 ]
+						m_position = [ -48.0, 16.0 ]
 						m_bIsStartState = true
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -5085,7 +5153,7 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -5108,7 +5176,7 @@
 						{
 							m_id = 1542622152
 						}
-						m_position = [ -272.0, -156.0 ]
+						m_position = [ -272.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -5246,7 +5314,7 @@
 						{
 							m_id = 1731775317
 						}
-						m_position = [ -279.0, 32.0 ]
+						m_position = [ -272.0, 16.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -5374,7 +5442,7 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -5397,7 +5465,7 @@
 						{
 							m_id = 210485700
 						}
-						m_position = [ -45.0, -160.0 ]
+						m_position = [ -48.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -5431,7 +5499,7 @@
 								{
 									m_id = 210485700
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -5512,7 +5580,7 @@
 								{
 									m_id = 1542622152
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -5535,7 +5603,7 @@
 						{
 							m_id = 2055914967
 						}
-						m_position = [ -42.0, 22.0 ]
+						m_position = [ -48.0, 16.0 ]
 						m_bIsStartState = true
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -5556,7 +5624,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1248.0, 496.0 ]
+				m_vecPosition = [ -1296.0, 480.0 ]
 				m_nNodeID = 
 				{
 					m_id = 1934731849
@@ -5997,7 +6065,7 @@
 								{
 									m_id = 1529982254
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6031,7 +6099,7 @@
 								{
 									m_id = 1862327238
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6120,7 +6188,7 @@
 								{
 									m_id = 1529982254
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6154,7 +6222,7 @@
 								{
 									m_id = 1549446948
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6250,7 +6318,7 @@
 								{
 									m_id = 326424518
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6284,7 +6352,7 @@
 								{
 									m_id = 841538665
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6318,41 +6386,7 @@
 								{
 									m_id = 1551783309
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
-								m_flFixedCycleValue = 0.0
-								m_blendCurve = 
-								{
-									m_vControlPoint1 = [ 0.5, 0.0 ]
-									m_vControlPoint2 = [ 0.5, 1.0 ]
-								}
-								m_bForceFootPlant = false
-								m_bDisabled = false
-							},
-							{
-								_class = "CAnimStateTransition"
-								m_conditions = 
-								[
-									{
-										_class = "CParameterAnimCondition"
-										m_comparisonOp = 0
-										m_paramID = 
-										{
-											m_id = 738641109
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 1
-											m_data = false
-										}
-									},
-								]
-								m_blendDuration = 0.2
-								m_destState = 
-								{
-									m_id = 1485176833
-								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6414,7 +6448,7 @@
 								{
 									m_id = 1514548656
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6448,7 +6482,7 @@
 								{
 									m_id = 1991641179
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6482,40 +6516,7 @@
 								{
 									m_id = 914748602
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
-								m_flFixedCycleValue = 0.0
-								m_blendCurve = 
-								{
-									m_vControlPoint1 = [ 0.5, 0.0 ]
-									m_vControlPoint2 = [ 0.5, 1.0 ]
-								}
-								m_bForceFootPlant = false
-								m_bDisabled = false
-							},
-							{
-								_class = "CAnimStateTransition"
-								m_conditions = 
-								[
-									{
-										_class = "CParameterAnimCondition"
-										m_comparisonOp = 0
-										m_paramID = 
-										{
-											m_id = 4294967295
-										}
-										m_comparisonValue = 
-										{
-											m_nType = 0
-										}
-									},
-								]
-								m_blendDuration = 0.2
-								m_destState = 
-								{
-									m_id = 1485176833
-								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6577,7 +6578,7 @@
 								{
 									m_id = 1991641179
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6611,7 +6612,7 @@
 								{
 									m_id = 1514548656
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6645,7 +6646,7 @@
 								{
 									m_id = 1551783309
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6665,19 +6666,19 @@
 										m_comparisonOp = 0
 										m_paramID = 
 										{
-											m_id = 738641109
+											m_id = 1981171996
 										}
 										m_comparisonValue = 
 										{
 											m_nType = 1
-											m_data = false
+											m_data = true
 										}
 									},
 								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
-									m_id = 1485176833
+									m_id = 1549446948
 								}
 								m_bReset = true
 								m_resetCycleOption = "Beginning"
@@ -6741,7 +6742,7 @@
 								{
 									m_id = 841538665
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6775,7 +6776,7 @@
 								{
 									m_id = 326424518
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6809,7 +6810,7 @@
 								{
 									m_id = 914748602
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -6829,18 +6830,19 @@
 										m_comparisonOp = 0
 										m_paramID = 
 										{
-											m_id = 4294967295
+											m_id = 1981171996
 										}
 										m_comparisonValue = 
 										{
-											m_nType = 0
+											m_nType = 1
+											m_data = true
 										}
 									},
 								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
-									m_id = 1485176833
+									m_id = 1862327238
 								}
 								m_bReset = true
 								m_resetCycleOption = "Beginning"
@@ -7061,8 +7063,8 @@
 								{
 									m_id = 1529982254
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_bReset = false
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -7101,7 +7103,7 @@
 								{
 									m_id = 1549446948
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -7156,8 +7158,8 @@
 								{
 									m_id = 1529982254
 								}
-								m_bReset = true
-								m_resetCycleOption = "Beginning"
+								m_bReset = false
+								m_resetCycleOption = "SameCycleAsSource"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
 								{
@@ -7196,7 +7198,7 @@
 								{
 									m_id = 1862327238
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -7281,7 +7283,7 @@
 						{
 							m_id = 1485176833
 						}
-						m_position = [ -64.0, -336.0 ]
+						m_position = [ 32.0, -224.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -7663,7 +7665,7 @@
 			{
 				_class = "CBlend2DAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1089.0, 888.0 ]
+				m_vecPosition = [ -1136.0, 864.0 ]
 				m_nNodeID = 
 				{
 					m_id = 2108324553
@@ -8054,7 +8056,7 @@
 								{
 									m_id = 1288580910
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8081,7 +8083,7 @@
 								{
 									m_id = 428510320
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8109,7 +8111,7 @@
 						{
 							m_id = 631146896
 						}
-						m_position = [ 112.0, 80.0 ]
+						m_position = [ 96.0, 80.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -8143,7 +8145,7 @@
 								{
 									m_id = 631146896
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8170,7 +8172,7 @@
 								{
 									m_id = 428510320
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8198,7 +8200,7 @@
 						{
 							m_id = 1288580910
 						}
-						m_position = [ -240.0, 80.0 ]
+						m_position = [ -256.0, 80.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -8225,7 +8227,7 @@
 								{
 									m_id = 428510320
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8259,7 +8261,7 @@
 								{
 									m_id = 280420050
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8314,7 +8316,7 @@
 								{
 									m_id = 428510320
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8348,7 +8350,7 @@
 								{
 									m_id = 349093367
 								}
-								m_bReset = true
+								m_bReset = false
 								m_resetCycleOption = "Beginning"
 								m_flFixedCycleValue = 0.0
 								m_blendCurve = 
@@ -8444,7 +8446,7 @@
 						{
 							m_id = 187685190
 						}
-						m_position = [ -192.0, -288.0 ]
+						m_position = [ -176.0, -288.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -8501,7 +8503,7 @@
 						{
 							m_id = 1437603568
 						}
-						m_position = [ -80.0, -416.0 ]
+						m_position = [ 32.0, -288.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
