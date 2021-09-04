@@ -116,7 +116,6 @@ partial class Scattergun : BaseDmWeapon
 	protected virtual void FinishReload()
 	{
 		ViewModelEntity?.SetAnimBool( "reload_finished", true );
-		PlaySound("scattergunplaceholder");
 	}
 
 	public override void SimulateAnimator( PawnAnimator anim )
