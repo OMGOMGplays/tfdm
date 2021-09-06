@@ -6,41 +6,65 @@ using System.Threading;
 
 partial class DeathmatchPlayer : Player
 {
-	private TimeSince timeSinceDropped;
 	private TimeSince timeSinceInAir;
+
+	// [Net, Predicted]
+	// public bool Class2 { get; set; }
 
 	[ServerCmd( "changeclass" )]
     public static void ChangeClass(string Class)
     {
-		var caller = ConsoleSystem.Caller.Pawn;
+		var caller = ConsoleSystem.Caller;
 
 		if (caller == null) return;
-		else 
+
+		// // caller.Class2 = true;
+
+		// Type t = typeof(caller);
+
+		// foreach (var p in t.GetProperties())
+		// {
+		// 	Log.Info(p.Name + " : " + p.GetType().ToString());
+		// }
+
+		// // Log.Info(Class2);
+
+		if (Class == "Scout" || Class == "scout") 
 		{
-			if (Class == "Scout" || Class == "scout") 
-			{
-				Scout = true;
-				Heavy = false;
+			Scout = true;
+			Heavy = false;
+			Demoman = false;
 
-				caller.Health = 125;
-			}
-
-			if (Class == "Heavy" || Class == "heavy") 
-			{
-				Scout = false;
-				Heavy = true;
-
-				caller.Health = 300;
-			}
+			Sandbox.UI.ChatBox.Say("You will respawn as Scout");
 		}
+
+		if (Class == "Heavy" || Class == "heavy") 
+		{
+			Scout = false;
+			Heavy = true;
+			Demoman = false;
+
+			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
+		}
+
+		// if (Class == "Demoman" || Class == "Demo" || Class == "demoman" || Class == "demo") 
+		// {
+		// 	Scout = false;
+		// 	Heavy = false;
+		// 	Demoman = true;
+
+		// 	Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
+		// }
     }
 
 	public float DamageSoundRandomizer = Rand.Float(1.0f, 1.5f);
 
 	private int numberOfJumps;
 
-	public static bool Scout = true;
-	public static bool Heavy = false;
+	static bool Scout = true;
+	static bool Heavy = false;
+	// static bool Demoman = false;
+
 
 	public bool SupressPickupNotices { get; private set; }
 
@@ -63,27 +87,30 @@ partial class DeathmatchPlayer : Player
 
 		if (Scout == true) 
 		{
+			SetModel( "models/scout/scout.vmdl" );
+
 			Inventory.Add(new Scattergun(), true);
 			Inventory.Add(new ScoutPistol());
 			Inventory.Add(new Bat());
 		}
 
-		if (Scout == true) 
-		{
-			SetModel( "models/scout/scout.vmdl" );
-		}
-
 		if (Heavy == true) 
 		{
 			SetModel("models/hvwpns/hvywpns.vmdl");
-		}
 
-		if (Heavy == true) 
-		{
 			Inventory.Add(new Minigun(), true);
 			Inventory.Add(new Shotgun());
-			Inventory.Add(new Fists());			
+			Inventory.Add(new Fists());	
 		}
+
+		// if (Demoman == true) 
+		// {
+		// 	SetModel("models/demo/demo.vmdl");
+
+		// 	Inventory.Add(new GrenadeLauncher(), true);
+		// 	Inventory.Add(new StickyLauncher());
+		//  Inventory.Add(new Bottle());
+		// }
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -109,7 +136,10 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.Buckshot, 32);
 		}
 
-		SupressPickupNotices = false;
+		// if (Demoman == true) 
+		// {
+		// 	GiveAmmo(AmmoType.PipeGrenade, 16);
+		// }
 
 		Health = 100;
 
@@ -222,8 +252,6 @@ partial class DeathmatchPlayer : Player
 
 	public override void StartTouch( Entity other )
 	{
-		if ( timeSinceDropped < 1 ) return;
-
 		base.StartTouch( other );
 	}
 
@@ -308,10 +336,15 @@ partial class DeathmatchPlayer : Player
 
 		// hack - hitbox 0 is head
 		// we should be able to get this from somewhere
-		if ( info.HitboxIndex == 0 )
-		{
-			info.Damage *= 2.0f;
-		}
+
+		// if ( info.HitboxIndex == 0 )
+		// {
+		// 	info.Damage *= 2.0f;
+		// }
+
+		// keeping as comment until sniper is added, then if he is selected: allow headshots, 
+		// makes it more like the original game.
+
 
 		if (DamageSoundRandomizer <= 1.25f && Heavy == true) 
 		{

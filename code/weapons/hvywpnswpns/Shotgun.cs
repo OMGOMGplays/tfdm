@@ -44,6 +44,11 @@ partial class Shotgun : BaseDmWeapon
 		//
 		ShootEffects();
 
+		if (AmmoClip == 0) 
+		{
+			Reload();
+		}
+
 		//
 		// Shoot the bullets
 		//
