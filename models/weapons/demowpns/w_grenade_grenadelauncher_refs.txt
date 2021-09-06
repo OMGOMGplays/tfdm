@@ -1,0 +1,5 @@
+importfilelist
+{
+	"file"	"w_grenade_red_is_unused.vmt"
+	"file"	"w_grenade_blue_is_unused.vmt"
+}

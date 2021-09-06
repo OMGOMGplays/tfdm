@@ -1,0 +1,3309 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "LookAtChains"
+						children = 
+						[
+							{
+								_class = "LookAtChain"
+								name = "AimChain"
+								lookat_chain = 
+								{
+									name = ""
+									bones = 
+									[
+										{
+											name = "bip_spine_2"
+											weight = 1.0
+										},
+										{
+											name = "bip_spine_1"
+											weight = 0.7
+										},
+										{
+											name = "bip_spine_0"
+											weight = 0.45
+										},
+										{
+											name = "bip_pelvis"
+											weight = 0.2
+										},
+									]
+								}
+							},
+							{
+								_class = "LookAtChain"
+								name = "LookChain"
+								lookat_chain = 
+								{
+									name = ""
+									bones = 
+									[
+										{
+											name = "bip_head"
+											weight = 0.6
+										},
+										{
+											name = "bip_neck"
+											weight = 0.35
+										},
+									]
+								}
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "demoman_head_red.vmat"
+								to = "materials/demo/demoman_head.vmat"
+							},
+							{
+								from = "demoman_red.vmat"
+								to = "materials/demo/demoman_red.vmat"
+							},
+							{
+								from = "eyeball_r.vmat"
+								to = "models/citizen/skin/citizen_eyes_advanced.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "forward_reference"
+						parent_bone = "bip_head"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 90.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/demo/demo_morphs_low.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Crouch_Walk"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkE_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkE_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkE_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkE_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkN_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkN_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkN_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkN_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkN_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkN_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNE_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNE_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNE_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNE_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNW_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNW_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNW_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNW_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkNW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkNW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkS_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkS_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkS_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkS_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkS_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkS_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSE_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSE_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSE_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSE_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSW_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSW_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSW_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSW_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkSW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkSW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkW_crouch_walk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkW_crouch_walk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkW_crouch_walk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkW_crouch_walk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_crouch_walkW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_crouch_walkW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Idle"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "crouch_MELEE"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/crouch_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "crouch_PRIMARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/crouch_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "crouch_SECONDARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/crouch_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "stand_MELEE"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/stand_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "stand_PRIMARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/stand_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "stand_SECONDARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/stand_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Run"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "a_runSW_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSW_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runW_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runW_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNW_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNW_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runN_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runN_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNE_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNE_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runE_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runE_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runSE_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSE_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runS_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runS_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runSW_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSW_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runW_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runW_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNW_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNW_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runN_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runN_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNE_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNE_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runE_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runE_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runSE_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSE_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runS_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runS_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runSW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNW_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNW_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runN_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runN_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runNE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runNE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runSE_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runSE_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_runS_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_runS_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Attack"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "AttackCrouch_SECONDARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/AttackCrouch_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "AttackStand_SECONDARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/AttackStand_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "AttackCrouch_PRIMARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/AttackCrouch_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "AttackStand_PRIMARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/AttackStand_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "armslayer_melee_swing"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/armslayer_melee_swing.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "armslayer_melee_Crouch_swing"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/armslayer_melee_Crouch_swing.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "bodylayer_Melee_Crouch_Swing"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/bodylayer_Melee_Crouch_Swing.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "bodylayer_Melee_Swing"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/bodylayer_Melee_Swing.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Reload"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "a_SECONDARY_reload_airwalk_end"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_SECONDARY_reload_airwalk_end.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_SECONDARY_reload_airwalk_loop"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_SECONDARY_reload_airwalk_loop.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_PRIMARY_reload_end"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_PRIMARY_reload_end.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_PRIMARY_reload_loop"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_PRIMARY_reload_loop.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Jump"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "a_jumpstart_MELEE"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_jumpstart_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_jumpstart_PRIMARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_jumpstart_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "a_jumpstart_SECONDARY"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/a_jumpstart_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "airwalk_MELEE"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/airwalk_MELEE.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "airwalk_PRIMARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/airwalk_PRIMARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "airwalk_SECONDARY"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "animations/demo/demo_animations_anims/airwalk_SECONDARY.smd"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								reverse = false
+							},
+						]
+					},
+				]
+				default_root_bone_name = ""
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "Only_Upperbody"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_spine_0"
+								weight = 0.32
+							},
+							{
+								bone = "bip_spine_1"
+								weight = 0.53
+							},
+							{
+								bone = "bip_spine_2"
+								weight = 0.74
+							},
+							{
+								bone = "bip_spine_3"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "PhysicJoints"
+						children = 
+						[
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_pelvis"
+								child_body = "bip_hip_L"
+								anchor_origin = [ 6.731913, 3.305538, -0.598939 ]
+								anchor_angles = [ 11.417686, 175.777344, 87.551743 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_hip_L"
+								child_body = "bip_knee_L"
+								anchor_origin = [ 19.139099, 0.000036, -0.000046 ]
+								anchor_angles = [ -0.000058, -89.999535, -108.149773 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_knee_L"
+								child_body = "bip_foot_L"
+								anchor_origin = [ 19.653927, -0.000113, -0.000046 ]
+								anchor_angles = [ -61.478554, -0.118963, -93.345535 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_pelvis"
+								child_body = "bip_hip_R"
+								anchor_origin = [ -6.73191, 3.305492, -0.598943 ]
+								anchor_angles = [ -78.32618, -7.964936, 101.942963 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_hip_R"
+								child_body = "bip_knee_R"
+								anchor_origin = [ 19.139185, 0.000053, -0.000009 ]
+								anchor_angles = [ 89.999962, 18.150146, 0.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_knee_R"
+								child_body = "bip_foot_R"
+								anchor_origin = [ 19.653923, -0.000005, 0.000077 ]
+								anchor_angles = [ 61.479156, -179.881332, 86.654251 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_pelvis"
+								child_body = "bip_spine_0"
+								anchor_origin = [ 0.0, -4.202526, -0.000014 ]
+								anchor_angles = [ -14.801484, -90.000008, -90.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_0"
+								child_body = "bip_spine_1"
+								anchor_origin = [ 0.0, -6.493103, 0.000017 ]
+								anchor_angles = [ 21.832977, -90.0, -90.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_1"
+								child_body = "bip_spine_2"
+								anchor_origin = [ 0.0, -5.857067, -0.000004 ]
+								anchor_angles = [ 11.318495, -90.000015, -90.000015 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_2"
+								child_body = "bip_spine_3"
+								anchor_origin = [ 0.0, -5.753975, 0.000006 ]
+								anchor_angles = [ 17.539736, -90.0, -90.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_3"
+								child_body = "bip_collar_L"
+								anchor_origin = [ 2.776879, -2.278679, -3.522594 ]
+								anchor_angles = [ -18.581871, 23.01573, 59.612896 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_collar_L"
+								child_body = "bip_upperArm_L"
+								anchor_origin = [ 0.000175, -8.334827, -0.000027 ]
+								anchor_angles = [ 17.263599, 126.09166, -66.233582 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_upperArm_L"
+								child_body = "bip_lowerArm_L"
+								anchor_origin = [ 13.552273, 0.000019, -0.00001 ]
+								anchor_angles = [ -0.000418, -90.0, -79.41716 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_lowerArm_L"
+								child_body = "bip_hand_L"
+								anchor_origin = [ 11.844383, 0.0, -0.000029 ]
+								anchor_angles = [ -0.000401, 0.000314, -89.999992 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_3"
+								child_body = "bip_collar_R"
+								anchor_origin = [ -2.77688, -2.278702, -3.522587 ]
+								anchor_angles = [ -18.581772, 156.984375, -59.610943 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_collar_R"
+								child_body = "bip_upperArm_R"
+								anchor_origin = [ -0.000198, 8.334747, 0.000053 ]
+								anchor_angles = [ -60.924236, 70.071945, -37.639889 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_upperArm_R"
+								child_body = "bip_lowerArm_R"
+								anchor_origin = [ 13.552338, -0.000088, -0.000011 ]
+								anchor_angles = [ -0.000109, -100.583298, -89.999542 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_lowerArm_R"
+								child_body = "bip_hand_R"
+								anchor_origin = [ 11.844414, 0.000019, -0.000019 ]
+								anchor_angles = [ -0.000025, -179.999161, -0.000329 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_spine_3"
+								child_body = "bip_neck"
+								anchor_origin = [ 0.0, -3.622719, 0.000042 ]
+								anchor_angles = [ -14.046194, -90.000008, -90.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+							{
+								_class = "PhysicsJointConical"
+								parent_body = "bip_neck"
+								child_body = "bip_head"
+								anchor_origin = [ 0.0, -3.348274, -0.000015 ]
+								anchor_angles = [ -14.443004, -90.000015, -90.0 ]
+								collision_enabled = false
+								friction = 0.1
+								enable_swing_limit = true
+								swing_limit = 30.0
+								swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+								enable_twist_limit = true
+								min_twist_angle = -15.0
+								max_twist_angle = 15.0
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Ragdoll"
+						children = 
+						[
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_upperArm_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.388082
+								point0 = [ 13.552326, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_hip_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.309689
+								point0 = [ 19.139124, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_collar_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.639814
+								center = [ 3.493826, -4.219857, 0.822558 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_hip_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.386467
+								point0 = [ 19.139187, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_hand_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 0.922262
+								point0 = [ 0.0, 0.0, 0.0 ]
+								point1 = [ -3.689049, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_pelvis"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.815661
+								point0 = [ 6.731913, 0.0, 0.0 ]
+								point1 = [ -8.530733, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_spine_2"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 4.209897
+								point0 = [ 8.412485, 0.0, 0.0 ]
+								point1 = [ -8.427104, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_foot_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 1.0
+								center = [ -0.000001, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_head"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 4.917182
+								center = [ -0.808691, -1.92011, -1.795999 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_upperArm_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.388095
+								point0 = [ 13.55238, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_knee_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.503729
+								point0 = [ 19.653954, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_hand_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.253019
+								point0 = [ 2.080833, 6.218467, -1.032328 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_neck"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.810926
+								center = [ 0.716485, -0.271803, -0.136294 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_foot_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 1.0
+								center = [ -0.000025, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_lowerArm_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.96111
+								point0 = [ 11.84444, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_lowerArm_L"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.961112
+								point0 = [ 11.844444, 0.0, 0.0 ]
+								point1 = [ -0.000004, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_spine_1"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 3.929254
+								point0 = [ 8.174987, 0.0, 0.0 ]
+								point1 = [ -7.542027, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_collar_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.643419
+								center = [ -4.283213, 2.853346, 1.111673 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_knee_R"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 2.919444
+								point0 = [ 19.653927, 0.0, 0.0 ]
+								point1 = [ 0.0, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeCapsule"
+								parent_bone = "bip_spine_3"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 4.275055
+								point0 = [ 8.593742, 0.0, 0.0 ]
+								point1 = [ -8.506479, 0.0, 0.0 ]
+							},
+							{
+								_class = "PhysicsShapeSphere"
+								parent_bone = "bip_spine_0"
+								surface_prop = "flesh"
+								collision_prop = "default"
+								radius = 5.705119
+								center = [ -0.000371, -1.12107, -0.457498 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "bip_spine_0"
+								parent_bone = "bip_spine_0"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 3
+								hitbox_mins = [ -12.096403, -12.694195, -11.546154 ]
+								hitbox_maxs = [ 12.096403, 5.748894, 7.24736 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_1"
+								parent_bone = "bip_spine_1"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 3
+								hitbox_mins = [ -12.217095, -11.611008, -11.497858 ]
+								hitbox_maxs = [ 12.217095, 6.612904, 6.747318 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_2"
+								parent_bone = "bip_spine_2"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 2
+								hitbox_mins = [ -12.705027, -8.082939, -11.963032 ]
+								hitbox_maxs = [ 13.160135, 6.987335, 7.091629 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_spine_3"
+								parent_bone = "bip_spine_3"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 2
+								hitbox_mins = [ -12.934551, -7.0867, -10.723732 ]
+								hitbox_maxs = [ 9.964737, 7.075577, 6.368557 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_collar_L"
+								parent_bone = "bip_collar_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -4.259377, -13.124633, -10.620293 ]
+								hitbox_maxs = [ 5.398689, 0.5, 6.980715 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_upperArm_L"
+								parent_bone = "bip_upperArm_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.5, -3.956841, -5.277733 ]
+								hitbox_maxs = [ 15.781315, 3.737442, 3.192312 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_lowerArm_L"
+								parent_bone = "bip_lowerArm_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -1.430222, -3.199615, -5.386415 ]
+								hitbox_maxs = [ 12.757555, 3.737423, 2.994504 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hand_L"
+								parent_bone = "bip_hand_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -3.91148, -7.144272, -3.437119 ]
+								hitbox_maxs = [ 1.930698, 0.5, 4.76981 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_0_L"
+								parent_bone = "bip_thumb_0_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -1.440765, -3.419109, -2.672392 ]
+								hitbox_maxs = [ 3.485348, 1.319338, 1.201036 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_1_L"
+								parent_bone = "bip_thumb_1_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -1.272177, -2.125824, -0.865772 ]
+								hitbox_maxs = [ 0.880825, 0.529289, 1.143497 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_0_L"
+								parent_bone = "bip_index_0_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.913092, -2.913147, -1.63979 ]
+								hitbox_maxs = [ 1.212924, 2.312256, 1.152821 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_1_L"
+								parent_bone = "bip_index_1_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.913098, -1.976192, -0.580565 ]
+								hitbox_maxs = [ 0.699821, 0.529064, 0.953799 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_0_L"
+								parent_bone = "bip_middle_0_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -1.24645, -3.777519, -0.918827 ]
+								hitbox_maxs = [ 0.967689, 0.517494, 1.238834 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_1_L"
+								parent_bone = "bip_middle_1_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.802134, -2.333443, -0.607563 ]
+								hitbox_maxs = [ 0.813454, 0.5, 0.874131 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_0_L"
+								parent_bone = "bip_ring_0_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -1.371741, -2.976746, -0.719753 ]
+								hitbox_maxs = [ 0.863791, 0.5, 1.432842 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_1_L"
+								parent_bone = "bip_ring_1_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.742126, -1.948154, -0.5 ]
+								hitbox_maxs = [ 0.696087, 0.5, 0.900862 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_0_L"
+								parent_bone = "bip_pinky_0_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.890581, -2.484684, -1.566021 ]
+								hitbox_maxs = [ 1.966169, 2.164185, 1.067251 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_1_L"
+								parent_bone = "bip_pinky_1_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 4
+								hitbox_mins = [ -0.527769, -1.54353, -0.522189 ]
+								hitbox_maxs = [ 0.616469, 0.5, 0.770484 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_collar_R"
+								parent_bone = "bip_collar_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -5.318207, -1.819724, -7.100127 ]
+								hitbox_maxs = [ 8.031471, 13.403907, 10.448842 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_upperArm_R"
+								parent_bone = "bip_upperArm_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -1.25853, -3.705029, -3.737408 ]
+								hitbox_maxs = [ 15.781391, 5.277643, 4.527349 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_lowerArm_R"
+								parent_bone = "bip_lowerArm_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.913925, -2.994533, -3.737404 ]
+								hitbox_maxs = [ 11.844454, 5.386391, 3.199635 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hand_R"
+								parent_bone = "bip_hand_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -1.930744, -0.5, -4.769957 ]
+								hitbox_maxs = [ 3.911465, 7.144123, 3.437025 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_0_R"
+								parent_bone = "bip_thumb_0_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -3.485346, -1.319338, -1.201008 ]
+								hitbox_maxs = [ 1.440784, 3.419106, 2.672386 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_thumb_1_R"
+								parent_bone = "bip_thumb_1_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.880796, -0.529293, -1.143499 ]
+								hitbox_maxs = [ 1.272219, 2.125801, 0.865768 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_0_R"
+								parent_bone = "bip_index_0_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -1.212903, -2.312317, -1.152798 ]
+								hitbox_maxs = [ 0.913118, 2.913082, 1.63982 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_index_1_R"
+								parent_bone = "bip_index_1_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.699808, -0.529095, -0.953738 ]
+								hitbox_maxs = [ 0.913116, 1.976162, 0.580638 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_0_R"
+								parent_bone = "bip_middle_0_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.967716, -0.517487, -1.238773 ]
+								hitbox_maxs = [ 1.24645, 3.777493, 0.918879 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_middle_1_R"
+								parent_bone = "bip_middle_1_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.813458, -0.5, -0.874145 ]
+								hitbox_maxs = [ 0.80213, 2.333431, 0.607536 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_0_R"
+								parent_bone = "bip_ring_0_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.863796, -0.5, -1.432831 ]
+								hitbox_maxs = [ 1.371736, 2.976707, 0.719755 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_ring_1_R"
+								parent_bone = "bip_ring_1_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.696088, -0.5, -0.900785 ]
+								hitbox_maxs = [ 0.742129, 1.948109, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_0_R"
+								parent_bone = "bip_pinky_0_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -1.966175, -2.164219, -1.067233 ]
+								hitbox_maxs = [ 0.890594, 2.48465, 1.566039 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_pinky_1_R"
+								parent_bone = "bip_pinky_1_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 5
+								hitbox_mins = [ -0.616469, -0.5, -0.770438 ]
+								hitbox_maxs = [ 0.527767, 1.543476, 0.522254 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_neck"
+								parent_bone = "bip_neck"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 1
+								hitbox_mins = [ -3.801848, -11.860985, -6.442535 ]
+								hitbox_maxs = [ 4.195676, 1.461243, 3.431536 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hip_L"
+								parent_bone = "bip_hip_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 6
+								hitbox_mins = [ -4.334885, -7.921103, -7.851484 ]
+								hitbox_maxs = [ 26.364929, 5.345018, 4.459572 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_knee_L"
+								parent_bone = "bip_knee_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 6
+								hitbox_mins = [ -4.298561, -4.385735, -6.319269 ]
+								hitbox_maxs = [ 23.782566, 5.344912, 4.423407 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_foot_L"
+								parent_bone = "bip_foot_L"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 6
+								hitbox_mins = [ -2.810988, -10.565664, -7.561643 ]
+								hitbox_maxs = [ 3.419821, 2.341508, 1.742961 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_hip_R"
+								parent_bone = "bip_hip_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 7
+								hitbox_mins = [ -1.172375, -4.459573, -5.344939 ]
+								hitbox_maxs = [ 26.364998, 7.85149, 7.921123 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_knee_R"
+								parent_bone = "bip_knee_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 7
+								hitbox_mins = [ -1.533384, -5.344929, -5.709768 ]
+								hitbox_maxs = [ 23.782522, 4.38571, 4.423444 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "bip_foot_R"
+								parent_bone = "bip_foot_R"
+								surface_property = "flesh"
+								translation_only = false
+								group_id = 7
+								hitbox_mins = [ -3.419825, -2.54384, -3.586275 ]
+								hitbox_maxs = [ 2.810981, 10.56565, 7.561649 ]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = "animgraphs/demo/demo.vanmgrph"
+	}
+}

@@ -2,27 +2,35 @@
 using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
+using System;
 using System.Threading.Tasks;
 
-public partial class KillFeedEntry : Panel
+namespace Deathmatch.UI
 {
-	public Label Left { get; internal set; }
-	public Label Right { get; internal set; }
-	public Panel Icon { get; internal set; }
-
-	public KillFeedEntry()
+	public partial class KillFeedEntry : Panel
 	{
-		Left = Add.Label( "", "left" );
-		Icon = Add.Panel( "icon" );
-		Right = Add.Label( "", "right" );
+		public Label Left { get; internal set; }
+		public Label Right { get; internal set; }
+		public Label Method { get; internal set; }
 
-		_ = RunAsync();
+		public RealTimeSince TimeSinceBorn = 0;
+
+		public KillFeedEntry()
+		{
+			Left = Add.Label( "", "left" );
+			Method = Add.Label( "", "method" );
+			Right = Add.Label( "", "right" );
+		}
+
+		public override void Tick() 
+		{
+			base.Tick();
+
+			if ( TimeSinceBorn > 6 ) 
+			{ 
+				Delete();
+			}
+		}
+
 	}
-
-	async Task RunAsync()
-	{
-		await Task.Delay( 4000 );
-		Delete();
-	}
-
 }

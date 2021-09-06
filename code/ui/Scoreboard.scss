@@ -3,12 +3,12 @@
 	position: absolute;
 	z-index: 100;
 	flex-direction: column;
-	font-family: Roboto;
+	font-family: tf2build;
 	font-size: 23px;
 	font-weight: 500;
 	color: white;
-	width: 100%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
@@ -49,12 +49,12 @@
 
 	.header
 	{
-		font-weight: 500;
-		border-bottom: 3px solid #fc0;
+		font-family: tf2build;
+		border-bottom: 3px solid rgb(255, 255, 255);
 		min-width: 30%;
 		margin-bottom: 10px;
 		padding-bottom: 5px;
-		color: #fc0;
+		color: rgb(255, 255, 255);
 		mix-blend-mode: lighten;
 	}
 
@@ -79,7 +79,7 @@
 
 			&.me
 			{
-				background-color: #00aa;
+				background-color: rgba(192, 192, 192, 0.667);
 			}
 		}
 	}

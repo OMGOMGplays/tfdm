@@ -3,8 +3,8 @@
 	position: absolute;
 	transform: translateX( -50% ) translateY( -0% );
 	mix-blend-mode: lighten;
-	width: 1px;
-	height: 1px;
+	width: 0.5px;
+	height: 0.5px;
 
 	.element
 	{
@@ -22,7 +22,7 @@
 
 	&.tfdm_minigun 
 	{
-		opacity: 0.5;
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0
@@ -40,7 +40,7 @@
 
 	&.tfdm_shotgun
 	{
-		opacity: 0.5;
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0
@@ -58,7 +58,7 @@
 
 	&.tfdm_fists 
 	{
-		opacity: 0.5;
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0
@@ -76,7 +76,7 @@
 
 	&.tfdm_bat 
 	{
-		opacity: 0.5;
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0
@@ -94,7 +94,7 @@
 
 	&.tfdm_scattergun
 	{
-		opacity: 0.5;
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0
@@ -112,7 +112,61 @@
 
 	&.tfdm_scoutpistol 
 	{
-		opacity: 0.5;
+		opacity: 1;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	&.tfdm_grenadelauncher
+	{
+		opacity: 1;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	&.tfdm_stickybomblauncher
+	{
+		opacity: 1;
+		transition: opacity 0.5s ease-in;
+
+		.el0
+		{
+			background-color: transparent;
+			background-image: url(/ui/hud_crosshair.png);
+			border-radius: 100px;
+			width: 49px;
+			height: 49px;
+			left: -20px;
+			top: -20px;
+			transition: all 0.3s ease-out;
+		}
+	}
+
+	&.tfdm_bottle
+	{
+		opacity: 1;
 		transition: opacity 0.5s ease-in;
 
 		.el0

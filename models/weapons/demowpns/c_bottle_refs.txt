@@ -1,0 +1,4 @@
+importfilelist
+{
+	"file"	"models/weapons/v_bottle/v_bottle_is_unused.vmt"
+}

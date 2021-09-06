@@ -18,9 +18,9 @@ public class Vitals : Panel
 		if ( player == null ) return;
 
 		Health.Text = $"{player.Health.CeilToInt()}";
-		Health.SetClass( "danger", player.Health < 75.0f );
-		Health.SetClass( "danger2", player.Health < 50.0f );
-		Health.SetClass( "danger3", player.Health < 25.0f );
+		Health.SetClass( "danger", player.Health <= 75.0f );
+		Health.SetClass( "danger2", player.Health <= 50.0f );
+		Health.SetClass( "danger3", player.Health <= 25.0f );
 		Health.SetClass( "dead", player.Health == 0.0f );		
 	}
 }

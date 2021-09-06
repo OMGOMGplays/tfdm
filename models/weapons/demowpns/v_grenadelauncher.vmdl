@@ -1,0 +1,667 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "BoneMarkupList"
+				bone_cull_type = "None"
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "bonemask_default"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "weapon_bone"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "weapon_bone"
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "weapon_bone_1"
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "weapon_bone_2"
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "procedural_chamber"
+												origin = [ 0.0, 0.0, 0.000001 ]
+												angles = [ -0.0, 0.0, 0.0 ]
+												do_not_discard = true
+											},
+										]
+										origin = [ 0.0, 5.609701, 3.790928 ]
+										angles = [ 0.0, 0.0, -0.0 ]
+										do_not_discard = true
+									},
+									{
+										_class = "Bone"
+										name = "weapon_bone_3"
+										origin = [ 0.0, 11.018908, 22.085588 ]
+										angles = [ 0.0, 0.0, -0.0 ]
+										do_not_discard = true
+									},
+									{
+										_class = "Bone"
+										name = "c_weapon_stattrack"
+										origin = [ 2.705062, 7.549326, 15.410252 ]
+										angles = [ -0.206543, -11.435676, -91.090347 ]
+										do_not_discard = true
+									},
+									{
+										_class = "Bone"
+										name = "weapon_bone_4"
+										origin = [ -0.000639, 16.725126, -10.374554 ]
+										angles = [ 0.0, 0.0, -0.36 ]
+										do_not_discard = true
+									},
+								]
+								origin = [ 0.0, -5.556518, 5.637804 ]
+								angles = [ -0.0, 0.0, 0.36 ]
+								do_not_discard = true
+							},
+						]
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ -0.0, 0.0, 0.0 ]
+						do_not_discard = true
+					},
+				]
+			},
+			{
+				_class = "LODGroupList"
+				children = 
+				[
+					{
+						_class = "LODGroup"
+						switch_threshold = 0.0
+						meshes = 
+						[
+							"c_grenadelauncher_bg_body_lod0",
+							"c_grenadelauncher_bg_reload_sm0_lod0",
+							"unnamed_1",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 11.0
+						meshes = 
+						[
+							"c_grenadelauncher_bg_body_lod1",
+							"c_grenadelauncher_bg_reload_sm0_lod1",
+							"unnamed_1",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 18.0
+						meshes = 
+						[
+							"c_grenadelauncher_bg_body_lod2",
+							"c_grenadelauncher_bg_reload_sm0_lod2",
+							"unnamed_1",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 29.0
+						meshes = 
+						[
+							"c_grenadelauncher_bg_body_lod3",
+							"c_grenadelauncher_bg_reload_sm0_lod3",
+							"unnamed_1",
+						]
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "MaterialGroup"
+						name = "1"
+						remaps = [  ]
+					},
+					{
+						_class = "MaterialGroup"
+						name = "2"
+						remaps = [  ]
+					},
+					{
+						_class = "MaterialGroup"
+						name = "3"
+						remaps = [  ]
+					},
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "demoman_hands.vmat"
+								to = "materials/demo/demoman_hands.vmat"
+							},
+							{
+								from = "demoman_red.vmat"
+								to = "materials/demo/demoman_red.vmat"
+							},
+							{
+								from = "models/weapons/c_models/c_grenadelauncher/c_grenadelauncher_is_unused.vmat"
+								to = "materials/weapons/demowpns/c_grenadelauncher.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsBodyMarkupList"
+				children = 
+				[
+					{
+						_class = "PhysicsBodyMarkup"
+						target_body = ""
+						mass_override = 1.0
+						inertia_scale = 1.0
+						linear_damping = 0.0
+						angular_damping = 0.0
+						use_mass_center_override = false
+						mass_center_override = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsHullFile"
+						name = "c_grenadelauncher_0_mesh"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						recenter_on_parent_bone = true
+						offset_origin = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 0.0, 0.0 ]
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/phys/c_grenadelauncher_phy.dmx"
+						import_scale = 1.0
+						faceMergeAngle = 10.0
+						maxHullVertices = 0
+						import_mode = "SingleHull"
+						optimization_algorithm = "QEM"
+						import_filter = 
+						{
+							exclude_by_default = true
+							exception_list = 
+							[
+								"c_grenadelauncher_0_mesh",
+							]
+						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "muzzle"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.231716, 28.86755 ]
+						relative_angles = [ -77.528542, -146.85141, -126.392075 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_0"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.204824, 27.471209 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_1"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.171147, 22.111471 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_2"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.137471, 16.751747 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_3"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.103793, 11.392017 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_4"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.070118, 6.032294 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "unusual_5"
+						parent_bone = "weapon_bone_1"
+						relative_origin = [ 0.0, 8.036441, 0.672567 ]
+						relative_angles = [ -89.639999, 89.997604, -89.997826 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "pedestal_0"
+						parent_bone = "weapon_bone"
+						relative_origin = [ 0.0, -2.098202, 7.494843 ]
+						relative_angles = [ -90.0, -90.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "icon_camera"
+						parent_bone = "weapon_bone"
+						relative_origin = [ 29.986479, 4.920827, 37.629875 ]
+						relative_angles = [ 34.339855, -176.142044, 92.178322 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "weapon_bone"
+								surface_property = "metal"
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.037064, -6.162195, -15.009619 ]
+								hitbox_maxs = [ 4.024609, 6.725492, 6.355609 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "weapon_bone_1"
+								surface_property = "metal"
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.593486, -1.684622, -10.374553 ]
+								hitbox_maxs = [ 5.586981, 16.725126, 27.502533 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "procedural_chamber"
+								surface_property = "metal"
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.307106, -5.284779, -3.133473 ]
+								hitbox_maxs = [ 5.300601, 5.337662, 4.567376 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "weapon_bone_3"
+								surface_property = "metal"
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.582678, -0.45876, -0.454973 ]
+								hitbox_maxs = [ 2.288988, 8.198594, 1.368289 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "weapon_bone_4"
+								surface_property = "metal"
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.404641, -1.405004, -2.801272 ]
+								hitbox_maxs = [ 1.404815, 1.405003, 3.038666 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_body_lod0"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod0.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_reload_sm0_lod0"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod0.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_body_lod1"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod1.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_reload_sm0_lod1"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod1.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_body_lod2"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod2.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_reload_sm0_lod2"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod2.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_body_lod3"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod3.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "c_grenadelauncher_bg_reload_sm0_lod3"
+						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod3.dmx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						filename = "models/weapons/demowpns/c_demo_arms.smd"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "g_draw"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_draw.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "g_fire"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_fire.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "g_idle"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_idle.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "g_reload_end"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_reload_end.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "g_reload_loop"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_reload_loop.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "g_reload_start"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "animations/wpns/demowpns/g_reload_start.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = "animgraphs/demo/c_grenadelauncher.vanmgrph"
+	}
+}

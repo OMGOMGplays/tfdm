@@ -49,11 +49,6 @@ partial class Scattergun : BaseDmWeapon
 		{
 			PlaySound("chicken");
 		}
-		
-		if (AmmoClip == 0) 
-		{
-			Reload();
-		}
 
 		//
 		// Tell the clients to play the shoot effects

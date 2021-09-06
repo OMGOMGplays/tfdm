@@ -47,14 +47,14 @@ partial class DeathmatchPlayer : Player
 			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
 		}
 
-		// if (Class == "Demoman" || Class == "Demo" || Class == "demoman" || Class == "demo") 
-		// {
-		// 	Scout = false;
-		// 	Heavy = false;
-		// 	Demoman = true;
+		if (Class == "Demoman" || Class == "Demo" || Class == "demoman" || Class == "demo") 
+		{
+			Scout = false;
+			Heavy = false;
+			Demoman = true;
 
-		// 	Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
-		// }
+			Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
+		}
     }
 
 	public float DamageSoundRandomizer = Rand.Float(1.0f, 1.5f);
@@ -63,7 +63,7 @@ partial class DeathmatchPlayer : Player
 
 	static bool Scout = true;
 	static bool Heavy = false;
-	// static bool Demoman = false;
+	static bool Demoman = false;
 
 
 	public bool SupressPickupNotices { get; private set; }
@@ -103,14 +103,14 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new Fists());	
 		}
 
-		// if (Demoman == true) 
-		// {
-		// 	SetModel("models/demo/demo.vmdl");
+		if (Demoman == true) 
+		{
+			SetModel("models/demo/demo.vmdl");
 
-		// 	Inventory.Add(new GrenadeLauncher(), true);
-		// 	Inventory.Add(new StickyLauncher());
-		//  Inventory.Add(new Bottle());
-		// }
+			Inventory.Add(new GrenadeLauncher(), true);
+			// Inventory.Add(new StickybombLauncher());
+			Inventory.Add(new Bottle());
+		}
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -136,10 +136,10 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.Buckshot, 32);
 		}
 
-		// if (Demoman == true) 
-		// {
-		// 	GiveAmmo(AmmoType.PipeGrenade, 16);
-		// }
+		if (Demoman == true) 
+		{
+			GiveAmmo(AmmoType.PipeGrenade, 16);
+		}
 
 		Health = 100;
 

@@ -1,28 +1,36 @@
 ﻿
 using Sandbox;
 using Sandbox.UI;
+using Sandbox.UI.Construct;
+using System;
+using System.Threading.Tasks;
 
-public partial class KillFeed : Sandbox.UI.KillFeed
+namespace Deathmatch.UI
 {
-	public KillFeed()
+	public partial class KillFeed : Panel
 	{
-		StyleSheet.Load( "/ui/KillFeed.scss" );
-	}
+		public static KillFeed Current;
 
-	public override Panel AddEntry( ulong lsteamid, string left, ulong rsteamid, string right, string method )
-	{
-		Log.Info( $"{left} killed {right} using {method}" );
+		public KillFeed()
+		{
+			Current = this;
 
-		var e = Current.AddChild<KillFeedEntry>();
+			StyleSheet.Load( "/ui/killfeed/KillFeed.scss" );
+		}
 
-		e.AddClass( method );
+		public virtual Panel AddEntry( ulong lsteamid, string left, ulong rsteamid, string right, string method )
+		{
+			var e = Current.AddChild<KillFeedEntry>();
 
-		e.Left.Text = left;
-		e.Left.SetClass( "me", lsteamid == (Local.SteamId) );
+			e.Left.Text = left;
+			e.Left.SetClass( "me", lsteamid == (Local.Client?.SteamId) );
 
-		e.Right.Text = right;
-		e.Right.SetClass( "me", rsteamid == (Local.SteamId) );
+			e.Method.Text = method;
 
-		return e;
+			e.Right.Text = right;
+			e.Right.SetClass( "me", rsteamid == (Local.Client?.SteamId) );
+
+			return e;
+		}
 	}
 }

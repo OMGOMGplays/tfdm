@@ -39,11 +39,6 @@ partial class Shotgun : BaseDmWeapon
 
 		PlaySound("shotgun_shoot");
 
-		if (AmmoClip == 0) 
-		{
-			Reload();
-		}
-
 		//
 		// Tell the clients to play the shoot effects
 		//

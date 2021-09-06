@@ -6,18 +6,17 @@
 	z-index: 100;
 	flex-direction: column-reverse;
 	width: 500px;
-	font-family: tf2;
+	font-family: Poppins;
 	font-size: 15px;
 	font-weight: 500;
 	align-items: flex-end;
-	border-radius: 10px;
 }
 
 KillFeedEntry
 {
-	//background-color: rgba( black, 0.8 );
+	background-color: rgba( black, 0.8 );
 	margin-bottom: 5px;
-	color: rgb(255, 255, 255);
+	color: white;
 	transition: all 0.2s ease-out;
 	opacity: 1;
 	flex-shrink: 0;
@@ -25,12 +24,10 @@ KillFeedEntry
 	padding: 12px;
 	height: 45px;
 	position: relative;
-	align-items: center;
-	mix-blend-mode: lighten;
 
 	&:intro
 	{
-		transform: scale( 1.25 );
+		transform: scale( 2 );
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-bottom: 0;
@@ -46,18 +43,25 @@ KillFeedEntry
 		transition: all 0.2s ease-in;
 	}
 
-	.icon
+	image
 	{
-		width: 100px;
-		height: 100px;
-		background-size: 100%;
-		background-image-tint: rgb(255, 255, 255);
+		width: 32px;
+		height: 32px;
+		min-height: 32px;
+		border-radius: 100px;
+		position: absolute;
+		left: 6px;
+		top: 6px;
 	}
 
 	.left, .right
 	{
 		padding: 0 12px;
-		color: #fc0;
+
+		&.me
+		{
+			color: #b6ff00;
+		}
 	}
 
 	.method
@@ -67,7 +71,7 @@ KillFeedEntry
 
 	.message
 	{
-		color: rgb(255, 255, 255);
+		color: #ccc;
 		font-size: 14px;
 		//	background-color: red;
 		flex-grow: 1;

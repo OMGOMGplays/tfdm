@@ -1,0 +1,5 @@
+importfilelist
+{
+	"file"	"w_stickybomb_red_is_unused.vmt"
+	"file"	"w_stickybomb_blue_is_unused.vmt"
+}

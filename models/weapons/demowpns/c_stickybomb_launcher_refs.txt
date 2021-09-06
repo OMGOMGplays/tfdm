@@ -1,0 +1,5 @@
+importfilelist
+{
+	"file"	"models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher_is_unused.vmt"
+	"file"	"c_stickybomb_launcher_gold_is_unused.vmt"
+}

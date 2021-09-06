@@ -64,5 +64,8 @@ public enum AmmoType
 	Buckshot,
 	Fists,
 	Minigun,
-	Bat
+	Bat,
+	PipeGrenade,
+	StickyGrenade,
+	Bottle
 }
