@@ -98,8 +98,7 @@ partial class Bottle : BaseDmWeapon
 
         (Owner as AnimEntity).SetAnimBool("b_attack", true);
 
-		PlaySound("fist_hit_world1");
-
+		PlaySound("bottle_hit1");
         ViewModelEntity?.SetBodyGroup("c_bottle_bg_broken_sm0_lod0", 1);
 
 		ViewModelEntity?.SetAnimBool( "fire", true );
