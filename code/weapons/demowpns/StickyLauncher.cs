@@ -13,6 +13,8 @@ partial class StickybombLauncher : BaseDmWeapon
 	public override int ClipSize => 4;
 	public override float ReloadTime => 0.7f;
 	public override int Bucket => 1;
+	
+	public int numberOfStickies;
 
 	public override void Spawn()
 	{
@@ -21,6 +23,8 @@ partial class StickybombLauncher : BaseDmWeapon
 		SetModel( "models/weapons/scoutwpns/w_scattergun.vmdl" );  
 
 		AmmoClip = 4;
+		
+		numberOfStickies = 0;
 
 		FinishReload();
 	}
@@ -46,6 +50,8 @@ partial class StickybombLauncher : BaseDmWeapon
 		ShootEffects();
 		ShootGrenade();
 		PlaySound("stickybomblauncher_shoot");
+		
+		numberOfStickies++;
 	}
 
 	private void ShootGrenade()
@@ -66,10 +72,18 @@ partial class StickybombLauncher : BaseDmWeapon
 
 	public override void AttackSecondary() 
 	{
-		TimeSincePrimaryAttack = 0;
-		TimeSinceSecondaryAttack = -0.5f;
-
-		PlaySound("stickybomblauncher_det");
+		if (numberOfStickies > 0) 
+		{
+			TimeSincePrimaryAttack = 0;
+			TimeSinceSecondaryAttack = -0.5f;
+		}
+		
+		if (numberOfStickies > 0) 
+		{
+			PlaySound("stickybomblauncher_det");
+			
+			numberOfStickies = 0;
+		}
 	}
 
 	[ClientRpc]
