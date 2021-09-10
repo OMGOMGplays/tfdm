@@ -43,8 +43,6 @@ partial class DeathmatchPlayer : Player
 		}
     }
 
-	public float DamageSoundRandomizer = Rand.Float(1.0f, 1.5f);
-
 	private int numberOfJumps;
 
 	static bool Scout = true;
@@ -155,6 +153,11 @@ partial class DeathmatchPlayer : Player
 		if (Scout == true) 
 		{
 			PlaySound("scout_painsevere03");
+		}
+
+		if (Demoman == true) 
+		{
+			PlaySound("demoman_paincrticialdeath01");
 		}
 
 		EnableAllCollisions = false;
@@ -333,37 +336,6 @@ partial class DeathmatchPlayer : Player
 
 		// keeping as comment until sniper is added, then if he is selected: allow headshots, 
 		// makes it more like the original game.
-
-
-		if (DamageSoundRandomizer <= 1.25f && Heavy == true) 
-		{
-			PlaySound("heavy_painsharp02");
-		}
-
-		if (DamageSoundRandomizer > 1.25f && Heavy == true) 
-		{
-			PlaySound("heavy_painsharp03");
-		}
-
-		if (DamageSoundRandomizer == 1.5f && Heavy == true) 
-		{
-			PlaySound("heavy_painsharp05");
-		}
-
-		if (DamageSoundRandomizer <= 1.25f && Scout == true) 
-		{
-			PlaySound("scout_painsharp01");
-		}
-
-		if (DamageSoundRandomizer < 1.25f && Scout == true) 
-		{
-			PlaySound("scout_painsharp03");
-		}
-
-		if (DamageSoundRandomizer == 1.5f && Scout == true ) 
-		{
-			PlaySound("scout_painsharp06");
-		}
 
 		base.TakeDamage( info );
 

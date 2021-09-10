@@ -35,7 +35,7 @@
 				[
 					{
 						_class = "Bone"
-						name = "weapon_bone"
+						name = "bip_hand_R"
 						children = 
 						[
 							{
@@ -87,8 +87,8 @@
 								do_not_discard = true
 							},
 						]
-						origin = [ 0.0, 0.0, 0.0 ]
-						angles = [ -0.0, 0.0, 0.0 ]
+						origin = [ 0.0, 3.627437, -0.0 ]
+						angles = [ -0.0, -12.0, 210.0 ]
 						do_not_discard = true
 					},
 				]
@@ -208,7 +208,7 @@
 						collision_prop = "default"
 						recenter_on_parent_bone = true
 						offset_origin = [ 0.0, 0.0, 0.0 ]
-						offset_angles = [ 0.0, 0.0, 0.0 ]
+						offset_angles = [ 0.0, 270.0, 0.0 ]
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
@@ -383,24 +383,7 @@
 						name = "c_grenadelauncher_bg_body_lod0"
 						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod0.dmx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						name = "c_grenadelauncher_bg_reload_sm0_lod0"
-						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod0.dmx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 90.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -417,24 +400,7 @@
 						name = "c_grenadelauncher_bg_body_lod1"
 						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod1.dmx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						name = "c_grenadelauncher_bg_reload_sm0_lod1"
-						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod1.dmx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 90.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -451,24 +417,7 @@
 						name = "c_grenadelauncher_bg_body_lod2"
 						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod2.dmx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						name = "c_grenadelauncher_bg_reload_sm0_lod2"
-						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod2.dmx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 90.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -485,40 +434,7 @@
 						name = "c_grenadelauncher_bg_body_lod3"
 						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_body_lod3.dmx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						name = "c_grenadelauncher_bg_reload_sm0_lod3"
-						filename = "models/weapons/demowpns/c_grenadelauncher_refs/mesh/c_grenadelauncher_bg_reload_sm0_lod3.dmx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						filename = "models/weapons/demowpns/c_demo_arms.smd"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 90.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -531,133 +447,6 @@
 						}
 					},
 				]
-			},
-			{
-				_class = "AnimationList"
-				children = 
-				[
-					{
-						_class = "AnimFile"
-						name = "g_draw"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_draw.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "g_fire"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_fire.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "g_idle"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_idle.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "g_reload_end"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_reload_end.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "g_reload_loop"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_reload_loop.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "g_reload_start"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/wpns/demowpns/grenadelauncher/g_reload_start.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-				]
-				default_root_bone_name = ""
 			},
 		]
 		model_archetype = ""

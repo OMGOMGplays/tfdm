@@ -18,7 +18,7 @@ partial class GrenadeLauncher : BaseDmWeapon
 	{
 		base.Spawn();
 
-		SetModel( "models/weapons/scoutwpns/w_scattergun.vmdl" );  
+		SetModel( "models/weapons/demowpns/w_grenadelauncher.vmdl" );  
 
 		AmmoClip = 4;
 

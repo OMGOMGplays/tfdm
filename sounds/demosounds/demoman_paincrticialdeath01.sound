@@ -4,7 +4,7 @@
 	{
 		sounds = 
 		[
-			"sounds/hvysounds/heavy_painsharp05.vsnd",
+			"sounds/demosounds/demoman_paincrticialdeath01.vsnd",
 		]
 	}
 }

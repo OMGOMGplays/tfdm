@@ -16,7 +16,7 @@ partial class Bottle : BaseDmWeapon
     {
         base.Spawn();
         
-        SetModel("models/weapons/scoutwpns/w_scattergun.vmdl");
+        SetModel("models/weapons/demowpns/w_bottle.vmdl");
 
         AmmoClip = 1;
     }
