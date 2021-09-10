@@ -8,26 +8,12 @@ partial class DeathmatchPlayer : Player
 {
 	private TimeSince timeSinceInAir;
 
-	// [Net, Predicted]
-	// public bool Class2 { get; set; }
-
 	[ServerCmd( "changeclass" )]
     public static void ChangeClass(string Class)
     {
 		var caller = ConsoleSystem.Caller;
 
 		if (caller == null) return;
-
-		// // caller.Class2 = true;
-
-		// Type t = typeof(caller);
-
-		// foreach (var p in t.GetProperties())
-		// {
-		// 	Log.Info(p.Name + " : " + p.GetType().ToString());
-		// }
-
-		// // Log.Info(Class2);
 
 		if (Class == "Scout" || Class == "scout") 
 		{
@@ -139,9 +125,12 @@ partial class DeathmatchPlayer : Player
 		if (Demoman == true) 
 		{
 			GiveAmmo(AmmoType.PipeGrenade, 16);
+			GiveAmmo(AmmoType.StickyGrenade, 24);
 		}
 
 		Health = 100;
+
+		SupressPickupNotices = false;
 
 		base.Respawn();
 	}

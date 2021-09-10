@@ -10,11 +10,11 @@ partial class StickybombLauncher : BaseDmWeapon
 
 	public override float PrimaryRate => 1.5f;
 	public override AmmoType AmmoType => AmmoType.StickyGrenade;
-	public override int ClipSize => 4;
+	public override int ClipSize => 8;
 	public override float ReloadTime => 0.7f;
 	public override int Bucket => 1;
-	
-	public int numberOfStickies;
+
+	public int numberOfStickies = 0;
 
 	public override void Spawn()
 	{
@@ -22,8 +22,8 @@ partial class StickybombLauncher : BaseDmWeapon
 
 		SetModel( "models/weapons/scoutwpns/w_scattergun.vmdl" );  
 
-		AmmoClip = 4;
-		
+		AmmoClip = 8;
+
 		numberOfStickies = 0;
 
 		FinishReload();
@@ -49,8 +49,9 @@ partial class StickybombLauncher : BaseDmWeapon
 
 		ShootEffects();
 		ShootGrenade();
+
 		PlaySound("stickybomblauncher_shoot");
-		
+
 		numberOfStickies++;
 	}
 
@@ -65,7 +66,6 @@ partial class StickybombLauncher : BaseDmWeapon
 			Rotation = Owner.EyeRot,
 		};
 
-		//TODO: Should be replaced with an actual grenade model
 		grenade.SetModel("models/weapons/demowpns/w_stickybomb.vmdl");
 		grenade.Velocity = Owner.EyeRot.Forward * 1000;
 	}
@@ -76,12 +76,9 @@ partial class StickybombLauncher : BaseDmWeapon
 		{
 			TimeSincePrimaryAttack = 0;
 			TimeSinceSecondaryAttack = -0.5f;
-		}
-		
-		if (numberOfStickies > 0) 
-		{
+
 			PlaySound("stickybomblauncher_det");
-			
+
 			numberOfStickies = 0;
 		}
 	}
@@ -125,6 +122,13 @@ partial class StickybombLauncher : BaseDmWeapon
 			{
 				Reload();
 				PlayReloadSound();
+
+				if (Input.Pressed(InputButton.Attack2) && numberOfStickies > 0) 
+				{
+					PlaySound("stickybomblauncher_det");
+
+					numberOfStickies = 0;
+				}
 			}
 			else
 			{
@@ -138,7 +142,7 @@ partial class StickybombLauncher : BaseDmWeapon
     {
         PlaySound("stickybomblauncher_boltback");
 
-        await GameTask.Delay(250);
+        await GameTask.Delay(335);
         PlaySound("stickybomblauncher_boltforward");
     }
 
