@@ -28,21 +28,6 @@ partial class DeathmatchPlayer
 		ent.SetRagdollVelocityFrom( this );
 		ent.DeleteAsync( 20.0f );
 
-		// Copy the clothes over
-		foreach ( var child in Children )
-		{
-			if ( child is ModelEntity e )
-			{
-				var model = e.GetModelName();
-				if ( model != null && !model.Contains( "clothes" ) ) // Uck we 're better than this, entity tags, entity type or something?
-					continue;
-
-				var clothing = new ModelEntity();
-				clothing.SetModel( model );
-				clothing.SetParent( ent, true );
-			}
-		}
-
 		ent.PhysicsGroup.AddVelocity( force );
 
 		if ( forceBone >= 0 )
