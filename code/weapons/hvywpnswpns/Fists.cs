@@ -7,6 +7,7 @@ partial class Fists : BaseDmWeapon
 {
     public override string ViewModelPath => "models/weapons/hvywpnswpns/c_heavy_arms.vmdl";
     public override float PrimaryRate => 1.0f;
+	public override float SecondaryRate => 1.0f;
 	public override int Bucket => 2;
 	public override AmmoType AmmoType => AmmoType.Fists;
 
@@ -27,6 +28,19 @@ partial class Fists : BaseDmWeapon
 		else
 		{
 			OnMeleeMiss();
+		}
+	}
+
+	public override void AttackSecondary() 
+	{
+		if (MeleeAttack())
+		{
+			OnMeleeHit2();
+		}
+
+		else
+		{
+			OnMeleeMiss2();
 		}
 	}
 	
@@ -98,6 +112,40 @@ partial class Fists : BaseDmWeapon
 		PlaySound("fist_hit_world1");
 
 		ViewModelEntity?.SetAnimBool( "attack", true );
+	}
+
+	[ClientRpc]
+	private void OnMeleeMiss2()
+	{
+		Host.AssertClient();
+
+		if ( IsLocalPawn )
+		{
+			_ = new Sandbox.ScreenShake.Perlin();
+		}
+
+        (Owner as AnimEntity).SetAnimBool("b_attack2", true);
+
+		PlaySound("boxing_gloves_swing2");
+
+		ViewModelEntity?.SetAnimBool( "attack2", true );
+	}
+
+	[ClientRpc]
+	private void OnMeleeHit2()
+	{
+		Host.AssertClient();
+
+		if ( IsLocalPawn )
+		{
+			_ = new Sandbox.ScreenShake.Perlin( 1.0f, 1.0f, 3.0f );
+		}
+
+        (Owner as AnimEntity).SetAnimBool("b_attack2", true);
+
+		PlaySound("fist_hit_world1");
+
+		ViewModelEntity?.SetAnimBool( "attack2", true );
 	}
 
     public override void SimulateAnimator(PawnAnimator anim) 

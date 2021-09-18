@@ -16,6 +16,8 @@ partial class ScoutPistol : BaseDmWeapon
 	public override float ReloadTime => 1f;
 	public override int Bucket => 1;
 
+	public float SoundRNG = Rand.Float(0.1f, 0.2f);
+
 	public override void Spawn()
 	{
 		base.Spawn();

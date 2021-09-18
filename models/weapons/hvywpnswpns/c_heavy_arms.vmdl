@@ -67,7 +67,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/heavyfists/f_draw.smd"
+						source_filename = "animations/wpns/heavywpnswpns/heavyfists/f_draw.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -87,7 +87,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/heavyfists/f_idle.smd"
+						source_filename = "animations/wpns/heavywpnswpns/heavyfists/f_idle.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -107,7 +107,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/heavyfists/f_swing_left.smd"
+						source_filename = "animations/wpns/heavywpnswpns/heavyfists/f_swing_left.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -127,7 +127,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/heavyfists/f_swing_right.smd"
+						source_filename = "animations/wpns/heavywpnswpns/heavyfists/f_swing_right.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0

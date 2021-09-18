@@ -1,5 +1,5 @@
 // 
-// TeamDeathmatchGame : Sandbox.Game 
+// TeamDeathmatchGame
 // 
 @PointClass = tfdm : "This is the heart of the gamemode. It's responsible for creating the player and stuff."
 [
@@ -9,7 +9,7 @@
 ]
 
 // 
-// Bottle : BaseDmWeapon 
+// Bottle
 // 
 @PointClass = tfdm_bottle : ""
 [
@@ -21,7 +21,7 @@
 ]
 
 // 
-// GrenadeLauncher : BaseDmWeapon 
+// GrenadeLauncher
 // 
 @PointClass = tfdm_grenadelauncher : ""
 [
@@ -33,7 +33,7 @@
 ]
 
 // 
-// StickybombLauncher : BaseDmWeapon 
+// StickybombLauncher
 // 
 @PointClass = tfdm_stickybomblauncher : ""
 [
@@ -45,7 +45,7 @@
 ]
 
 // 
-// Fists : BaseDmWeapon 
+// Fists
 // 
 @PointClass = tfdm_fists : ""
 [
@@ -57,7 +57,7 @@
 ]
 
 // 
-// Minigun : BaseDmWeapon 
+// Minigun
 // 
 @PointClass = tfdm_minigun : ""
 [
@@ -69,7 +69,7 @@
 ]
 
 // 
-// Shotgun : BaseDmWeapon 
+// Shotgun
 // 
 @PointClass = tfdm_shotgun : ""
 [
@@ -81,7 +81,7 @@
 ]
 
 // 
-// Bat : BaseDmWeapon 
+// Bat
 // 
 @PointClass = tfdm_bat : ""
 [
@@ -93,7 +93,7 @@
 ]
 
 // 
-// Scattergun : BaseDmWeapon 
+// Scattergun
 // 
 @PointClass = tfdm_scattergun : ""
 [
@@ -105,7 +105,7 @@
 ]
 
 // 
-// ScoutPistol : BaseDmWeapon 
+// ScoutPistol
 // 
 @PointClass = tfdm_scoutpistol : ""
 [
