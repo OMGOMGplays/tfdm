@@ -87,7 +87,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_draw.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_draw.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -107,7 +107,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_fire.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_fire.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -127,7 +127,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_idle.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_idle.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -147,7 +147,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_spool_down.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_spool_down.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -167,7 +167,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_spool_idle.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_spool_idle.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
@@ -187,7 +187,7 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "animations/wpns/minigun/m_spool_up.smd"
+						source_filename = "animations/wpns/heavywpnswpns/minigun/m_spool_up.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0

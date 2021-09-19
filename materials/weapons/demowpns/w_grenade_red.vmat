@@ -45,7 +45,7 @@ Layer0
 	g_flSelfIllumScale "1.000"
 	g_vSelfIllumScrollSpeed "[0.000 0.000]"
 	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureSelfIllumMask "materials/weapons/demowpns/w_grenade_red_ill.png"
+	TextureSelfIllumMask "materials/weapons/demowpns/w_grenade_red_ill.tga"
 
 	//---- Texture Animation ----
 	g_flAnimationFrame "0.000"
