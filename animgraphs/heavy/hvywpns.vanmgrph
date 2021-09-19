@@ -748,6 +748,38 @@
 		{
 			key = 
 			{
+				m_id = 200308406
+			}
+			value = 
+			{
+				_class = "CAddAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -48.0, 272.0 ]
+				m_nNodeID = 
+				{
+					m_id = 200308406
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_baseChildID = 
+				{
+					m_id = 736008992
+				}
+				m_additiveChildID = 
+				{
+					m_id = 351953025
+				}
+				m_timingBehavior = "UseChild2"
+				m_flTimingBlend = 0.5
+				m_footMotionTiming = "Child1"
+				m_bResetBase = false
+				m_bResetAdditive = true
+				m_bApplyChannelsSeparately = true
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 207188166
 			}
 			value = 
@@ -1092,7 +1124,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -1.0, 540.0 ]
+				m_vecPosition = [ 128.0, 560.0 ]
 				m_nNodeID = 
 				{
 					m_id = 454083183
@@ -3157,6 +3189,38 @@
 		{
 			key = 
 			{
+				m_id = 621709555
+			}
+			value = 
+			{
+				_class = "CAddAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -48.0, 528.0 ]
+				m_nNodeID = 
+				{
+					m_id = 621709555
+				}
+				m_networkMode = "ClientPredicted"
+				m_sNote = ""
+				m_baseChildID = 
+				{
+					m_id = 207188166
+				}
+				m_additiveChildID = 
+				{
+					m_id = 605857422
+				}
+				m_timingBehavior = "UseChild2"
+				m_flTimingBlend = 0.5
+				m_footMotionTiming = "Child1"
+				m_bResetBase = true
+				m_bResetAdditive = true
+				m_bApplyChannelsSeparately = true
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 659165334
 			}
 			value = 
@@ -3174,53 +3238,6 @@
 				m_sequenceName = "layer_attackStand_PRIMARY_spoolup"
 				m_playbackSpeed = 1.0
 				m_bLoop = false
-			}
-		},
-		{
-			key = 
-			{
-				m_id = 677746572
-			}
-			value = 
-			{
-				_class = "CChoiceAnimNode"
-				m_sName = "Melee Crouch Attack Randomizer"
-				m_vecPosition = [ -268.0, 348.0 ]
-				m_nNodeID = 
-				{
-					m_id = 677746572
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_children = 
-				[
-					{
-						m_nodeID = 
-						{
-							m_id = 351953025
-						}
-						m_name = "Melee_R"
-						m_weight = 0.0
-						m_blendTime = 0.2
-					},
-					{
-						m_nodeID = 
-						{
-							m_id = 865072630
-						}
-						m_name = "Melee_L"
-						m_weight = 0.0
-						m_blendTime = 0.2
-					},
-				]
-				m_seed = 1732217089
-				m_choiceMethod = "WeightedRandom"
-				m_choiceChangeMethod = "OnReset"
-				m_blendMethod = "SingleBlendTime"
-				m_blendTime = 0.2
-				m_bCrossFade = false
-				m_bResetChosen = true
-				m_bDontResetSameSelection = false
 			}
 		},
 		{
@@ -5711,7 +5728,7 @@
 				}
 				m_additiveChildID = 
 				{
-					m_id = 677746572
+					m_id = 865072630
 				}
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
@@ -6730,53 +6747,6 @@
 					m_fMinSpeed = 10.0
 					m_fMaxTension = 1000.0
 				}
-			}
-		},
-		{
-			key = 
-			{
-				m_id = 1129871163
-			}
-			value = 
-			{
-				_class = "CChoiceAnimNode"
-				m_sName = "Melee Attack Randomizer"
-				m_vecPosition = [ -258.0, 465.0 ]
-				m_nNodeID = 
-				{
-					m_id = 1129871163
-				}
-				m_networkMode = "ClientPredicted"
-				m_sNote = ""
-				m_children = 
-				[
-					{
-						m_nodeID = 
-						{
-							m_id = 605857422
-						}
-						m_name = "Melee_R"
-						m_weight = 0.0
-						m_blendTime = 0.2
-					},
-					{
-						m_nodeID = 
-						{
-							m_id = 1226180883
-						}
-						m_name = "Melee_L"
-						m_weight = 0.0
-						m_blendTime = 0.2
-					},
-				]
-				m_seed = 1068433431
-				m_choiceMethod = "WeightedRandom"
-				m_choiceChangeMethod = "OnReset"
-				m_blendMethod = "SingleBlendTime"
-				m_blendTime = 0.2
-				m_bCrossFade = false
-				m_bResetChosen = true
-				m_bDontResetSameSelection = false
 			}
 		},
 		{
@@ -8780,7 +8750,7 @@
 				}
 				m_additiveChildID = 
 				{
-					m_id = 1129871163
+					m_id = 1226180883
 				}
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
@@ -10091,7 +10061,7 @@
 						m_name = "Melee Attack 2"
 						m_childNodeID = 
 						{
-							m_id = 4294967295
+							m_id = 621709555
 						}
 						m_stateID = 
 						{
@@ -10175,7 +10145,7 @@
 						m_name = "Melee Attack 2 Crouch"
 						m_childNodeID = 
 						{
-							m_id = 4294967295
+							m_id = 200308406
 						}
 						m_stateID = 
 						{
