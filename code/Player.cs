@@ -20,6 +20,7 @@ partial class DeathmatchPlayer : Player
 			Scout = true;
 			Heavy = false;
 			Demoman = false;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Scout");
 		}
@@ -29,6 +30,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = true;
 			Demoman = false;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
 		}
@@ -38,9 +40,20 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = false;
 			Demoman = true;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
 		}
+
+		// if (Class == "Sniper" || Class == "sniper") 
+		// {
+		// 	Scout = false;
+		// 	Heavy = false;
+		// 	Demoman = false;
+		// 	Sniper = true;
+
+		// 	Sandbox.UI.ChatBox.Say("You will respawn as Sniper");
+		// }
     }
 
 	private int numberOfJumps;
@@ -48,6 +61,7 @@ partial class DeathmatchPlayer : Player
 	static bool Scout = true;
 	static bool Heavy = false;
 	static bool Demoman = false;
+	// static bool Sniper = false;
 
 
 	public bool SupressPickupNotices { get; private set; }
@@ -96,6 +110,15 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new Bottle());
 		}
 
+		// if (Sniper == true) 
+		// {
+		// 	SetModel("models/scout/scout.vmdl");
+
+		// 	Inventory.Add(new SniperRifle(), true);
+		// 	Inventory.Add(new SMG());
+		// 	Inventory.Add(new Kukri());
+		// }
+
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
 		Camera = new FirstPersonCamera();
@@ -125,6 +148,12 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.PipeGrenade, 16);
 			GiveAmmo(AmmoType.StickyGrenade, 24);
 		}
+
+		// if (Sniper == true) 
+		// {
+		// 	GiveAmmo(AmmoType.SniperAmmo, 24);
+		// 	GiveAmmo(AmmoType.SMGAmmo, 75);
+		// }
 
 		Health = 100;
 

@@ -14,7 +14,7 @@
 
 KillFeedEntry
 {
-	background-color: rgba( black, 0.8 );
+	//background-color: rgba( black, 0.8 );
 	margin-bottom: 5px;
 	color: white;
 	transition: all 0.2s ease-out;
@@ -24,6 +24,8 @@ KillFeedEntry
 	padding: 12px;
 	height: 45px;
 	position: relative;
+	align-items: center;
+	mix-blend-mode: lighten;
 
 	&:intro
 	{
@@ -43,24 +45,23 @@ KillFeedEntry
 		transition: all 0.2s ease-in;
 	}
 
-	image
+	.icon
 	{
-		width: 32px;
-		height: 32px;
-		min-height: 32px;
-		border-radius: 100px;
-		position: absolute;
-		left: 6px;
-		top: 6px;
+		width: 75px;
+		top: -25px;
+		height: 75px;
+		background-size: 100%;
+		background-image-tint: rgb(255, 255, 255);
 	}
 
 	.left, .right
 	{
 		padding: 0 12px;
+		color: #fc0;
 
 		&.me
 		{
-			color: #b6ff00;
+			font-weight: bold;
 		}
 	}
 

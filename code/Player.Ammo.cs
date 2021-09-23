@@ -67,5 +67,8 @@ public enum AmmoType
 	Bat,
 	PipeGrenade,
 	StickyGrenade,
-	Bottle
+	Bottle,
+	SniperAmmo,
+	SMGAmmo,
+	Kukri
 }
