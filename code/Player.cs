@@ -20,7 +20,7 @@ partial class DeathmatchPlayer : Player
 			Scout = true;
 			Heavy = false;
 			Demoman = false;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Scout");
 		}
@@ -30,7 +30,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = true;
 			Demoman = false;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
 		}
@@ -40,7 +40,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = false;
 			Demoman = true;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
 		}
