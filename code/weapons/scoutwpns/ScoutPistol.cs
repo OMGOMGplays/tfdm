@@ -60,7 +60,7 @@ partial class ScoutPistol : BaseDmWeapon
 		//
 		ShootEffects();
 
-		ShootBullet(0.1f, 1.5f, 5.0f, 3.0f);
+		ShootBullet(0.1f, 1.5f, 15f, 3.0f);
 	}
 
 	[ClientRpc]

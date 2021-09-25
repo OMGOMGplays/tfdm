@@ -392,6 +392,24 @@
 				]
 				default_root_bone_name = ""
 			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "models/weapons/c_models/c_shotgun/c_shotgun_is_unused.vmat"
+								to = "tfdm/materials/weapons/hvywpnswpns/c_shotgun.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""

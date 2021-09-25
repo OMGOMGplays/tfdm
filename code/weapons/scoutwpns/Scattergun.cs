@@ -65,7 +65,7 @@ partial class Scattergun : BaseDmWeapon
 		//
 		for ( int i = 0; i < 10; i++ )
 		{
-			ShootBullet( 0.15f, 0.3f, 9.0f, 3.0f );
+			ShootBullet( 0.15f, 0.3f, 6f, 3.0f );
 		}
 	}
 

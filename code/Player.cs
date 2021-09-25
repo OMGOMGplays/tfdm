@@ -20,7 +20,7 @@ partial class DeathmatchPlayer : Player
 			Scout = true;
 			Heavy = false;
 			Demoman = false;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Scout");
 		}
@@ -30,7 +30,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = true;
 			Demoman = false;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
 		}
@@ -40,7 +40,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = false;
 			Demoman = true;
-			Sniper = false;
+			// Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
 		}
@@ -61,7 +61,7 @@ partial class DeathmatchPlayer : Player
 	static bool Scout = true;
 	static bool Heavy = false;
 	static bool Demoman = false;
-	// static bool Sniper = false;
+	// static bool Sniper = true;
 
 
 	public bool SupressPickupNotices { get; private set; }
@@ -90,6 +90,8 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new Scattergun(), true);
 			Inventory.Add(new ScoutPistol());
 			Inventory.Add(new Bat());
+
+			Controller = new ScoutWalkController();
 		}
 
 		if (Heavy == true) 
@@ -99,6 +101,8 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new Minigun(), true);
 			Inventory.Add(new Shotgun());
 			Inventory.Add(new Fists());	
+
+			Controller = new HeavyWalkController();
 		}
 
 		if (Demoman == true) 
@@ -108,18 +112,21 @@ partial class DeathmatchPlayer : Player
 			Inventory.Add(new GrenadeLauncher(), true);
 			// Inventory.Add(new StickybombLauncher());
 			Inventory.Add(new Bottle());
+
+			Controller = new DemoWalkController();
 		}
 
 		// if (Sniper == true) 
 		// {
-		// 	SetModel("models/scout/scout.vmdl");
+		// 	SetModel("models/sniper/sniper.vmdl");
 
 		// 	Inventory.Add(new SniperRifle(), true);
 		// 	Inventory.Add(new SMG());
 		// 	Inventory.Add(new Kukri());
+
+		// 	Controller = new SniperWalkController();
 		// }
 
-		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
 		Camera = new FirstPersonCamera();
 		  
@@ -357,15 +364,11 @@ partial class DeathmatchPlayer : Player
 
 		// hack - hitbox 0 is head
 		// we should be able to get this from somewhere
-
-		// if ( info.HitboxIndex == 0 )
+		// if ( info.HitboxIndex == 0 && Sniper == true )
 		// {
 		// 	info.Damage *= 2.0f;
 		// }
-
-		// keeping as comment until sniper is added, then if he is selected: allow headshots, 
-		// makes it more like the original game.
-
+		
 		base.TakeDamage( info );
 
 		if ( info.Attacker is DeathmatchPlayer attacker && attacker != this )
