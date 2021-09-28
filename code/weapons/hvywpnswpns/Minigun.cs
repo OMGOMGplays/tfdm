@@ -33,8 +33,6 @@ partial class Minigun : BaseDmWeapon
 			return;
 		}
 
-		
-
 		AttackPrimaryStart();
 
 		ShootEffects();

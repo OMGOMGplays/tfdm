@@ -60,6 +60,11 @@ partial class Scattergun : BaseDmWeapon
 			Reload();
 		}
 
+		if (AmmoClip == 6) 
+		{
+			FinishReload();
+		}
+
 		//
 		// Shoot the bullets
 		//
