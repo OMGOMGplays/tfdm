@@ -8,6 +8,22 @@ partial class DeathmatchPlayer : Player
 {
 	private TimeSince timeSinceInAir;
 
+	bool enableThirdperson;
+
+	[ServerCmd("enable_thirdperson)]
+    public static void EnableThirdperson(bool onoff) 
+    {
+	if (onoff == true) 
+	{
+		enableThirdperson = true;
+	}
+	
+	if (onoff == false) 
+	{
+		enableThirdperson = false;
+	}
+    }
+	
 	[ServerCmd( "changeclass" )]
     public static void ChangeClass(string Class)
     {
@@ -222,7 +238,7 @@ partial class DeathmatchPlayer : Player
 
 		TickPlayerUse();
 
-		if ( Input.Pressed( InputButton.View ) )
+		if ( Input.Pressed( InputButton.View ) && enableThirdperson == true )
 		{
 			if ( Camera is ThirdPersonCamera )
 			{
@@ -232,6 +248,10 @@ partial class DeathmatchPlayer : Player
 			{
 				Camera = new ThirdPersonCamera();
 			}
+		}
+		else if (input.Pressed(InputButton.View) && enableThirdperson == false) 
+		{
+			Log.Info("Enable thirdperson by using the command 'enable_thirdperson', then press the button again."
 		}
 
 		if (Scout == true) 
