@@ -10,7 +10,7 @@ partial class DeathmatchPlayer : Player
 
 	bool enableThirdperson;
 
-	[ServerCmd("enable_thirdperson)]
+	[ServerCmd("enable_thirdperson")]
     public static void EnableThirdperson(bool onoff) 
     {
 	if (onoff == true) 
