@@ -19,9 +19,7 @@ partial class TeamDeathmatchGame : Game
 		if ( IsServer )
 		{
 			new DeathmatchHud();
-		}
-
-		
+		}	
 	}
 
 	public override void PostLevelLoaded()

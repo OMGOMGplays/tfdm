@@ -8,22 +8,6 @@ partial class DeathmatchPlayer : Player
 {
 	private TimeSince timeSinceInAir;
 
-	bool enableThirdperson;
-
-	[ServerCmd("enable_thirdperson")]
-    public static void EnableThirdperson(bool onoff) 
-    {
-	if (onoff == true) 
-	{
-		enableThirdperson = true;
-	}
-	
-	if (onoff == false) 
-	{
-		enableThirdperson = false;
-	}
-    }
-	
 	[ServerCmd( "changeclass" )]
     public static void ChangeClass(string Class)
     {
@@ -36,7 +20,7 @@ partial class DeathmatchPlayer : Player
 			Scout = true;
 			Heavy = false;
 			Demoman = false;
-			// Sniper = false;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Scout");
 		}
@@ -46,7 +30,7 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = true;
 			Demoman = false;
-			// Sniper = false;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Heavy");
 		}
@@ -56,20 +40,20 @@ partial class DeathmatchPlayer : Player
 			Scout = false;
 			Heavy = false;
 			Demoman = true;
-			// Sniper = false;
+			Sniper = false;
 
 			Sandbox.UI.ChatBox.Say("You will respawn as Demoman");
 		}
 
-		// if (Class == "Sniper" || Class == "sniper") 
-		// {
-		// 	Scout = false;
-		// 	Heavy = false;
-		// 	Demoman = false;
-		// 	Sniper = true;
+		if (Class == "Sniper" || Class == "sniper") 
+		{
+			Scout = false;
+			Heavy = false;
+			Demoman = false;
+			Sniper = true;
 
-		// 	Sandbox.UI.ChatBox.Say("You will respawn as Sniper");
-		// }
+			Sandbox.UI.ChatBox.Say("You will respawn as Sniper");
+		}
     }
 
 	private int numberOfJumps;
@@ -77,7 +61,7 @@ partial class DeathmatchPlayer : Player
 	static bool Scout = true;
 	static bool Heavy = false;
 	static bool Demoman = false;
-	// static bool Sniper = true;
+	static bool Sniper = false;
 
 
 	public bool SupressPickupNotices { get; private set; }
@@ -132,16 +116,16 @@ partial class DeathmatchPlayer : Player
 			Controller = new DemoWalkController();
 		}
 
-		// if (Sniper == true) 
-		// {
-		// 	SetModel("models/sniper/sniper.vmdl");
+		if (Sniper == true) 
+		{
+			SetModel("models/sniper/sniper.vmdl");
 
-		// 	Inventory.Add(new SniperRifle(), true);
-		// 	Inventory.Add(new SMG());
-		// 	Inventory.Add(new Kukri());
+			Inventory.Add(new SniperRifle(), true);
+			Inventory.Add(new SMG());
+			Inventory.Add(new Kukri());
 
-		// 	Controller = new SniperWalkController();
-		// }
+			Controller = new SniperWalkController();
+		}
 
 		Animator = new StandardPlayerAnimator();
 		Camera = new FirstPersonCamera();
@@ -172,11 +156,11 @@ partial class DeathmatchPlayer : Player
 			GiveAmmo(AmmoType.StickyGrenade, 24);
 		}
 
-		// if (Sniper == true) 
-		// {
-		// 	GiveAmmo(AmmoType.SniperAmmo, 24);
-		// 	GiveAmmo(AmmoType.SMGAmmo, 75);
-		// }
+		if (Sniper == true) 
+		{
+			GiveAmmo(AmmoType.SniperAmmo, 24);
+			GiveAmmo(AmmoType.SMGAmmo, 75);
+		}
 
 		Health = 100;
 
@@ -238,7 +222,7 @@ partial class DeathmatchPlayer : Player
 
 		TickPlayerUse();
 
-		if ( Input.Pressed( InputButton.View ) && enableThirdperson == true )
+		if ( Input.Pressed( InputButton.View ))
 		{
 			if ( Camera is ThirdPersonCamera )
 			{
@@ -248,10 +232,6 @@ partial class DeathmatchPlayer : Player
 			{
 				Camera = new ThirdPersonCamera();
 			}
-		}
-		else if (input.Pressed(InputButton.View) && enableThirdperson == false) 
-		{
-			Log.Info("Enable thirdperson by using the command 'enable_thirdperson', then press the button again."
 		}
 
 		if (Scout == true) 
@@ -384,10 +364,10 @@ partial class DeathmatchPlayer : Player
 
 		// hack - hitbox 0 is head
 		// we should be able to get this from somewhere
-		// if ( info.HitboxIndex == 0 && Sniper == true )
-		// {
-		// 	info.Damage *= 2.0f;
-		// }
+		if ( info.HitboxIndex == 0 && Sniper == true )
+		{
+			info.Damage *= 2.0f;
+		}
 		
 		base.TakeDamage( info );
 

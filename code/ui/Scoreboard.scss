@@ -7,7 +7,7 @@
 	font-size: 23px;
 	font-weight: 500;
 	color: white;
-	width: 50%;
+	width: 35%;
 	height: 50%;
 	align-items: center;
 	justify-content: center;
@@ -17,11 +17,11 @@
 	transform-origin: 50% 50%;
 	background-size: 100% 100%;
 	background-position: center center;
-	background-color: rgba( 10, 10, 10, 0.8 );
+	background-color: rgba( 10, 10, 10, 0.7 );
 
 	&.open
 	{
-		opacity: 1;
+		opacity: 5;
 		transform: scale( 1 );
 	}
 
@@ -38,7 +38,7 @@
 
 	.ping, .fps
 	{
-		opacity: 0.3;
+		opacity: 5;
 		width: 50px;
 	}
 
@@ -51,9 +51,11 @@
 	{
 		font-family: tf2build;
 		border-bottom: 3px solid rgb(255, 255, 255);
+		border-radius: 5px;
 		min-width: 30%;
 		margin-bottom: 10px;
 		padding-bottom: 5px;
+		text-shadow: 2px 2px 1px rgb(138, 138, 138);
 		color: rgb(255, 255, 255);
 		mix-blend-mode: lighten;
 	}
@@ -74,12 +76,12 @@
 
 			label
 			{
-				//text-shadow: 0px 0px 10px #f70a;
+				// text-shadow: 0px 0px 10px #f70a;
 			}
 
 			&.me
 			{
-				background-color: rgba(192, 192, 192, 0.667);
+				// background-color: rgba(192, 192, 192, 0.667);
 			}
 		}
 	}
