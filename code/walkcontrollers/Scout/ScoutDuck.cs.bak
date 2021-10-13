@@ -1,4 +1,4 @@
-﻿using Sandbox;
+﻿using Sandbox.Rcon;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 namespace Sandbox
 {
 	[Library]
-	public class HeavyDuck : NetworkComponent
+	public class ScoutDuck : NetworkComponent
 	{
 		public BasePlayerController Controller;
 
 		public bool IsActive; // replicate
 
-		public HeavyDuck( BasePlayerController controller )
+		public ScoutDuck( BasePlayerController controller )
 		{
 			Controller = controller;
 		}
@@ -71,7 +71,7 @@ namespace Sandbox
 		public virtual float GetWishSpeed()
 		{
 			if ( !IsActive ) return -1;
-			return 76.67f;
+			return 150.0f;
 		}
 	}
 }

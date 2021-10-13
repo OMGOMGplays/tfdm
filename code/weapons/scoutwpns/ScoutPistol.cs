@@ -16,8 +16,6 @@ partial class ScoutPistol : BaseDmWeapon
 	public override float ReloadTime => 1f;
 	public override int Bucket => 1;
 
-	public float SoundRNG = Rand.Float(0.1f, 0.2f);
-
 	public override void Spawn()
 	{
 		base.Spawn();
@@ -49,11 +47,6 @@ partial class ScoutPistol : BaseDmWeapon
 		{
 			PlaySound("chicken");
 		}
-		
-		if (AmmoClip == 0) 
-		{
-			Reload();
-		}
 
 		//
 		// Tell the clients to play the shoot effects
@@ -61,6 +54,17 @@ partial class ScoutPistol : BaseDmWeapon
 		ShootEffects();
 
 		ShootBullet(0.1f, 1.5f, 15f, 3.0f);
+	}
+
+	public override void Simulate(Client cl) 
+	{
+		base.Simulate(Client);
+		
+		if (AmmoClip == 0) 
+		{
+			Reload();
+		}
+		else return;
 	}
 
 	[ClientRpc]

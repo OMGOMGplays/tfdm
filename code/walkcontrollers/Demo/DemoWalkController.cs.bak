@@ -1,5 +1,5 @@
 ﻿using Sandbox.Internal.JsonConvert;
-using Sandbox;
+using Sandbox.Rcon;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 namespace Sandbox
 {
 	[Library]
-	public class ScoutWalkController : BasePlayerController
+	public class DemoWalkController : BasePlayerController
 	{
-		public float SprintSpeed { get; set; } = 15f;
-		public float WalkSpeed { get; set; } = 400.0f;
-		public float DefaultSpeed { get; set; } = 400.0f;
+		public float SprintSpeed { get; set; } = 320.0f;
+		public float WalkSpeed { get; set; } = 150.0f;
+		public float DefaultSpeed { get; set; } = 280.0f;
 		public float Acceleration { get; set; } = 10.0f;
 		public float AirAcceleration { get; set; } = 50.0f;
 		public float FallSoundZ { get; set; } = -30.0f;
@@ -40,7 +40,7 @@ namespace Sandbox
 		public Unstuck Unstuck;
 
 
-		public ScoutWalkController()
+		public DemoWalkController()
 		{
 			Duck = new Duck( this );
 			Unstuck = new Unstuck( this );
@@ -485,7 +485,7 @@ namespace Sandbox
 			float startz = Velocity.z;
 
 			if ( Duck.IsActive )
-				WalkSpeed = 150.0f;
+				flMul *= 0.8f;
 
 			Velocity = Velocity.WithZ( startz + flMul * flGroundFactor );
 
@@ -496,11 +496,6 @@ namespace Sandbox
 
 			// don't jump again until released
 			//mv->m_nOldButtons |= IN_JUMP;
-
-			if (Input.Down(InputButton.Attack1)) 
-			{
-				WalkSpeed = 80.0f;
-			}
 
 			AddEvent( "jump" );
 
