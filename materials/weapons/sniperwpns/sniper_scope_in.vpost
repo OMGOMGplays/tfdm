@@ -1,0 +1,107 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CPostProcessData"
+	m_layers = 
+	[
+		{
+			_class = "CHueSaturationColorCorrectionLayer"
+			m_name = "Hue/Saturation 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = 
+			{
+				_class = "CLayerMask"
+				m_nLumMaskCenter = 0
+				m_nLumMaskWidth = 80
+				m_nLumMaskShape = 42
+				m_bInverted = false
+			}
+			m_nHueMaster = 0
+			m_nHueRed = 0
+			m_nHueYellow = 0
+			m_nHueGreen = 0
+			m_nHueCyan = 0
+			m_nHueBlue = 0
+			m_nHueMagenta = 0
+			m_nSaturationMaster = 12
+			m_nSaturationRed = 0
+			m_nSaturationYellow = 0
+			m_nSaturationGreen = 0
+			m_nSaturationCyan = 0
+			m_nSaturationBlue = 0
+			m_nSaturationMagenta = 0
+			m_nBrightnessMaster = 0
+			m_nBrightnessRed = 0
+			m_nBrightnessYellow = 0
+			m_nBrightnessGreen = 0
+			m_nBrightnessCyan = 0
+			m_nBrightnessBlue = 0
+			m_nBrightnessMagenta = 0
+		},
+		{
+			_class = "CCurvesColorCorrectionLayer"
+			m_name = "Curves 1"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_curvePointsRGB = 
+			[
+				[ 0.0, 0.0 ],
+				[ 95.0, 69.0 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsR = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsG = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsB = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+		},
+		{
+			_class = "CColorTintColorCorrectionLayer"
+			m_name = "Color Tint 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = 
+			{
+				_class = "CLayerMask"
+				m_nLumMaskCenter = 59
+				m_nLumMaskWidth = 58
+				m_nLumMaskShape = 77
+				m_bInverted = false
+			}
+			m_nTintColorR = 252
+			m_nTintColorG = 142
+			m_nTintColorB = 8
+			m_nStrength = 26
+			m_bPreserveLuminosity = true
+		},
+		{
+			_class = "CToneMappingLayer"
+			m_name = "Tone Mapping 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_params = 
+			{
+				m_flExposureBias = -0.12
+				m_flShoulderStrength = 0.1499
+				m_flLinearStrength = 0.5
+				m_flLinearAngle = 0.0999
+				m_flToeStrength = 0.1999
+				m_flToeNum = 0.02
+				m_flToeDenom = 0.2999
+				m_flWhitePoint = 3.9996
+			}
+		},
+	]
+}

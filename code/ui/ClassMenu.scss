@@ -1,0 +1,78 @@
+ClassMenu {
+    width: 400px;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    font-family: poppins;
+    height: 25%;
+    width: 25%;
+    top: 350px;
+    opacity: 1;
+    margin: auto;
+    background-color: #1b1b1b;
+    flex-direction: column;
+    overflow: hidden;
+    left: -500px;
+    z-index: 1000;
+
+    .header {
+        padding: 14px 20px;
+        width: 100%;
+        background-color: #4b4b4b;
+        color: #fdeece;
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 0 black;
+        box-shadow: 0px 0 10px 5px #0009;
+        position: relative;
+    }
+
+    &.open {
+        pointer-events: all;
+        height: 50%;
+        width: 15%;
+        top: 250px;
+        left: 0;
+    }
+
+    ClassMenuButtons {
+        height: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        display: grid;
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            font-family: Poppins;
+            font-size: 22px;
+            color: #fff;
+            background-color: #646464;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            transition: all 0.5s ease-out;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #a8a8a8;
+            cursor: pointer;
+            text-shadow: 2.5px 2.5px 2px black;
+        }
+
+        .button:active {
+            background-color: #f3f3f3;
+            text-shadow: 5px 5px 4px black;
+        }
+
+        .section {
+            color: #808080;
+            font-family: Poppins;
+            margin-bottom: 10px;
+        }
+    }
+}

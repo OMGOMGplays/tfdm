@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OSMzMl3i+L2GnDJ+ZlkQKjC33eIsn4l6XfDC8SuConsLA3X8zxgHenVDtUyBZlJN1/RutGBT/LT8VCyIx+Ej5g==",
+  "dgSpecHash": "vwG3C/IoEATGil9CcY+g+NsH7cR2Q2Ep9CONig8GLLF6cVeTz7WUTvPPnfqRc8MlC4rJgO4CdRCk9mw/+auPBQ==",
   "success": true,
-  "projectFilePath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\tfdm.csproj",
+  "projectFilePath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\tfdm\\code\\tfdm.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

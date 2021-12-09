@@ -50,18 +50,15 @@ partial class GrenadeLauncher : BaseDmWeapon
 
 	private void ShootGrenade()
 	{
-		if (Host.IsClient)
-			return;
-
-		var grenade = new Prop
+		var grenade = new Grenade
 		{
 			Position = Owner.EyePos + Owner.EyeRot.Forward * 50,
 			Rotation = Owner.EyeRot,
 		};
 
 		//TODO: Should be replaced with an actual grenade model
-		grenade.SetModel("models/weapons/demowpns/w_grenade_grenadelauncher.vmdl");
 		grenade.Velocity = Owner.EyeRot.Forward * 2000;
+		grenade.Owner = Owner;
 
 		grenade.ExplodeAsync(3f);
 	}

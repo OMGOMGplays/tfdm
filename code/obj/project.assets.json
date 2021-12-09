@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "base/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/base.dll": {}
         },
@@ -22,39 +22,44 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "base >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Loke\\.nuget\\packages\\": {}
+    "C:\\Users\\Loke\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\tfdm.csproj",
+      "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\tfdm\\code\\tfdm.csproj",
       "projectName": "tfdm",
-      "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\tfdm.csproj",
+      "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\tfdm\\code\\tfdm.csproj",
       "packagesPath": "C:\\Users\\Loke\\.nuget\\packages\\",
-      "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\tfdm\\code\\obj\\",
+      "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\tfdm\\code\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Loke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj": {
-              "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\Addons\\base\\code\\base.csproj"
+            "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj": {
+              "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj"
             }
           }
         }
@@ -66,8 +71,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -83,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

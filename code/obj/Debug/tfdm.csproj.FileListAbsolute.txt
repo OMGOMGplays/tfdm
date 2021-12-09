@@ -1,0 +1,14 @@
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\.vs\output\tfdm.xml
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\.vs\output\tfdm.deps.json
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\.vs\output\tfdm.dll
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\.vs\output\ref\tfdm.dll
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\.vs\output\tfdm.pdb
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.csproj.AssemblyReference.cache
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.GeneratedMSBuildEditorConfig.editorconfig
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.AssemblyInfoInputs.cache
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.AssemblyInfo.cs
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.csproj.CoreCompileInputs.cache
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.csproj.CopyComplete
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.dll
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\ref\tfdm.dll
+E:\Steam Spel\steamapps\common\sbox\addons\tfdm\code\obj\Debug\tfdm.pdb

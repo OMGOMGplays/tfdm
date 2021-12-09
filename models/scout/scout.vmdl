@@ -4144,6 +4144,56 @@
 						master_morph_weight = -1.0
 						morph_weights = [  ]
 					},
+					{
+						_class = "WeightList"
+						name = "Upperbody_And_Lowerlegs"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_foot_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_foot_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_hip_L"
+								weight = 0.560606
+							},
+							{
+								bone = "bip_hip_R"
+								weight = 0.583333
+							},
+							{
+								bone = "bip_knee_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_knee_R"
+								weight = 1.0
+							},
+							{
+								bone = "bip_spine_0"
+								weight = 0.32
+							},
+							{
+								bone = "bip_spine_1"
+								weight = 0.53
+							},
+							{
+								bone = "bip_spine_2"
+								weight = 0.74
+							},
+							{
+								bone = "bip_spine_3"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
 				]
 			},
 			{
@@ -4632,6 +4682,28 @@
 								}
 							},
 						]
+					},
+					{
+						_class = "MovementSettings"
+						movementsettings = 
+						{
+							name = ""
+							speeds = 
+							[
+								{
+									name = "Crouching"
+									speed = 75.0
+								},
+							]
+							runspeed = 400.0
+							walkspeed = 400.0
+							maxSpringTension = 100.0
+							springConstant = 10.0
+							useSmoothPaths = true
+							useMotionDamping = false
+							sharpStartAngle = 180.0
+							m_vTraceScale = [ 1.0, 1.0, 1.0 ]
+						}
 					},
 				]
 			},

@@ -4484,77 +4484,49 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Left_Arm_And_Spine"
+						name = "Upperbody_And_Lowerlegs"
 						default_weight = 0.0
 						weights = 
 						[
 							{
-								bone = "bip_collar_L"
-								weight = 1.0
-							},
-							{
-								bone = "bip_collar_R"
+								bone = "bip_foot_L"
 								weight = 0.0
 							},
 							{
-								bone = "bip_hand_L"
-								weight = 1.0
-							},
-							{
-								bone = "bip_head"
+								bone = "bip_foot_R"
 								weight = 0.0
 							},
 							{
-								bone = "bip_lowerArm_L"
+								bone = "bip_hip_L"
+								weight = 0.560606
+							},
+							{
+								bone = "bip_hip_R"
+								weight = 0.583333
+							},
+							{
+								bone = "bip_knee_L"
 								weight = 1.0
 							},
 							{
-								bone = "bip_neck"
-								weight = 0.864542
+								bone = "bip_knee_R"
+								weight = 1.0
 							},
 							{
 								bone = "bip_spine_0"
-								weight = 0.135458
+								weight = 0.32
 							},
 							{
 								bone = "bip_spine_1"
-								weight = 0.322709
+								weight = 0.53
 							},
 							{
 								bone = "bip_spine_2"
-								weight = 0.553785
+								weight = 0.74
 							},
 							{
 								bone = "bip_spine_3"
-								weight = 0.760956
-							},
-							{
-								bone = "bip_upperArm_L"
 								weight = 1.0
-							},
-							{
-								bone = "hlp_forearm_L"
-								weight = 0.0
-							},
-							{
-								bone = "prp_bullet_backLower"
-								weight = 0.0
-							},
-							{
-								bone = "prp_bullet_backUpper"
-								weight = 0.0
-							},
-							{
-								bone = "prp_bullet_chestLower"
-								weight = 0.0
-							},
-							{
-								bone = "prp_bullet_chestUpper"
-								weight = 0.0
-							},
-							{
-								bone = "prp_bullet_side"
-								weight = 0.0
 							},
 						]
 						master_morph_weight = -1.0

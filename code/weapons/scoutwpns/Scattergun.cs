@@ -112,7 +112,6 @@ partial class Scattergun : BaseDmWeapon
 			if ( AmmoClip < ClipSize )
 			{
 				Reload();
-				PlaySound("scatter_gun_reload");
 				Particles.Create( "particles/pistol_ejectbrass.vpcf", EffectEntity, "ejection_point" );
 			}
 			else
