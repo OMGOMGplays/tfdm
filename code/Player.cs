@@ -123,16 +123,16 @@ partial class DeathmatchPlayer : Player
 			Controller = new DemoWalkController();
 		}
 
-		if (Sniper == true) 
-		{
-			SetModel("models/sniper/sniper.vmdl");
+		// if (Sniper == true) 
+		// {
+		// 	SetModel("models/sniper/sniper.vmdl");
 
-			Inventory.Add(new SniperRifle(), true);
-			Inventory.Add(new SMG());
-			Inventory.Add(new Kukri());
+		// 	Inventory.Add(new SniperRifle(), true);
+		// 	Inventory.Add(new SMG());
+		// 	Inventory.Add(new Kukri());
 
-			Controller = new SniperWalkController();
-		}
+		// 	Controller = new SniperWalkController();
+		// }
 
 		Animator = new StandardPlayerAnimator();
 		Camera = new FirstPersonCamera();
