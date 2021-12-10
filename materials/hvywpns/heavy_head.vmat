@@ -20,7 +20,7 @@ Layer0
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "materials/hvywpns/heavy_head.tga"
 	TextureSquishColor "materials/hvywpns/heavy_head_compress.tga"
-	TextureStretchColor "tfdm/materials/hvywpns/heavy_head_stretch.tga"
+	TextureStretchColor "materials/hvywpns/heavy_head_stretch.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"

@@ -405,12 +405,16 @@ partial class DeathmatchPlayer : Player
 
     public virtual void DoubleJump()
     {
+		var player = this;
+
         float flGroundFactor = 1.25f;
 
         float flMul = 268.3281572999747f * 1.2f;
 
         Vector3 startx = new Vector3(); //LocalVelocity.x;
         Vector3 starty = new Vector3(); //LocalVelocity.y;
+
+		player.SetAnimBool("b_doublejump", true);
 
         if (Input.Down(InputButton.Left))
         {

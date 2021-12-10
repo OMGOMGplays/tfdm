@@ -98,6 +98,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -132,6 +133,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -166,6 +168,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -200,6 +203,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -234,6 +238,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -268,6 +273,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -302,6 +308,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -336,6 +343,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -370,6 +378,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -404,6 +413,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -438,6 +448,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -472,6 +483,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -506,6 +518,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -540,6 +553,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -574,6 +588,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -608,6 +623,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -642,6 +658,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -676,6 +693,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -710,6 +728,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -744,6 +763,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -778,6 +798,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -812,6 +833,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -846,6 +868,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -880,6 +903,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -921,6 +945,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -955,6 +980,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -989,6 +1015,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1023,6 +1050,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1057,6 +1085,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1091,6 +1120,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1125,6 +1155,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1159,6 +1190,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1193,6 +1225,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1227,6 +1260,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1261,6 +1295,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1295,6 +1330,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1315,6 +1351,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1349,6 +1386,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1383,6 +1421,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1417,6 +1456,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1451,6 +1491,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1485,6 +1526,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1519,6 +1561,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1539,6 +1582,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1573,6 +1617,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1607,6 +1652,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1641,6 +1687,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1675,6 +1722,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1709,6 +1757,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1743,6 +1792,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1763,6 +1813,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -1805,6 +1856,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1840,6 +1892,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1860,6 +1913,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1880,6 +1934,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1900,6 +1955,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1920,6 +1976,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1940,6 +1997,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -1960,6 +2018,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -1987,6 +2046,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2007,6 +2067,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2027,6 +2088,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2047,6 +2109,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2067,6 +2130,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2087,6 +2151,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2107,6 +2172,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -2148,6 +2214,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2182,6 +2249,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2216,6 +2284,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2250,6 +2319,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2284,6 +2354,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2318,6 +2389,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2352,6 +2424,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2386,6 +2459,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2420,6 +2494,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2454,6 +2529,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2488,6 +2564,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2522,6 +2599,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2556,6 +2634,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2590,6 +2669,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2624,6 +2704,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2658,6 +2739,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2692,6 +2774,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2726,6 +2809,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2760,6 +2844,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2794,6 +2879,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2828,6 +2914,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2862,6 +2949,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2896,6 +2984,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2930,6 +3019,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -2957,6 +3047,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2977,6 +3068,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -2997,6 +3089,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3017,6 +3110,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3037,6 +3131,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -3078,6 +3173,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3112,6 +3208,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3146,6 +3243,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3180,6 +3278,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3214,6 +3313,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3248,6 +3348,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3282,6 +3383,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3316,6 +3418,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3350,6 +3453,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3384,6 +3488,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3418,6 +3523,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3452,6 +3558,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3486,6 +3593,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3520,6 +3628,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3554,6 +3663,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3588,6 +3698,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3622,6 +3733,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3656,6 +3768,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3690,6 +3803,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3724,6 +3838,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3758,6 +3873,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3792,6 +3908,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3826,6 +3943,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3860,6 +3978,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3894,6 +4013,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3928,6 +4048,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -3962,6 +4083,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -3989,6 +4111,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -4009,6 +4132,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 							{
@@ -4029,6 +4153,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
+								take = 0
 								reverse = false
 							},
 						]
@@ -4061,6 +4186,14 @@
 							{
 								bone = "bip_spine_3"
 								weight = 1.0
+							},
+							{
+								bone = "hlp_forearm_L"
+								weight = 0.0
+							},
+							{
+								bone = "hlp_forearm_R"
+								weight = 0.0
 							},
 						]
 						master_morph_weight = -1.0
@@ -4140,6 +4273,14 @@
 								bone = "bip_upperArm_R"
 								weight = 1.0
 							},
+							{
+								bone = "hlp_forearm_L"
+								weight = 0.0
+							},
+							{
+								bone = "hlp_forearm_R"
+								weight = 0.0
+							},
 						]
 						master_morph_weight = -1.0
 						morph_weights = [  ]
@@ -4189,6 +4330,36 @@
 							{
 								bone = "bip_spine_3"
 								weight = 1.0
+							},
+							{
+								bone = "hlp_forearm_L"
+								weight = 0.0
+							},
+							{
+								bone = "hlp_forearm_R"
+								weight = 0.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "All_but_Helper"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_pelvis"
+								weight = 1.0
+							},
+							{
+								bone = "hlp_forearm_L"
+								weight = 0.0
+							},
+							{
+								bone = "hlp_forearm_R"
+								weight = 0.0
 							},
 						]
 						master_morph_weight = -1.0
