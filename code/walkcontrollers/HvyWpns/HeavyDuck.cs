@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Sandbox
 {
 	[Library]
-	public class HeavyDuck : NetworkComponent
+	public class HeavyDuck : 
 	{
 		public BasePlayerController Controller;
 

@@ -8,6 +8,7 @@
 		<LangVersion>10</LangVersion>
 		<NoWarn>1701;1702;1591;</NoWarn>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<DefineConstants>SANDBOX;DEBUG;TRACE</DefineConstants>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -25,6 +26,7 @@
   <PropertyGroup>
 	<OutputPath>../.vs/output/</OutputPath>
 	<DocumentationFile>../.vs/output/tfdm.xml</DocumentationFile>
+	<RootNamespace>Sandbox</RootNamespace>
   </PropertyGroup>
 
 	<ItemGroup>
@@ -37,7 +39,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-<ProjectReference Include="..\..\..\addons\base\code\base.csproj" />
+<ProjectReference Include="E:\Steam Spel\steamapps\common\sbox\addons\base\code\base.csproj" />
   </ItemGroup>
 
 </Project>

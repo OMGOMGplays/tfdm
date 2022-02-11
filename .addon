@@ -1,5 +1,15 @@
 {
-	"sharedassets": "*.*",
-	"type": "game",
-	"ident": "oop.tfdm"
+  "Title": "TFDM",
+  "Type": "game",
+  "Org": "oop",
+  "Ident": "tfdm",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": [
+    "/ui/*"
+  ],
+  "HasCode": true,
+  "CodePath": "code",
+  "RootNamespace": "Sandbox"
 }
