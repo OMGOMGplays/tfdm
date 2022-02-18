@@ -1340,7 +1340,7 @@
             could be being spectated.
             </summary>
         </member>
-        <member name="P:Sandbox.Entity.EyePos">
+        <member name="P:Sandbox.Entity.EyePosition">
             <summary>
             Position a player should be looking from in world space.
             </summary>
@@ -4349,9 +4349,9 @@
             This should ideally be set in BuildInput or FrameSimulate.
             
             <example>
-            This could be your <see cref="P:Sandbox.Local.Pawn"/> EyePos and EyeDir:
+            This could be your <see cref="P:Sandbox.Local.Pawn"/> EyePosition and EyeDir:
             <code>
-            WorldInput.Ray = new Ray( Local.Pawn.EyePos, Local.Pawn.EyeDir );
+            WorldInput.Ray = new Ray( Local.Pawn.EyePosition, Local.Pawn.EyeDir );
             </code>
             
             This could also be <see cref="P:Sandbox.Input.Cursor"/> if you want to use the mouse cursor.

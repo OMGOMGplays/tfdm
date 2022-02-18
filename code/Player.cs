@@ -438,7 +438,7 @@ partial class DeathmatchPlayer : Player
             
         }
 
-        //Log.Info("Global: " + EyeRot);
+        //Log.Info("Global: " + EyeRotation);
         //Log.Info("Local: " + EyeRotLocal);
 
         //Velocity = Velocity.AddClamped((startx * 100.0f) + (starty * 100f) + Velocity.WithZ(flMul * flGroundFactor), 500.0f);

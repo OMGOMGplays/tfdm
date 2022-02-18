@@ -97,7 +97,7 @@ namespace Sandbox
 		{
 			base.FrameSimulate();
 
-			EyeRot = Input.Rotation;
+			EyeRot= Input.Rotation;
 		}
 
 		public override void Simulate()

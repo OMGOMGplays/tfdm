@@ -151,7 +151,7 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 		// ShootBullet is coded in a way where we can have bullets pass through shit
 		// or bounce off shit, in which case it'll return multiple results
 		//
-		foreach ( var tr in TraceBullet( Owner.EyePos, Owner.EyePos + Owner.EyeRot.Forward * 5000 ) )
+		foreach ( var tr in TraceBullet( Owner.EyePosition, Owner.EyePosition + Owner.EyeRotation.Forward * 5000 ) )
 		{
 			tr.Surface.DoBulletImpact( tr );
 
@@ -163,7 +163,7 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 			//
 			using ( Prediction.Off() )
 			{
-				var damage = DamageInfo.FromBullet( tr.EndPos, Owner.EyeRot.Forward * 100, 15 )
+				var damage = DamageInfo.FromBullet( tr.EndPos, Owner.EyeRotation.Forward * 100, 15 )
 					.UsingTraceResult( tr )
 					.WithAttacker( Owner )
 					.WithWeapon( this );
@@ -194,7 +194,7 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 	/// </summary>
 	public virtual void ShootBullet( float spread, float force, float damage, float bulletSize )
 	{
-		var forward = Owner.EyeRot.Forward;
+		var forward = Owner.EyeRotation.Forward;
 		forward += (Vector3.Random + Vector3.Random + Vector3.Random + Vector3.Random) * spread * 0.25f;
 		forward = forward.Normal;
 
@@ -202,7 +202,7 @@ partial class BaseDmWeapon : BaseWeapon, IRespawnableEntity
 		// ShootBullet is coded in a way where we can have bullets pass through shit
 		// or bounce off shit, in which case it'll return multiple results
 		//
-		foreach ( var tr in TraceBullet( Owner.EyePos, Owner.EyePos + forward * 5000, bulletSize ) )
+		foreach ( var tr in TraceBullet( Owner.EyePosition, Owner.EyePosition + forward * 5000, bulletSize ) )
 		{
 			tr.Surface.DoBulletImpact( tr );
 

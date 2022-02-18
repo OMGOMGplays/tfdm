@@ -62,12 +62,12 @@ partial class StickybombLauncher : BaseDmWeapon
 
 		var grenade = new Prop
 		{
-			Position = Owner.EyePos + Owner.EyeRot.Forward * 75,
-			Rotation = Owner.EyeRot,
+			Position = Owner.EyePosition + Owner.EyeRotation.Forward * 75,
+			Rotation = Owner.EyeRotation,
 		};
 
 		grenade.SetModel("models/weapons/demowpns/w_stickybomb.vmdl");
-		grenade.Velocity = Owner.EyeRot.Forward * 1000;
+		grenade.Velocity = Owner.EyeRotation.Forward * 1000;
 	}
 
 	public override void AttackSecondary() 

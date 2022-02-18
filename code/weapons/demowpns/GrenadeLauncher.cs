@@ -52,12 +52,12 @@ partial class GrenadeLauncher : BaseDmWeapon
 	{
 		var grenade = new Grenade
 		{
-			Position = Owner.EyePos + Owner.EyeRot.Forward * 50,
-			Rotation = Owner.EyeRot,
+			Position = Owner.EyePosition + Owner.EyeRotation.Forward * 50,
+			Rotation = Owner.EyeRotation,
 		};
 
 		//TODO: Should be replaced with an actual grenade model
-		grenade.Velocity = Owner.EyeRot.Forward * 2000;
+		grenade.Velocity = Owner.EyeRotation.Forward * 2000;
 		grenade.Owner = Owner;
 
 		grenade.ExplodeAsync(3f);
