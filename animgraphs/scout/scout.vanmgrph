@@ -313,10 +313,7 @@
 	{
 		m_id = 1351397524
 	}
-	m_previewModels = 
-	[
-		"models/scout/scout.vmdl",
-	]
+	m_previewModels = [  ]
 	m_nodes = 
 	[
 		{
@@ -4722,7 +4719,7 @@
 				m_timingBehavior = "UseChild2"
 				m_flTimingBlend = 0.5
 				m_footMotionTiming = "Child1"
-				m_bResetBase = true
+				m_bResetBase = false
 				m_bResetAdditive = true
 				m_bApplyChannelsSeparately = true
 			}
